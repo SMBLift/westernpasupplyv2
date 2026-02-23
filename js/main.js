@@ -1,0 +1,145 @@
+/* ========================================
+   Western PA Supply Co — Main JavaScript
+   ======================================== */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  // ---- Mobile Menu ----
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileOverlay = document.getElementById('mobile-overlay');
+  const closeMenu = document.getElementById('close-menu');
+
+  function openMobileMenu() {
+    mobileMenu.classList.add('open');
+    mobileOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    hamburger.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeMobileMenu() {
+    mobileMenu.classList.remove('open');
+    mobileOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+    hamburger.setAttribute('aria-expanded', 'false');
+  }
+
+  if (hamburger) hamburger.addEventListener('click', openMobileMenu);
+  if (closeMenu) closeMenu.addEventListener('click', closeMobileMenu);
+  if (mobileOverlay) mobileOverlay.addEventListener('click', closeMobileMenu);
+
+  // Close on escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) {
+      closeMobileMenu();
+    }
+  });
+
+  // ---- Mobile Services Accordion ----
+  const mobileServicesToggle = document.getElementById('mobile-products-toggle');
+  const mobileServicesList = document.getElementById('mobile-products-list');
+  const accordionArrow = document.querySelector('.accordion-arrow');
+
+  if (mobileServicesToggle && mobileServicesList) {
+    mobileServicesToggle.addEventListener('click', () => {
+      mobileServicesList.classList.toggle('open');
+      if (accordionArrow) accordionArrow.classList.toggle('open');
+      const expanded = mobileServicesToggle.getAttribute('aria-expanded') === 'true';
+      mobileServicesToggle.setAttribute('aria-expanded', String(!expanded));
+    });
+  }
+
+  // ---- Scroll Animations (IntersectionObserver) ----
+  const animatedElements = document.querySelectorAll('.fade-up, .fade-in');
+
+  if (animatedElements.length > 0) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    animatedElements.forEach(el => {
+      observer.observe(el);
+    });
+  }
+
+  // ---- Form Handling ----
+  const contactForm = document.getElementById('contact-form');
+  const formTimestamp = document.getElementById('form-timestamp');
+
+  // Set timestamp on page load
+  if (formTimestamp) {
+    formTimestamp.value = Date.now();
+  }
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const data = Object.fromEntries(new FormData(form));
+
+      // Client-side honeypot check
+      if (data._honeypot) return;
+
+      const btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      try {
+        const res = await fetch('WORKER_URL', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        if (res.ok) {
+          form.reset();
+          // Reset timestamp
+          if (formTimestamp) formTimestamp.value = Date.now();
+          const msg = document.getElementById('form-success');
+          if (msg) {
+            msg.classList.remove('hidden');
+            msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+          // Clean URL params
+          history.replaceState(null, '', window.location.pathname);
+        } else {
+          throw new Error('Submission failed');
+        }
+      } catch (err) {
+        alert('Something went wrong. Please call us directly at (412) 760-4621.');
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Send Message';
+      }
+    });
+  }
+
+  // ---- Sticky Header Shadow on Scroll ----
+  const header = document.querySelector('header');
+  if (header) {
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll > 20) {
+        header.classList.add('shadow-lg');
+      } else {
+        header.classList.remove('shadow-lg');
+      }
+      lastScroll = currentScroll;
+    }, { passive: true });
+  }
+
+  // ---- Current Year ----
+  const yearEl = document.getElementById('current-year');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+
+});
