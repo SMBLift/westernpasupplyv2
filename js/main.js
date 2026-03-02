@@ -136,6 +136,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
+  // ---- Desktop Products Dropdown — Smart Positioning ----
+  const dropdownTrigger = document.querySelector('.services-trigger');
+  const dropdownMenu = document.querySelector('.services-dropdown');
+
+  if (dropdownTrigger && dropdownMenu) {
+    function positionDropdown() {
+      const triggerRect = dropdownTrigger.getBoundingClientRect();
+      const menuWidth = Math.min(600, window.innerWidth - 32); // matches w-[600px] / max-w
+      const viewportWidth = window.innerWidth;
+      const margin = 16;
+
+      // Ideal: center dropdown over trigger
+      const ideal = triggerRect.left + triggerRect.width / 2 - menuWidth / 2;
+      // Clamp so dropdown stays within viewport
+      const clamped = Math.max(margin, Math.min(ideal, viewportWidth - menuWidth - margin));
+      // Convert viewport-relative to trigger-relative (absolute is relative to .services-trigger)
+      const offsetFromTrigger = clamped - triggerRect.left;
+
+      dropdownMenu.style.left = offsetFromTrigger + 'px';
+    }
+
+    dropdownTrigger.addEventListener('mouseenter', positionDropdown);
+    window.addEventListener('resize', positionDropdown, { passive: true });
+    positionDropdown(); // initial position
+  }
+
   // ---- Current Year ----
   const yearEl = document.getElementById('current-year');
   if (yearEl) {
