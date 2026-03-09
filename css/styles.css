@@ -51,6 +51,21 @@
 .stagger-children > *:nth-child(7) { transition-delay: 600ms; }
 .stagger-children > *:nth-child(8) { transition-delay: 700ms; }
 
+/* Touch target minimum sizes (WCAG 2.5.8) */
+header a:not(.skip-link),
+header button,
+nav a,
+nav button {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+footer li a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
 /* Nav underline animation */
 .nav-link {
   position: relative;
