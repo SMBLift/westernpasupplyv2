@@ -172,15 +172,12 @@
   <div id="mobile-overlay" class="mobile-overlay fixed inset-0 bg-black/50 z-[60] lg:hidden" aria-hidden="true"></div>
   <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white z-[70] overflow-y-auto lg:hidden" role="dialog" aria-label="Mobile navigation menu">
     <div class="p-6">
-      <!-- Close Button -->
-      <div class="flex justify-end mb-6">
-        <button id="close-menu" class="flex items-center justify-center w-11 h-11 rounded-lg text-text hover:bg-brand-vlight transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-label="Close menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-        </button>
-      </div>
-
-      <!-- Mobile Nav Links -->
       <nav class="flex flex-col gap-1" aria-label="Mobile navigation">
+        <div class="flex justify-end mb-6">
+          <button id="close-menu" class="flex items-center justify-center w-11 h-11 rounded-lg text-text hover:bg-brand-vlight transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-label="Close menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+        </div>
         <a href="index.html" class="font-heading text-lg uppercase tracking-wider text-text hover:text-brand hover:bg-brand-vlight px-4 py-3 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Home</a>
         <a href="about.html" class="font-heading text-lg uppercase tracking-wider text-text hover:text-brand hover:bg-brand-vlight px-4 py-3 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">About</a>
 
@@ -505,12 +502,12 @@
   </footer>
 
   <!-- ============ STICKY MOBILE BAR ============ -->
-  <div class="mobile-bar fixed bottom-0 left-0 right-0 bg-brand z-50 lg:hidden" role="complementary" aria-label="Call us" style="box-shadow: 0 -4px 16px rgba(0,0,0,0.15);">
+  <aside class="mobile-bar fixed bottom-0 left-0 right-0 bg-brand z-50 lg:hidden" aria-label="Call us" style="box-shadow: 0 -4px 16px rgba(0,0,0,0.15);">
     <a href="tel:4127604621" class="flex items-center justify-center gap-3 py-4 text-white font-heading uppercase tracking-wider text-sm hover:bg-brand-dark active:bg-brand-dark transition-colors duration-200">
       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
       Call (412) 760-4621
     </a>
-  </div>
+  </aside>
 
   <!-- Main JS -->
   <script src="js/main.js"></script>
