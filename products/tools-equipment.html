@@ -30,7 +30,7 @@
         extend: {
           colors: {
             brand: { DEFAULT: '#446B3E', dark: '#2F4D2B', light: '#5A8C52', vlight: '#EDF3EB' },
-            accent: { DEFAULT: '#C8942A', dark: '#A67B1F', light: '#F0DEB0' },
+            accent: { DEFAULT: '#946D1A', dark: '#7A5A14', light: '#F0DEB0' },
             dark: '#1B2118',
             text: { DEFAULT: '#2C2C2C', secondary: '#5A5A5A' },
             bg: '#FAFAF7',
@@ -70,6 +70,16 @@
     "url": "https://westernpasupply.com"
   }
   </script>
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
 </head>
 <body class="font-body text-text bg-bg pb-20 lg:pb-0">
 
@@ -103,10 +113,10 @@
             <img src="../images/westernpasupplylogosquare.png" alt="Western PA Supply Co logo" class="h-14 sm:h-16 w-auto">
           </a>
           <div class="hidden lg:flex items-center gap-8">
-            <a href="../index.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-1 py-1">Home</a>
-            <a href="../about.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-1 py-1">About</a>
+            <a href="../index.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-2 py-2">Home</a>
+            <a href="../about.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-2 py-2">About</a>
             <div class="services-trigger relative">
-              <a href="../products.html" class="nav-link active font-heading text-sm uppercase tracking-wider text-brand hover:text-brand transition-colors duration-200 flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-1 py-1" aria-haspopup="true">
+              <a href="../products.html" class="nav-link active font-heading text-sm uppercase tracking-wider text-brand hover:text-brand transition-colors duration-200 flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-2 py-2" aria-haspopup="true">
                 Products
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
               </a>
@@ -131,8 +141,8 @@
                 </div>
               </div>
             </div>
-            <a href="../vendors.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-1 py-1">Vendors</a>
-            <a href="../services.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-1 py-1">Services</a>
+            <a href="../vendors.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-2 py-2">Vendors</a>
+            <a href="../services.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-2 py-2">Services</a>
             <a href="../contact.html" class="inline-block font-heading text-sm uppercase tracking-wider bg-accent hover:bg-accent-dark text-white px-6 py-2.5 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 active:scale-95 transition-transform duration-150">Contact Us</a>
           </div>
           <button id="hamburger" class="lg:hidden flex items-center justify-center w-11 h-11 rounded-lg text-text hover:bg-brand-vlight transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -237,7 +247,7 @@
             <div class="w-12 h-12 bg-brand-vlight rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
             </div>
-            <h3 class="font-heading text-xl uppercase tracking-wide text-dark mb-2">Hand Tools</h3>
+            <h2 class="font-heading text-xl uppercase tracking-wide text-dark mb-2">Hand Tools</h2>
             <p class="text-text-secondary text-sm leading-relaxed">Hammers, levels, tape measures, pliers, screwdrivers, and essential trade tools.</p>
           </div>
 
@@ -246,7 +256,7 @@
             <div class="w-12 h-12 bg-brand-vlight rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
             </div>
-            <h3 class="font-heading text-xl uppercase tracking-wide text-dark mb-2">Power Tools</h3>
+            <h2 class="font-heading text-xl uppercase tracking-wide text-dark mb-2">Power Tools</h2>
             <p class="text-text-secondary text-sm leading-relaxed">Drills, saws, grinders, rotary hammers, and corded/cordless power tool systems.</p>
           </div>
 
@@ -255,7 +265,7 @@
             <div class="w-12 h-12 bg-brand-vlight rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
             </div>
-            <h3 class="font-heading text-xl uppercase tracking-wide text-dark mb-2">Concrete & Masonry Tools</h3>
+            <h2 class="font-heading text-xl uppercase tracking-wide text-dark mb-2">Concrete & Masonry Tools</h2>
             <p class="text-text-secondary text-sm leading-relaxed">Trowels, floats, edgers, jointers, mixers, and specialty concrete finishing tools.</p>
           </div>
 
@@ -264,7 +274,7 @@
             <div class="w-12 h-12 bg-brand-vlight rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
             </div>
-            <h3 class="font-heading text-xl uppercase tracking-wide text-dark mb-2">Measuring & Layout</h3>
+            <h2 class="font-heading text-xl uppercase tracking-wide text-dark mb-2">Measuring & Layout</h2>
             <p class="text-text-secondary text-sm leading-relaxed">Laser levels, chalk lines, squares, and precision measuring tools.</p>
           </div>
 
@@ -273,7 +283,7 @@
             <div class="w-12 h-12 bg-brand-vlight rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z"/></svg>
             </div>
-            <h3 class="font-heading text-xl uppercase tracking-wide text-dark mb-2">Cutting Tools</h3>
+            <h2 class="font-heading text-xl uppercase tracking-wide text-dark mb-2">Cutting Tools</h2>
             <p class="text-text-secondary text-sm leading-relaxed">Blades, bits, hole saws, and abrasive cutting wheels.</p>
           </div>
 
@@ -282,7 +292,7 @@
             <div class="w-12 h-12 bg-brand-vlight rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
             </div>
-            <h3 class="font-heading text-xl uppercase tracking-wide text-dark mb-2">Safety Equipment</h3>
+            <h2 class="font-heading text-xl uppercase tracking-wide text-dark mb-2">Safety Equipment</h2>
             <p class="text-text-secondary text-sm leading-relaxed">Hard hats, gloves, eye protection, hearing protection, and high-vis gear.</p>
           </div>
 
@@ -354,7 +364,7 @@
 
         <!-- Quick Links -->
         <div>
-          <h4 class="font-heading text-sm uppercase tracking-wider text-accent mb-4">Quick Links</h4>
+          <h3 class="font-heading text-sm uppercase tracking-wider text-accent-light mb-4">Quick Links</h3>
           <ul class="space-y-2">
             <li><a href="../index.html" class="text-white/70 hover:text-accent text-sm transition-colors">Home</a></li>
             <li><a href="../about.html" class="text-white/70 hover:text-accent text-sm transition-colors">About</a></li>
@@ -367,7 +377,7 @@
 
         <!-- Product Categories -->
         <div>
-          <h4 class="font-heading text-sm uppercase tracking-wider text-accent mb-4">Product Categories</h4>
+          <h3 class="font-heading text-sm uppercase tracking-wider text-accent-light mb-4">Product Categories</h3>
           <ul class="space-y-2">
             <li><a href="concrete-masonry.html" class="text-white/70 hover:text-accent text-sm transition-colors">Concrete & Masonry</a></li>
             <li><a href="chimney-fireplace.html" class="text-white/70 hover:text-accent text-sm transition-colors">Chimney & Fireplace</a></li>
@@ -379,7 +389,7 @@
 
         <!-- Contact Info -->
         <div>
-          <h4 class="font-heading text-sm uppercase tracking-wider text-accent mb-4">Contact</h4>
+          <h3 class="font-heading text-sm uppercase tracking-wider text-accent-light mb-4">Contact</h3>
           <ul class="space-y-3">
             <li class="flex items-start gap-3">
               <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>

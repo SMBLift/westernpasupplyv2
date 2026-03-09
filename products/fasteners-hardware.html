@@ -33,7 +33,7 @@
         extend: {
           colors: {
             brand: { DEFAULT: '#446B3E', dark: '#2F4D2B', light: '#5A8C52', vlight: '#EDF3EB' },
-            accent: { DEFAULT: '#C8942A', dark: '#A67B1F', light: '#F0DEB0' },
+            accent: { DEFAULT: '#946D1A', dark: '#7A5A14', light: '#F0DEB0' },
             dark: '#1B2118',
             text: { DEFAULT: '#2C2C2C', secondary: '#5A5A5A' },
             bg: '#FAFAF7',
@@ -70,6 +70,16 @@
     "url": "https://westernpasupply.com"
   }
   </script>
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
 </head>
 <body class="font-body text-text bg-bg pb-20 lg:pb-0">
 
@@ -93,7 +103,7 @@
     </div>
 
     <!-- Main Nav -->
-    <nav class="bg-white border-b border-border">
+    <nav class="bg-white border-b border-border" aria-label="Main navigation">
       <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-20">
         <!-- Logo -->
         <a href="../index.html" class="flex-shrink-0">
@@ -101,7 +111,7 @@
         </a>
 
         <!-- Desktop Nav -->
-        <div class="hidden lg:flex items-center gap-8" role="navigation" aria-label="Main navigation">
+        <div class="hidden lg:flex items-center gap-8" role="navigation" aria-label="Desktop navigation">
           <a href="../index.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200">Home</a>
           <a href="../about.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200">About</a>
 
@@ -380,7 +390,7 @@
 
         <!-- Col 2: Quick Links -->
         <div>
-          <h4 class="font-heading text-sm font-semibold uppercase tracking-wider text-accent mb-4">Quick Links</h4>
+          <h3 class="font-heading text-sm font-semibold uppercase tracking-wider text-accent-light mb-4">Quick Links</h3>
           <ul class="flex flex-col gap-2">
             <li><a href="../index.html" class="text-sm text-white/60 hover:text-accent transition-colors duration-200">Home</a></li>
             <li><a href="../about.html" class="text-sm text-white/60 hover:text-accent transition-colors duration-200">About</a></li>
@@ -393,7 +403,7 @@
 
         <!-- Col 3: Products -->
         <div>
-          <h4 class="font-heading text-sm font-semibold uppercase tracking-wider text-accent mb-4">Products</h4>
+          <h3 class="font-heading text-sm font-semibold uppercase tracking-wider text-accent-light mb-4">Products</h3>
           <ul class="flex flex-col gap-2">
             <li><a href="concrete-masonry.html" class="text-sm text-white/60 hover:text-accent transition-colors duration-200">Concrete & Masonry</a></li>
             <li><a href="waterproofing.html" class="text-sm text-white/60 hover:text-accent transition-colors duration-200">Waterproofing</a></li>
@@ -406,7 +416,7 @@
 
         <!-- Col 4: Contact -->
         <div>
-          <h4 class="font-heading text-sm font-semibold uppercase tracking-wider text-accent mb-4">Contact</h4>
+          <h3 class="font-heading text-sm font-semibold uppercase tracking-wider text-accent-light mb-4">Contact</h3>
           <ul class="flex flex-col gap-3">
             <li>
               <a href="tel:4127604621" class="text-sm text-white/60 hover:text-accent transition-colors duration-200 flex items-center gap-2">
@@ -427,7 +437,7 @@
 
       <!-- Bottom Bar -->
       <div class="mt-12 pt-8 border-t border-white/10 text-center">
-        <p class="text-sm text-white/40">&copy; <span id="current-year">2026</span> Western PA Supply Co. All rights reserved.</p>
+        <p class="text-sm text-white/60">&copy; <span id="current-year">2026</span> Western PA Supply Co. All rights reserved.</p>
       </div>
     </div>
   </footer>

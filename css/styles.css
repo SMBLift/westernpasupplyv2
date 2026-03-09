@@ -62,7 +62,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #C8942A;
+  background-color: #946D1A;
   transition: width 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .nav-link:hover::after,
@@ -197,4 +197,14 @@ html {
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
