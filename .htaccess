@@ -32,4 +32,4 @@ RewriteRule ^(.*)$ $1.html [L]
   Header set X-XSS-Protection "1; mode=block"
 </IfModule>
 
-ErrorDocument 404 /index.html
+ErrorDocument 404 /404.html
