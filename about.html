@@ -23,7 +23,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -33,15 +33,15 @@
         extend: {
           colors: {
             brand: {
-              DEFAULT: '#446B3E',
-              dark: '#2F4D2B',
-              light: '#5A8C52',
-              vlight: '#EDF3EB'
+              DEFAULT: '#2F5733',
+              dark: '#1E3B22',
+              light: '#4A7A4F',
+              vlight: '#EBF3EC'
             },
             accent: {
-              DEFAULT: '#946D1A',
-              dark: '#7A5A14',
-              light: '#F0DEB0'
+              DEFAULT: '#556063',
+              dark: '#3F484B',
+              light: '#D4DADB'
             },
             dark: '#1B2118',
             text: {
@@ -52,7 +52,7 @@
             border: '#E0E0D8'
           },
           fontFamily: {
-            heading: ['Barlow Condensed', 'sans-serif'],
+            heading: ['Inter', 'sans-serif'],
             body: ['Inter', 'sans-serif']
           }
         }
@@ -63,6 +63,15 @@
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/styles.css">
 
+  <!-- FAQ panel styles -->
+  <style>
+    .faq-panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+  </style>
+
   <!-- Schema.org LocalBusiness JSON-LD -->
   <script type="application/ld+json">
   {
@@ -70,7 +79,7 @@
     "@type": "LocalBusiness",
     "name": "Western PA Supply Co",
     "description": "Locally owned building and construction supply company serving the Greater Pittsburgh area. True Value member store.",
-    "image": "https://westernpasupply.com/images/westernpasupplylogowithwords.png",
+    "image": "https://westernpasupply.com/images/westernpasupplylogowhitebg.png",
     "telephone": "(412) 760-4621",
     "email": "info@westernpasupply.com",
     "address": {
@@ -117,7 +126,7 @@
 
           <!-- Logo -->
           <a href="index.html" class="flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded" aria-label="Western PA Supply Co home">
-            <img src="images/westernpasupplylogosquare.png" alt="Western PA Supply Co logo" class="h-14 sm:h-16 w-auto">
+            <img src="images/westernpasupplylogowhitebg.png" alt="Western PA Supply Co logo" class="h-14 sm:h-16 w-auto">
           </a>
 
           <!-- Desktop Nav Links -->
@@ -238,7 +247,7 @@
     <!-- ========== HERO SECTION ========== -->
     <section class="relative min-h-[40vh] flex items-center bg-dark overflow-hidden">
       <!-- Background pattern -->
-      <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 20% 50%, #446B3E 0%, transparent 50%), radial-gradient(circle at 80% 50%, #946D1A 0%, transparent 50%);"></div>
+      <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 20% 50%, #2F5733 0%, transparent 50%), radial-gradient(circle at 80% 50%, #556063 0%, transparent 50%);"></div>
       <div class="grain absolute inset-0"></div>
       <div class="relative z-10 max-w-7xl mx-auto px-6 py-16 text-center w-full">
         <div class="w-16 h-0.5 bg-accent mx-auto mb-6"></div>
@@ -273,7 +282,7 @@
 
           <!-- Image Column -->
           <div class="relative">
-            <div class="relative rounded-2xl overflow-hidden shadow-xl" style="box-shadow: 0 12px 40px rgba(68, 107, 62, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);">
+            <div class="relative rounded-2xl overflow-hidden shadow-xl" style="box-shadow: 0 12px 40px rgba(47, 87, 51, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);">
               <img src="https://images.unsplash.com/photo-1574184383650-5f859b6793c5?auto=format&fit=crop&w=800&q=80" alt="Western PA Supply Co team and store front" class="w-full h-auto object-cover" loading="lazy">
               <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
             </div>
@@ -301,7 +310,7 @@
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 stagger-children">
 
           <!-- Card 1: True Value Network -->
-          <div class="fade-up bg-white rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(68, 107, 62, 0.06);">
+          <div class="fade-up bg-white rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             </div>
@@ -312,7 +321,7 @@
           </div>
 
           <!-- Card 2: Local Knowledge -->
-          <div class="fade-up bg-white rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(68, 107, 62, 0.06);">
+          <div class="fade-up bg-white rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
             </div>
@@ -323,7 +332,7 @@
           </div>
 
           <!-- Card 3: Contractor Focus -->
-          <div class="fade-up bg-white rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(68, 107, 62, 0.06);">
+          <div class="fade-up bg-white rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
             </div>
@@ -334,7 +343,7 @@
           </div>
 
           <!-- Card 4: Full-Service Supply -->
-          <div class="fade-up bg-white rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(68, 107, 62, 0.06);">
+          <div class="fade-up bg-white rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
             </div>
@@ -353,8 +362,8 @@
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           <!-- Map / Area Visual -->
-          <div class="fade-up relative rounded-2xl overflow-hidden" style="box-shadow: 0 12px 40px rgba(68, 107, 62, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);">
-            <img src="https://placehold.co/700x480/E0E0D8/446B3E?text=Greater+Pittsburgh+Service+Area+Map" alt="Map showing Western PA Supply Co service area across the Greater Pittsburgh region" class="w-full h-auto object-cover" loading="lazy">
+          <div class="fade-up relative rounded-2xl overflow-hidden" style="box-shadow: 0 12px 40px rgba(47, 87, 51, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);">
+            <img src="https://placehold.co/700x480/E0E0D8/2F5733?text=Greater+Pittsburgh+Service+Area+Map" alt="Map showing Western PA Supply Co service area across the Greater Pittsburgh region" class="w-full h-auto object-cover" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/20 to-transparent"></div>
           </div>
 
@@ -421,9 +430,9 @@
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 stagger-children">
 
           <!-- Team Member 1 -->
-          <div class="fade-up bg-white rounded-2xl overflow-hidden card-hover border border-border" style="box-shadow: 0 2px 8px rgba(68, 107, 62, 0.06);">
+          <div class="fade-up bg-white rounded-2xl overflow-hidden card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="relative">
-              <img src="https://placehold.co/400x400/2F4D2B/FAFAF7?text=Team+Member" alt="Team member placeholder photo" class="w-full h-72 object-cover" loading="lazy">
+              <img src="https://placehold.co/400x400/1E3B22/FAFAF7?text=Team+Member" alt="Team member placeholder photo" class="w-full h-72 object-cover" loading="lazy">
               <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
             </div>
             <div class="p-6">
@@ -437,9 +446,9 @@
           </div>
 
           <!-- Team Member 2 -->
-          <div class="fade-up bg-white rounded-2xl overflow-hidden card-hover border border-border" style="box-shadow: 0 2px 8px rgba(68, 107, 62, 0.06);">
+          <div class="fade-up bg-white rounded-2xl overflow-hidden card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="relative">
-              <img src="https://placehold.co/400x400/446B3E/FAFAF7?text=Team+Member" alt="Team member placeholder photo" class="w-full h-72 object-cover" loading="lazy">
+              <img src="https://placehold.co/400x400/2F5733/FAFAF7?text=Team+Member" alt="Team member placeholder photo" class="w-full h-72 object-cover" loading="lazy">
               <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
             </div>
             <div class="p-6">
@@ -453,9 +462,9 @@
           </div>
 
           <!-- Team Member 3 -->
-          <div class="fade-up bg-white rounded-2xl overflow-hidden card-hover border border-border" style="box-shadow: 0 2px 8px rgba(68, 107, 62, 0.06);">
+          <div class="fade-up bg-white rounded-2xl overflow-hidden card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="relative">
-              <img src="https://placehold.co/400x400/5A8C52/FAFAF7?text=Team+Member" alt="Team member placeholder photo" class="w-full h-72 object-cover" loading="lazy">
+              <img src="https://placehold.co/400x400/4A7A4F/FAFAF7?text=Team+Member" alt="Team member placeholder photo" class="w-full h-72 object-cover" loading="lazy">
               <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
             </div>
             <div class="p-6">
@@ -471,10 +480,86 @@
       </div>
     </section>
 
+    <!-- ========== FAQ ========== -->
+    <section class="py-12 lg:py-20 bg-white" aria-labelledby="faq-heading">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="text-center mb-14 fade-up">
+          <h2 id="faq-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-dark tracking-tight mb-4">Frequently Asked Questions</h2>
+          <div class="w-16 h-1 bg-accent mx-auto mb-4"></div>
+        </div>
+
+        <div class="space-y-4 fade-up" id="faq-accordion">
+          <!-- FAQ 1 -->
+          <div class="border border-border rounded-xl overflow-hidden">
+            <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left bg-bg hover:bg-brand-vlight transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-inset" aria-expanded="false" aria-controls="faq-1">
+              <span class="font-heading text-base font-600 text-dark pr-4">Do you offer contractor pricing?</span>
+              <svg class="faq-icon w-5 h-5 text-text-secondary flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="faq-1" class="faq-panel" role="region">
+              <div class="px-6 py-5 text-text-secondary text-sm leading-relaxed border-t border-border">Yes. We offer dedicated contractor accounts with competitive bulk pricing, personalized ordering, and priority service. Stop by or call to set up your account.</div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="border border-border rounded-xl overflow-hidden">
+            <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left bg-bg hover:bg-brand-vlight transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-inset" aria-expanded="false" aria-controls="faq-2">
+              <span class="font-heading text-base font-600 text-dark pr-4">What are your store hours?</span>
+              <svg class="faq-icon w-5 h-5 text-text-secondary flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="faq-2" class="faq-panel" role="region">
+              <div class="px-6 py-5 text-text-secondary text-sm leading-relaxed border-t border-border">We're open Monday through Friday 7:00 AM to 5:00 PM, Saturday 8:00 AM to 2:00 PM, and closed on Sunday.</div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="border border-border rounded-xl overflow-hidden">
+            <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left bg-bg hover:bg-brand-vlight transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-inset" aria-expanded="false" aria-controls="faq-3">
+              <span class="font-heading text-base font-600 text-dark pr-4">Do you deliver materials?</span>
+              <svg class="faq-icon w-5 h-5 text-text-secondary flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="faq-3" class="faq-panel" role="region">
+              <div class="px-6 py-5 text-text-secondary text-sm leading-relaxed border-t border-border">We offer delivery options for larger orders in the Greater Pittsburgh area. Call us to discuss your project needs and we'll work out the details.</div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="border border-border rounded-xl overflow-hidden">
+            <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left bg-bg hover:bg-brand-vlight transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-inset" aria-expanded="false" aria-controls="faq-4">
+              <span class="font-heading text-base font-600 text-dark pr-4">Can you special order products you don't stock?</span>
+              <svg class="faq-icon w-5 h-5 text-text-secondary flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="faq-4" class="faq-panel" role="region">
+              <div class="px-6 py-5 text-text-secondary text-sm leading-relaxed border-t border-border">Absolutely. As a True Value member store, we have access to thousands of products through the True Value distribution network. If we don't have it in store, we can usually get it within a few days.</div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="border border-border rounded-xl overflow-hidden">
+            <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left bg-bg hover:bg-brand-vlight transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-inset" aria-expanded="false" aria-controls="faq-5">
+              <span class="font-heading text-base font-600 text-dark pr-4">What types of customers do you serve?</span>
+              <svg class="faq-icon w-5 h-5 text-text-secondary flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="faq-5" class="faq-panel" role="region">
+              <div class="px-6 py-5 text-text-secondary text-sm leading-relaxed border-t border-border">We serve everyone from professional contractors and builders to DIY homeowners. Our staff can help regardless of your experience level — whether you're managing a commercial project or fixing a leaky faucet at home.</div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="border border-border rounded-xl overflow-hidden">
+            <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left bg-bg hover:bg-brand-vlight transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-inset" aria-expanded="false" aria-controls="faq-6">
+              <span class="font-heading text-base font-600 text-dark pr-4">How are your prices compared to big box stores?</span>
+              <svg class="faq-icon w-5 h-5 text-text-secondary flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="faq-6" class="faq-panel" role="region">
+              <div class="px-6 py-5 text-text-secondary text-sm leading-relaxed border-t border-border">Very competitive. Our True Value buying power gives us access to wholesale pricing, and we pass those savings on. Many customers find our prices beat the big box stores, especially on bulk and contractor orders — plus you get expert advice, not a teenager in an orange apron.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ========== CTA SECTION ========== -->
-    <section class="py-20 lg:py-28 relative overflow-hidden grain">
-      <!-- Background -->
-      <div class="absolute inset-0 bg-gradient-to-br from-brand-dark via-brand to-brand-light"></div>
+    <section class="relative py-20 lg:py-28 bg-brand-dark overflow-hidden grain">
 
       <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div class="fade-up">
@@ -511,7 +596,7 @@
         <!-- Column 1: Logo & Tagline -->
         <div>
           <a href="index.html" class="inline-block mb-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded" aria-label="Western PA Supply Co home">
-            <img src="images/westernpasupplylogowithwords.png" alt="Western PA Supply Co logo" class="h-12 w-auto brightness-0 invert">
+            <img src="images/westernpasuppplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-12 w-auto opacity-90">
           </a>
           <p class="text-white/70 text-sm" style="line-height: 1.7;">
             Locally owned building and construction supply serving the Greater Pittsburgh area. True Value member store.
@@ -596,6 +681,30 @@
 
   <!-- Main JavaScript -->
   <script src="js/main.js"></script>
+
+  <!-- FAQ Accordion -->
+  <script>
+    (function() {
+      const triggers = document.querySelectorAll('.faq-trigger');
+      triggers.forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const panel = document.getElementById(trigger.getAttribute('aria-controls'));
+          const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+          triggers.forEach(t => {
+            t.setAttribute('aria-expanded', 'false');
+            const p = document.getElementById(t.getAttribute('aria-controls'));
+            if (p) { p.style.maxHeight = null; }
+            t.querySelector('.faq-icon').style.transform = '';
+          });
+          if (!isOpen) {
+            trigger.setAttribute('aria-expanded', 'true');
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+            trigger.querySelector('.faq-icon').style.transform = 'rotate(180deg)';
+          }
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>

@@ -20,7 +20,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -29,15 +29,15 @@
       theme: {
         extend: {
           colors: {
-            brand: { DEFAULT: '#446B3E', dark: '#2F4D2B', light: '#5A8C52', vlight: '#EDF3EB' },
-            accent: { DEFAULT: '#946D1A', dark: '#7A5A14', light: '#F0DEB0' },
+            brand: { DEFAULT: '#2F5733', dark: '#1E3B22', light: '#4A7A4F', vlight: '#EBF3EC' },
+            accent: { DEFAULT: '#556063', dark: '#3F484B', light: '#D4DADB' },
             dark: '#1B2118',
             text: { DEFAULT: '#2C2C2C', secondary: '#5A5A5A' },
             bg: '#FAFAF7',
             border: '#E0E0D8'
           },
           fontFamily: {
-            heading: ['Barlow Condensed', 'sans-serif'],
+            heading: ['Inter', 'sans-serif'],
             body: ['Inter', 'sans-serif']
           }
         }
@@ -80,6 +80,7 @@
       }
     }
   </style>
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1659511473223-f4001971b8ef?auto=format&fit=crop&w=1920&q=80">
 </head>
 <body class="font-body text-text bg-bg pb-20 lg:pb-0">
 
@@ -108,7 +109,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-20">
           <a href="../index.html" class="flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded" aria-label="Western PA Supply Co home">
-            <img src="../images/westernpasupplylogosquare.png" alt="Western PA Supply Co logo" class="h-14 sm:h-16 w-auto">
+            <img src="../images/westernpasupplylogowhitebg.png" alt="Western PA Supply Co logo" class="h-14 sm:h-16 w-auto">
           </a>
           <div class="hidden lg:flex items-center gap-8">
             <a href="../index.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2">Home</a>
@@ -370,7 +371,7 @@
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
         <!-- Logo & Tagline -->
         <div>
-          <img src="../images/westernpasupplylogowithwords.png" alt="Western PA Supply Co logo" class="h-12 w-auto mb-4 brightness-0 invert">
+          <img src="../images/westernpasuppplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-12 w-auto mb-4 opacity-90">
           <p class="text-white/60 text-sm leading-relaxed">Your trusted source for building materials, masonry supplies, and hardware in Pittsburgh, PA.</p>
         </div>
 

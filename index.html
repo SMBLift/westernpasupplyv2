@@ -28,7 +28,7 @@
   <!-- Preconnect to Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -38,15 +38,15 @@
         extend: {
           colors: {
             brand: {
-              DEFAULT: '#446B3E',
-              dark: '#2F4D2B',
-              light: '#5A8C52',
-              vlight: '#EDF3EB',
+              DEFAULT: '#2F5733',
+              dark: '#1E3B22',
+              light: '#4A7A4F',
+              vlight: '#EBF3EC',
             },
             accent: {
-              DEFAULT: '#946D1A',
-              dark: '#7A5A14',
-              light: '#F0DEB0',
+              DEFAULT: '#556063',
+              dark: '#3F484B',
+              light: '#D4DADB',
             },
             dark: '#1B2118',
             text: {
@@ -57,7 +57,7 @@
             border: '#E0E0D8',
           },
           fontFamily: {
-            heading: ['Barlow Condensed', 'sans-serif'],
+            heading: ['Inter', 'sans-serif'],
             body: ['Inter', 'sans-serif'],
           },
           letterSpacing: {
@@ -74,6 +74,7 @@
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/styles.css">
 
+
   <!-- Schema.org LocalBusiness JSON-LD -->
   <script type="application/ld+json">
   {
@@ -81,7 +82,7 @@
     "@type": "LocalBusiness",
     "name": "Western PA Supply Co",
     "description": "Building and construction supply company serving contractors, builders, and homeowners in the Greater Pittsburgh area. True Value member store.",
-    "image": "https://westernpasupply.com/images/westernpasupplylogowithwords.png",
+    "image": "https://westernpasupply.com/images/westernpasupplylogowhitebg.png",
     "telephone": "(412) 760-4621",
     "email": "info@westernpasupply.com",
     "address": {
@@ -138,7 +139,7 @@
 
           <!-- Logo -->
           <a href="index.html" class="flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded" aria-label="Western PA Supply Co home">
-            <img src="images/westernpasupplylogosquare.png" alt="Western PA Supply Co logo" class="h-14 sm:h-16 w-auto">
+            <img src="images/westernpasupplylogowhitebg.png" alt="Western PA Supply Co logo" class="h-14 sm:h-16 w-auto">
           </a>
 
           <!-- Desktop Nav Links -->
@@ -258,7 +259,7 @@
     <section class="relative min-h-[40vh] flex items-center overflow-hidden">
       <!-- Background Image -->
       <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1706027554815-ae587412dbef?auto=format&fit=crop&w=1920&q=80" alt="" class="w-full h-full object-cover" aria-hidden="true">
+        <img src="images/hero-handshake.jpg" alt="" class="w-full h-full object-cover" aria-hidden="true">
         <div class="absolute inset-0 bg-gradient-to-r from-dark/85 via-dark/70 to-dark/50"></div>
         <div class="absolute inset-0 bg-brand-dark/30 mix-blend-multiply"></div>
       </div>
@@ -323,7 +324,7 @@
     </section>
 
     <!-- ========== FEATURED PRODUCT CATEGORIES ========== -->
-    <section class="py-20 lg:py-28 bg-bg" aria-labelledby="products-heading">
+    <section class="py-12 lg:py-20 bg-bg" aria-labelledby="products-heading">
       <div class="max-w-7xl mx-auto px-6">
         <!-- Section Header -->
         <div class="text-center mb-14 fade-up">
@@ -400,60 +401,125 @@
       </div>
     </section>
 
-    <!-- ========== WHY CHOOSE US ========== -->
-    <section class="py-20 lg:py-28 bg-white" aria-labelledby="why-heading">
-      <div class="max-w-7xl mx-auto px-6">
+    <!-- ========== WHY CHOOSE US — STAT BLOCKS ========== -->
+    <section class="py-12 lg:py-20 bg-brand-dark relative overflow-hidden" aria-labelledby="why-heading">
+      <!-- Subtle texture -->
+      <div class="absolute inset-0 opacity-[0.03]" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
         <!-- Section Header -->
         <div class="text-center mb-14 fade-up">
-          <h2 id="why-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-dark tracking-tight mb-4">Why Choose Western PA Supply</h2>
+          <h2 id="why-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4">Why Choose Western PA Supply</h2>
           <div class="w-16 h-1 bg-accent mx-auto mb-4"></div>
-          <p class="text-text-secondary text-lg max-w-2xl mx-auto">We combine national buying power with local expertise to deliver the best value for your building and construction projects.</p>
+          <p class="text-white/70 text-lg max-w-2xl mx-auto">National buying power. Local expertise. The best value for your building projects.</p>
         </div>
 
-        <!-- Differentiators Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 stagger-children fade-up">
+        <!-- 2x2 Stat Blocks -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 fade-up">
 
-          <!-- True Value Buying Power -->
-          <div class="text-center">
-            <div class="w-16 h-16 bg-brand-vlight rounded-2xl flex items-center justify-center mx-auto mb-5">
-              <svg class="w-8 h-8 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          <!-- True Value Network -->
+          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10 flex gap-6 items-start">
+            <div class="flex-shrink-0">
+              <span class="font-heading text-5xl lg:text-6xl font-bold text-accent leading-none">TV</span>
             </div>
-            <h3 class="font-heading text-lg font-600 text-dark mb-3 tracking-tight">True Value Buying Power</h3>
-            <p class="text-text-secondary text-sm">Access to thousands of products through the True Value network at competitive wholesale pricing.</p>
+            <div>
+              <h3 class="font-heading text-lg font-600 text-white mb-2 tracking-tight">True Value Buying Power</h3>
+              <p class="text-white/60 text-sm">Access to thousands of products through the True Value network at competitive wholesale pricing — savings we pass directly to you.</p>
+            </div>
           </div>
 
           <!-- Local Expertise -->
-          <div class="text-center">
-            <div class="w-16 h-16 bg-brand-vlight rounded-2xl flex items-center justify-center mx-auto mb-5">
-              <svg class="w-8 h-8 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10 flex gap-6 items-start">
+            <div class="flex-shrink-0">
+              <span class="font-heading text-5xl lg:text-6xl font-bold text-accent leading-none">PGH</span>
             </div>
-            <h3 class="font-heading text-lg font-600 text-dark mb-3 tracking-tight">Local Expertise</h3>
-            <p class="text-text-secondary text-sm">Knowledgeable staff who understand Pittsburgh-area building codes, conditions, and project requirements.</p>
+            <div>
+              <h3 class="font-heading text-lg font-600 text-white mb-2 tracking-tight">Pittsburgh Expertise</h3>
+              <p class="text-white/60 text-sm">Staff who understand local building codes, weather conditions, and project requirements specific to the Greater Pittsburgh area.</p>
+            </div>
           </div>
 
-          <!-- Contractor-Friendly -->
-          <div class="text-center">
-            <div class="w-16 h-16 bg-brand-vlight rounded-2xl flex items-center justify-center mx-auto mb-5">
-              <svg class="w-8 h-8 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          <!-- Contractor Accounts -->
+          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10 flex gap-6 items-start">
+            <div class="flex-shrink-0">
+              <span class="font-heading text-5xl lg:text-6xl font-bold text-accent leading-none">PRO</span>
             </div>
-            <h3 class="font-heading text-lg font-600 text-dark mb-3 tracking-tight">Contractor-Friendly</h3>
-            <p class="text-text-secondary text-sm">Dedicated contractor accounts with competitive pricing, bulk ordering, and personalized support.</p>
+            <div>
+              <h3 class="font-heading text-lg font-600 text-white mb-2 tracking-tight">Contractor-Friendly</h3>
+              <p class="text-white/60 text-sm">Dedicated contractor accounts with bulk pricing, personalized ordering, and priority service — built for pros who need reliability.</p>
+            </div>
           </div>
 
-          <!-- One-Stop Shop -->
-          <div class="text-center">
-            <div class="w-16 h-16 bg-brand-vlight rounded-2xl flex items-center justify-center mx-auto mb-5">
-              <svg class="w-8 h-8 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+          <!-- One-Stop -->
+          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10 flex gap-6 items-start">
+            <div class="flex-shrink-0">
+              <span class="font-heading text-5xl lg:text-6xl font-bold text-accent leading-none">15+</span>
             </div>
-            <h3 class="font-heading text-lg font-600 text-dark mb-3 tracking-tight">One-Stop Shop</h3>
-            <p class="text-text-secondary text-sm">Everything from concrete and masonry to tools, paint, plumbing, electrical, and more under one roof.</p>
+            <div>
+              <h3 class="font-heading text-lg font-600 text-white mb-2 tracking-tight">Product Categories</h3>
+              <p class="text-white/60 text-sm">From concrete and masonry to tools, paint, plumbing, electrical, and more — everything for your project under one roof.</p>
+            </div>
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS (PROCESS) ========== -->
+    <section class="py-12 lg:py-20 bg-bg border-t border-border" aria-labelledby="process-heading">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-14 fade-up">
+          <h2 id="process-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-dark tracking-tight mb-4">How It Works</h2>
+          <div class="w-16 h-1 bg-accent mx-auto mb-4"></div>
+          <p class="text-text-secondary text-lg max-w-2xl mx-auto">Getting the supplies you need is simple. Here's how we make it easy.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 stagger-children fade-up">
+          <!-- Step 1 -->
+          <div class="relative text-center">
+            <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mx-auto mb-5">
+              <span class="font-heading text-2xl font-bold text-white">1</span>
+            </div>
+            <h3 class="font-heading text-lg font-600 text-dark mb-2 tracking-tight">Call or Visit</h3>
+            <p class="text-text-secondary text-sm">Give us a call or stop by our Pittsburgh location to discuss your project needs.</p>
+          </div>
+          <!-- Step 2 -->
+          <div class="relative text-center">
+            <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mx-auto mb-5">
+              <span class="font-heading text-2xl font-bold text-white">2</span>
+            </div>
+            <h3 class="font-heading text-lg font-600 text-dark mb-2 tracking-tight">Get Expert Advice</h3>
+            <p class="text-text-secondary text-sm">Our knowledgeable staff helps you find the right products for your specific project.</p>
+          </div>
+          <!-- Step 3 -->
+          <div class="relative text-center">
+            <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mx-auto mb-5">
+              <span class="font-heading text-2xl font-bold text-white">3</span>
+            </div>
+            <h3 class="font-heading text-lg font-600 text-dark mb-2 tracking-tight">Get Your Quote</h3>
+            <p class="text-text-secondary text-sm">We provide competitive pricing with contractor-friendly bulk rates and True Value savings.</p>
+          </div>
+          <!-- Step 4 -->
+          <div class="relative text-center">
+            <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mx-auto mb-5">
+              <span class="font-heading text-2xl font-bold text-white">4</span>
+            </div>
+            <h3 class="font-heading text-lg font-600 text-dark mb-2 tracking-tight">Pick Up or Deliver</h3>
+            <p class="text-text-secondary text-sm">Grab your order at our store or ask about delivery options for larger jobs.</p>
+          </div>
+        </div>
+
+        <div class="text-center mt-10 fade-up">
+          <a href="contact.html" class="inline-flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white font-heading text-base uppercase tracking-wide font-600 px-7 py-3.5 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 transition-colors duration-200">
+            Ready to Get Started?
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- ========== VENDOR PARTNERS ========== -->
-    <section class="py-20 lg:py-28 bg-bg border-t border-border" aria-labelledby="vendors-heading">
+    <section class="py-12 lg:py-20 bg-white" aria-labelledby="vendors-heading">
       <div class="max-w-7xl mx-auto px-6">
         <!-- Section Header -->
         <div class="text-center mb-12 fade-up">
@@ -468,37 +534,37 @@
             <!-- First set -->
             <div class="flex items-center gap-16 px-8">
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="True Value">
-                <img src="https://placehold.co/200x80/FFFFFF/446B3E?text=True+Value" alt="True Value logo" class="h-14 w-auto">
+                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=True+Value" alt="True Value logo" class="h-14 w-auto">
               </a>
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Fairborn Cement Company">
-                <img src="https://placehold.co/200x80/FFFFFF/446B3E?text=Fairborn+Cement" alt="Fairborn Cement Company logo" class="h-14 w-auto">
+                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=Fairborn+Cement" alt="Fairborn Cement Company logo" class="h-14 w-auto">
               </a>
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Superior Clay Products">
-                <img src="https://placehold.co/200x80/FFFFFF/446B3E?text=Superior+Clay" alt="Superior Clay Products logo" class="h-14 w-auto">
+                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=Superior+Clay" alt="Superior Clay Products logo" class="h-14 w-auto">
               </a>
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Equiparts">
-                <img src="https://placehold.co/200x80/FFFFFF/446B3E?text=Equiparts" alt="Equiparts logo" class="h-14 w-auto">
+                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=Equiparts" alt="Equiparts logo" class="h-14 w-auto">
               </a>
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Bon Tool">
-                <img src="https://placehold.co/200x80/FFFFFF/446B3E?text=Bon+Tool" alt="Bon Tool logo" class="h-14 w-auto">
+                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=Bon+Tool" alt="Bon Tool logo" class="h-14 w-auto">
               </a>
             </div>
             <!-- Duplicate set for seamless scroll -->
             <div class="flex items-center gap-16 px-8">
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="True Value">
-                <img src="https://placehold.co/200x80/FFFFFF/446B3E?text=True+Value" alt="True Value logo" class="h-14 w-auto">
+                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=True+Value" alt="True Value logo" class="h-14 w-auto">
               </a>
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Fairborn Cement Company">
-                <img src="https://placehold.co/200x80/FFFFFF/446B3E?text=Fairborn+Cement" alt="Fairborn Cement Company logo" class="h-14 w-auto">
+                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=Fairborn+Cement" alt="Fairborn Cement Company logo" class="h-14 w-auto">
               </a>
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Superior Clay Products">
-                <img src="https://placehold.co/200x80/FFFFFF/446B3E?text=Superior+Clay" alt="Superior Clay Products logo" class="h-14 w-auto">
+                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=Superior+Clay" alt="Superior Clay Products logo" class="h-14 w-auto">
               </a>
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Equiparts">
-                <img src="https://placehold.co/200x80/FFFFFF/446B3E?text=Equiparts" alt="Equiparts logo" class="h-14 w-auto">
+                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=Equiparts" alt="Equiparts logo" class="h-14 w-auto">
               </a>
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Bon Tool">
-                <img src="https://placehold.co/200x80/FFFFFF/446B3E?text=Bon+Tool" alt="Bon Tool logo" class="h-14 w-auto">
+                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=Bon+Tool" alt="Bon Tool logo" class="h-14 w-auto">
               </a>
             </div>
           </div>
@@ -513,14 +579,145 @@
       </div>
     </section>
 
+    <!-- ========== TESTIMONIALS CAROUSEL ========== -->
+    <!-- REPLACE WITH REAL REVIEWS -->
+    <section class="py-12 lg:py-20 bg-bg" aria-labelledby="testimonials-heading">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-14 fade-up">
+          <h2 id="testimonials-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-dark tracking-tight mb-4">What Our Customers Say</h2>
+          <div class="w-16 h-1 bg-accent mx-auto mb-4"></div>
+          <p class="text-text-secondary text-lg max-w-2xl mx-auto">Contractors and homeowners across Pittsburgh trust Western PA Supply for their projects.</p>
+        </div>
+
+        <!-- Carousel -->
+        <div class="relative fade-up">
+          <!-- Desktop arrows -->
+          <button id="reviews-prev" class="hidden lg:flex absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-11 h-11 items-center justify-center rounded-full bg-white border border-border hover:bg-brand-vlight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand transition-colors duration-200" aria-label="Previous review" style="box-shadow: 0 2px 8px rgba(47,87,51,0.1);">
+            <svg class="w-5 h-5 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button id="reviews-next" class="hidden lg:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-11 h-11 items-center justify-center rounded-full bg-white border border-border hover:bg-brand-vlight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand transition-colors duration-200" aria-label="Next review" style="box-shadow: 0 2px 8px rgba(47,87,51,0.1);">
+            <svg class="w-5 h-5 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
+
+          <!-- Viewport -->
+          <div id="reviews-viewport" class="overflow-hidden">
+            <div id="reviews-track" class="flex" style="transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+
+              <!-- Review 1 -->
+              <div class="review-card flex-shrink-0 px-3">
+                <div class="bg-white rounded-xl border border-border p-8 h-full" style="box-shadow: 0 2px 8px rgba(27, 33, 24, 0.06);">
+                  <div class="flex gap-1 mb-4" aria-label="5 out of 5 stars">
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  </div>
+                  <blockquote class="text-text mb-5 text-sm leading-relaxed">"Best supply store in the South Hills. The guys really know their stuff — they helped me spec out all the concrete products for a retaining wall project. Fair prices and always in stock."</blockquote>
+                  <div>
+                    <p class="font-heading font-600 text-dark text-sm">Mike R.</p>
+                    <p class="text-text-secondary text-xs">Contractor, Baldwin Borough</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review 2 -->
+              <div class="review-card flex-shrink-0 px-3">
+                <div class="bg-white rounded-xl border border-border p-8 h-full" style="box-shadow: 0 2px 8px rgba(27, 33, 24, 0.06);">
+                  <div class="flex gap-1 mb-4" aria-label="5 out of 5 stars">
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  </div>
+                  <blockquote class="text-text mb-5 text-sm leading-relaxed">"I've been buying all my masonry supplies here for three years now. They always have what I need, and if they don't, they can get it fast through True Value. Beats the big box stores every time."</blockquote>
+                  <div>
+                    <p class="font-heading font-600 text-dark text-sm">Dave K.</p>
+                    <p class="text-text-secondary text-xs">Mason, Bethel Park</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review 3 -->
+              <div class="review-card flex-shrink-0 px-3">
+                <div class="bg-white rounded-xl border border-border p-8 h-full" style="box-shadow: 0 2px 8px rgba(27, 33, 24, 0.06);">
+                  <div class="flex gap-1 mb-4" aria-label="5 out of 5 stars">
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  </div>
+                  <blockquote class="text-text mb-5 text-sm leading-relaxed">"First time homeowner doing some repairs, and these guys were incredibly patient explaining what I needed. No upselling, just honest advice. I won't go anywhere else for supplies now."</blockquote>
+                  <div>
+                    <p class="font-heading font-600 text-dark text-sm">Sarah L.</p>
+                    <p class="text-text-secondary text-xs">Homeowner, Mt. Lebanon</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review 4 -->
+              <div class="review-card flex-shrink-0 px-3">
+                <div class="bg-white rounded-xl border border-border p-8 h-full" style="box-shadow: 0 2px 8px rgba(27, 33, 24, 0.06);">
+                  <div class="flex gap-1 mb-4" aria-label="5 out of 5 stars">
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  </div>
+                  <blockquote class="text-text mb-5 text-sm leading-relaxed">"Great selection of fasteners and hardware. I needed some specialty anchors for a commercial job and they had them in stock. Most places would have made me order and wait a week."</blockquote>
+                  <div>
+                    <p class="font-heading font-600 text-dark text-sm">Tom W.</p>
+                    <p class="text-text-secondary text-xs">General Contractor, Upper St. Clair</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review 5 -->
+              <div class="review-card flex-shrink-0 px-3">
+                <div class="bg-white rounded-xl border border-border p-8 h-full" style="box-shadow: 0 2px 8px rgba(27, 33, 24, 0.06);">
+                  <div class="flex gap-1 mb-4" aria-label="5 out of 5 stars">
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  </div>
+                  <blockquote class="text-text mb-5 text-sm leading-relaxed">"Switched from the big box store after getting the runaround on a paint order. Western PA Supply had everything I needed, mixed it on the spot, and the price was actually better. Real customer service still exists here."</blockquote>
+                  <div>
+                    <p class="font-heading font-600 text-dark text-sm">Jennifer M.</p>
+                    <p class="text-text-secondary text-xs">Homeowner, Dormont</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Mobile arrows + dots -->
+          <div class="flex items-center justify-center gap-4 mt-8">
+            <button id="reviews-prev-mobile" class="lg:hidden flex w-10 h-10 items-center justify-center rounded-full bg-white border border-border hover:bg-brand-vlight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand transition-colors duration-200" aria-label="Previous review">
+              <svg class="w-5 h-5 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <div id="reviews-dots" class="flex items-center gap-2"></div>
+            <button id="reviews-next-mobile" class="lg:hidden flex w-10 h-10 items-center justify-center rounded-full bg-white border border-border hover:bg-brand-vlight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand transition-colors duration-200" aria-label="Next review">
+              <svg class="w-5 h-5 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ========== ABOUT PREVIEW ========== -->
-    <section class="py-20 lg:py-28 bg-brand-vlight" aria-labelledby="about-heading">
+    <section class="py-12 lg:py-20 bg-white" aria-labelledby="about-heading">
       <div class="max-w-7xl mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <!-- Image Side -->
           <div class="fade-up order-2 lg:order-1">
-            <div class="relative rounded-2xl overflow-hidden" style="box-shadow: 0 12px 40px rgba(68, 107, 62, 0.15), 0 2px 8px rgba(68, 107, 62, 0.08);">
-              <img src="https://images.unsplash.com/photo-1765690450663-bb514c57eb8c?auto=format&fit=crop&w=800&q=80" alt="Inside the Western PA Supply Co store" class="w-full h-auto" loading="lazy">
+            <div class="relative rounded-2xl overflow-hidden" style="box-shadow: 0 12px 40px rgba(47, 87, 51, 0.15), 0 2px 8px rgba(47, 87, 51, 0.08);">
+              <img src="https://images.unsplash.com/photo-1706027554815-ae587412dbef?auto=format&fit=crop&w=800&q=80" alt="Inside the Western PA Supply Co store" class="w-full h-auto" loading="lazy">
               <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/30 to-transparent"></div>
             </div>
           </div>
@@ -540,21 +737,45 @@
       </div>
     </section>
 
-    <!-- ========== CTA SECTION ========== -->
-    <section class="relative py-20 lg:py-28 bg-brand-dark overflow-hidden grain" aria-labelledby="cta-heading">
-      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <h2 id="cta-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4 fade-up">Ready to Get Started?</h2>
-        <div class="w-16 h-1 bg-accent mx-auto mb-6 fade-up"></div>
-        <p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto fade-up">Whether you are a contractor, builder, or homeowner, we have the supplies you need. Stop by our store or give us a call to discuss your project.</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center fade-up">
-          <a href="contact.html" class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-white font-heading text-base uppercase tracking-wide font-600 px-8 py-4 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-brand-dark transition-colors duration-200">
-            Request a Quote
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
-          <a href="tel:4127604621" class="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white hover:bg-white/10 font-heading text-base uppercase tracking-wide font-600 px-8 py-4 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-dark transition-colors duration-200">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-            (412) 760-4621
-          </a>
+    <!-- ========== FINAL CTA SECTION ========== -->
+    <section class="relative py-12 lg:py-20 bg-brand-dark overflow-hidden grain" aria-labelledby="cta-heading">
+      <div class="relative z-10 max-w-6xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- Left: Text + Phone -->
+          <div class="text-center lg:text-left fade-up">
+            <h2 id="cta-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4">Get Your Free <span class="text-accent">Quote</span> Today</h2>
+            <div class="w-16 h-1 bg-accent mb-6 mx-auto lg:mx-0"></div>
+            <p class="text-white/80 text-lg mb-8 max-w-lg mx-auto lg:mx-0">Whether you are a contractor, builder, or homeowner, we have the supplies you need. Stop by our store, call us, or fill out the form and we'll get back to you within one business day.</p>
+            <a href="tel:4127604621" class="inline-flex items-center justify-center gap-3 border-2 border-white/30 text-white hover:bg-white/10 font-heading text-lg uppercase tracking-wide font-600 px-8 py-4 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-dark transition-colors duration-200">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              (412) 760-4621
+            </a>
+          </div>
+
+          <!-- Right: Mini Form -->
+          <div class="fade-up">
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+              <h3 class="font-heading text-xl font-600 text-white mb-6 tracking-tight">Request a Quick Quote</h3>
+              <form class="space-y-4" action="contact.html" method="get">
+                <div>
+                  <label for="cta-name" class="sr-only">Your Name</label>
+                  <input type="text" id="cta-name" name="name" placeholder="Your Name" autocomplete="name" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" style="font-size:16px;">
+                </div>
+                <div>
+                  <label for="cta-phone" class="sr-only">Phone Number</label>
+                  <input type="tel" id="cta-phone" name="phone" placeholder="Phone Number" autocomplete="tel" pattern="[0-9()\-\s+]{7,15}" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" style="font-size:16px;">
+                </div>
+                <div>
+                  <label for="cta-message" class="sr-only">What do you need?</label>
+                  <textarea id="cta-message" name="message" rows="3" placeholder="What supplies do you need?" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent resize-none" style="font-size:16px;"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-accent hover:bg-accent-dark text-white font-heading text-base uppercase tracking-wide font-600 px-6 py-3.5 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-brand-dark transition-colors duration-200">
+                  Get a Quote
+                </button>
+              </form>
+              <p class="text-white/50 text-xs mt-4 text-center">We respond within 1 business day.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -569,10 +790,10 @@
         <!-- Column 1: Logo & Tagline -->
         <div>
           <a href="index.html" class="inline-block mb-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded" aria-label="Western PA Supply Co home">
-            <img src="images/westernpasupplylogowithwords.png" alt="Western PA Supply Co logo" class="h-12 w-auto brightness-0 invert opacity-90">
+            <img src="images/westernpasuppplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-12 w-auto opacity-90">
           </a>
           <p class="text-white/60 text-sm mb-3">Your local source for building materials, construction supplies, tools, and hardware in the Greater Pittsburgh area.</p>
-          <p class="font-heading text-sm uppercase tracking-wider text-accent-light font-500">Tools &middot; Materials &middot; Lumber</p>
+          <p class="font-heading text-sm uppercase tracking-wider text-white/70 font-500">Tools &middot; Materials &middot; Lumber</p>
         </div>
 
         <!-- Column 2: Quick Links -->
@@ -599,7 +820,7 @@
             <li><a href="products/electrical.html" class="block text-sm text-white/70 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-1 transition-colors duration-200">Electrical</a></li>
             <li><a href="products/fasteners-hardware.html" class="block text-sm text-white/70 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-1 transition-colors duration-200">Fasteners &amp; Hardware</a></li>
             <li><a href="products/safety-ppe.html" class="block text-sm text-white/70 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-1 transition-colors duration-200">Safety &amp; PPE</a></li>
-            <li><a href="products.html" class="block text-sm text-accent-light font-semibold hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-1 transition-colors duration-200">View All &rarr;</a></li>
+            <li><a href="products.html" class="block text-sm text-white/70 font-semibold hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-1 transition-colors duration-200">View All &rarr;</a></li>
           </ul>
         </div>
 
@@ -655,6 +876,105 @@
 
   <!-- Main JS -->
   <script src="js/main.js"></script>
+
+  <!-- Reviews Carousel -->
+  <script>
+  (function() {
+    const reviewsTrack = document.getElementById('reviews-track');
+    const reviewsDots = document.getElementById('reviews-dots');
+    if (!reviewsTrack || !reviewsDots) return;
+
+    const cards = reviewsTrack.querySelectorAll('.review-card');
+    const totalCards = cards.length;
+    let currentIndex = 0;
+
+    function getCardsPerView() {
+      if (window.innerWidth >= 1024) return 3;
+      if (window.innerWidth >= 768) return 2;
+      return 1;
+    }
+
+    function getMaxIndex() {
+      return Math.max(0, totalCards - getCardsPerView());
+    }
+
+    function updateCarousel() {
+      const perView = getCardsPerView();
+      const cardWidth = 100 / perView;
+      const offset = currentIndex * cardWidth;
+      reviewsTrack.style.transform = 'translateX(-' + offset + '%)';
+      var dots = reviewsDots.querySelectorAll('.review-dot');
+      dots.forEach(function(dot, i) {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+    }
+
+    function buildDots() {
+      reviewsDots.innerHTML = '';
+      var maxIdx = getMaxIndex();
+      for (var i = 0; i <= maxIdx; i++) {
+        var dot = document.createElement('button');
+        dot.className = 'review-dot' + (i === currentIndex ? ' active' : '');
+        dot.setAttribute('aria-label', 'Go to review ' + (i + 1));
+        (function(idx) {
+          dot.addEventListener('click', function() { currentIndex = idx; updateCarousel(); });
+        })(i);
+        reviewsDots.appendChild(dot);
+      }
+    }
+
+    function goNext() {
+      currentIndex = currentIndex < getMaxIndex() ? currentIndex + 1 : 0;
+      updateCarousel();
+    }
+    function goPrev() {
+      currentIndex = currentIndex > 0 ? currentIndex - 1 : getMaxIndex();
+      updateCarousel();
+    }
+
+    function setCardWidths() {
+      var perView = getCardsPerView();
+      cards.forEach(function(card) { card.style.width = (100 / perView) + '%'; });
+    }
+
+    // Bind arrows
+    var prevBtn = document.getElementById('reviews-prev');
+    var nextBtn = document.getElementById('reviews-next');
+    var prevMobile = document.getElementById('reviews-prev-mobile');
+    var nextMobile = document.getElementById('reviews-next-mobile');
+    if (prevBtn) prevBtn.addEventListener('click', goPrev);
+    if (nextBtn) nextBtn.addEventListener('click', goNext);
+    if (prevMobile) prevMobile.addEventListener('click', goPrev);
+    if (nextMobile) nextMobile.addEventListener('click', goNext);
+
+    // Init
+    setCardWidths();
+    buildDots();
+    updateCarousel();
+
+    // Recalc on resize
+    var resizeTimeout;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(function() {
+        if (currentIndex > getMaxIndex()) currentIndex = getMaxIndex();
+        setCardWidths();
+        buildDots();
+        updateCarousel();
+      }, 150);
+    }, { passive: true });
+
+    // Swipe support
+    var touchStartX = 0;
+    reviewsTrack.addEventListener('touchstart', function(e) { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+    reviewsTrack.addEventListener('touchend', function(e) {
+      var diff = touchStartX - e.changedTouches[0].screenX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) goNext(); else goPrev();
+      }
+    }, { passive: true });
+  })();
+  </script>
 
 </body>
 </html>

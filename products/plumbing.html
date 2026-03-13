@@ -23,7 +23,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -33,15 +33,15 @@
         extend: {
           colors: {
             brand: {
-              DEFAULT: '#446B3E',
-              dark: '#2F4D2B',
-              light: '#5A8C52',
-              vlight: '#EDF3EB'
+              DEFAULT: '#2F5733',
+              dark: '#1E3B22',
+              light: '#4A7A4F',
+              vlight: '#EBF3EC'
             },
             accent: {
-              DEFAULT: '#946D1A',
-              dark: '#7A5A14',
-              light: '#F0DEB0'
+              DEFAULT: '#556063',
+              dark: '#3F484B',
+              light: '#D4DADB'
             },
             dark: '#1B2118',
             text: {
@@ -52,7 +52,7 @@
             border: '#E0E0D8'
           },
           fontFamily: {
-            heading: ['Barlow Condensed', 'sans-serif'],
+            heading: ['Inter', 'sans-serif'],
             body: ['Inter', 'sans-serif']
           }
         }
@@ -70,7 +70,7 @@
     "@type": "LocalBusiness",
     "name": "Western PA Supply Co",
     "description": "Locally owned building and construction supply company serving the Greater Pittsburgh area. True Value member store.",
-    "image": "https://westernpasupply.com/images/westernpasupplylogowithwords.png",
+    "image": "https://westernpasupply.com/images/westernpasupplylogowhitebg.png",
     "telephone": "(412) 760-4621",
     "email": "info@westernpasupply.com",
     "address": {
@@ -97,6 +97,7 @@
       }
     }
   </style>
+  <link rel="preload" as="image" href="../images/stock/plumbing-hero.jpg">
 </head>
 <body class="font-body text-text bg-bg pb-20 lg:pb-0">
 
@@ -127,7 +128,7 @@
 
           <!-- Logo -->
           <a href="../index.html" class="flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded" aria-label="Western PA Supply Co home">
-            <img src="../images/westernpasupplylogosquare.png" alt="Western PA Supply Co logo" class="h-14 sm:h-16 w-auto">
+            <img src="../images/westernpasupplylogowhitebg.png" alt="Western PA Supply Co logo" class="h-14 sm:h-16 w-auto">
           </a>
 
           <!-- Desktop Nav Links -->
@@ -248,7 +249,7 @@
     <!-- ========== HERO ========== -->
     <section class="relative min-h-[40vh] flex items-center bg-dark overflow-hidden">
       <div class="absolute inset-0 bg-gradient-to-br from-brand-dark/90 via-dark/80 to-dark/90"></div>
-      <img src="https://images.unsplash.com/photo-1650246363606-a2402ec42b08?auto=format&fit=crop&w=1920&q=80" alt="Plumbing supplies" class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-40">
+      <img src="../images/stock/plumbing-hero.jpg" alt="Plumbing supplies" class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-40">
       <div class="relative z-10 max-w-7xl mx-auto px-4 py-20 w-full">
         <!-- Breadcrumb -->
         <nav class="mb-6" aria-label="Breadcrumb">
@@ -285,7 +286,7 @@
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 stagger-children">
 
           <!-- Product 1 -->
-          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(68, 107, 62, 0.06);">
+          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h8m-8 6h16"></path></svg>
             </div>
@@ -296,7 +297,7 @@
           </div>
 
           <!-- Product 2 -->
-          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(68, 107, 62, 0.06);">
+          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             </div>
@@ -307,7 +308,7 @@
           </div>
 
           <!-- Product 3 -->
-          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(68, 107, 62, 0.06);">
+          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
             </div>
@@ -318,7 +319,7 @@
           </div>
 
           <!-- Product 4 -->
-          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(68, 107, 62, 0.06);">
+          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
             </div>
@@ -329,7 +330,7 @@
           </div>
 
           <!-- Product 5 -->
-          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(68, 107, 62, 0.06);">
+          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
             </div>
@@ -340,7 +341,7 @@
           </div>
 
           <!-- Product 6 -->
-          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(68, 107, 62, 0.06);">
+          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
             </div>
@@ -367,7 +368,7 @@
         <div class="grid sm:grid-cols-3 gap-8 stagger-children">
 
           <!-- Related 1 -->
-          <a href="tools-equipment.html" class="fade-up group bg-white rounded-2xl p-8 card-hover border border-border text-center block" style="box-shadow: 0 2px 8px rgba(68, 107, 62, 0.06);">
+          <a href="tools-equipment.html" class="fade-up group bg-white rounded-2xl p-8 card-hover border border-border text-center block" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5 mx-auto group-hover:bg-brand transition-colors duration-200">
               <svg class="w-7 h-7 text-brand group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
             </div>
@@ -379,7 +380,7 @@
           </a>
 
           <!-- Related 2 -->
-          <a href="electrical.html" class="fade-up group bg-white rounded-2xl p-8 card-hover border border-border text-center block" style="box-shadow: 0 2px 8px rgba(68, 107, 62, 0.06);">
+          <a href="electrical.html" class="fade-up group bg-white rounded-2xl p-8 card-hover border border-border text-center block" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5 mx-auto group-hover:bg-brand transition-colors duration-200">
               <svg class="w-7 h-7 text-brand group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
             </div>
@@ -391,7 +392,7 @@
           </a>
 
           <!-- Related 3 -->
-          <a href="fasteners-hardware.html" class="fade-up group bg-white rounded-2xl p-8 card-hover border border-border text-center block" style="box-shadow: 0 2px 8px rgba(68, 107, 62, 0.06);">
+          <a href="fasteners-hardware.html" class="fade-up group bg-white rounded-2xl p-8 card-hover border border-border text-center block" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5 mx-auto group-hover:bg-brand transition-colors duration-200">
               <svg class="w-7 h-7 text-brand group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path></svg>
             </div>
@@ -407,9 +408,7 @@
     </section>
 
     <!-- ========== CTA SECTION ========== -->
-    <section class="py-20 lg:py-28 relative overflow-hidden grain">
-      <!-- Background -->
-      <div class="absolute inset-0 bg-gradient-to-br from-brand-dark via-brand to-brand-light"></div>
+    <section class="relative py-20 lg:py-28 bg-brand-dark overflow-hidden grain">
 
       <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div class="fade-up">
@@ -446,7 +445,7 @@
         <!-- Column 1: Logo & Tagline -->
         <div>
           <a href="../index.html" class="inline-block mb-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded" aria-label="Western PA Supply Co home">
-            <img src="../images/westernpasupplylogowithwords.png" alt="Western PA Supply Co logo" class="h-12 w-auto brightness-0 invert">
+            <img src="../images/westernpasuppplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-12 w-auto opacity-90">
           </a>
           <p class="text-white/70 text-sm" style="line-height: 1.7;">
             Locally owned building and construction supply serving the Greater Pittsburgh area. True Value member store.
