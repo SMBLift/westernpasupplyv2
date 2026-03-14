@@ -119,14 +119,14 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- ========== TOP BAR ========== -->
-    <div class="bg-dark text-white/90 text-sm font-body hidden lg:block">
-      <div class="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
-        <span class="flex items-center gap-2">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+    <div class="bg-dark text-white/90 text-sm font-body hidden lg:block h-7">
+      <div class="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
+        <span class="flex items-center gap-1.5">
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           3561 Valley Drive, Pittsburgh, PA 15236
         </span>
-        <a href="tel:4127604621" class="flex items-center gap-2 hover:text-accent transition-colors duration-200">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        <a href="tel:4127604621" class="flex items-center gap-1.5 hover:text-accent transition-colors duration-200">
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
           (412) 760-4621
         </a>
       </div>
@@ -259,9 +259,8 @@
     <section class="relative min-h-[40vh] flex items-center overflow-hidden">
       <!-- Background Image -->
       <div class="absolute inset-0">
-        <img src="images/hero-handshake.jpg" alt="" class="w-full h-full object-cover" aria-hidden="true">
-        <div class="absolute inset-0 bg-gradient-to-r from-dark/85 via-dark/70 to-dark/50"></div>
-        <div class="absolute inset-0 bg-brand-dark/30 mix-blend-multiply"></div>
+        <img src="images/hero-saw.jpg" alt="" class="w-full h-full object-cover" aria-hidden="true">
+        <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(27,33,24,0.92) 0%, rgba(27,33,24,0.85) 40%, rgba(27,33,24,0.55) 70%, rgba(27,33,24,0.2) 100%);"></div>
       </div>
 
       <!-- Hero Content -->
@@ -288,118 +287,373 @@
     </section>
 
     <!-- ========== TRUST SIGNALS BAR ========== -->
-    <section class="bg-accent" aria-label="Trust signals">
-      <div class="max-w-7xl mx-auto px-6 py-5">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4">
-          <!-- True Value Member -->
-          <div class="flex items-center gap-3 justify-center">
-            <div class="w-10 h-10 flex-shrink-0 bg-white/20 rounded-lg flex items-center justify-center">
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
-            </div>
-            <span class="font-heading text-sm md:text-base uppercase font-600 text-white tracking-wide">True Value Member</span>
+    <section class="bg-brand-dark" aria-label="Trust signals">
+      <div class="max-w-7xl mx-auto px-6 py-3.5">
+        <div class="flex flex-wrap justify-center gap-x-10 gap-y-2">
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span class="font-heading text-xs sm:text-sm uppercase tracking-wider text-white/80">True Value Member</span>
           </div>
-          <!-- Expert Staff -->
-          <div class="flex items-center gap-3 justify-center">
-            <div class="w-10 h-10 flex-shrink-0 bg-white/20 rounded-lg flex items-center justify-center">
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-            </div>
-            <span class="font-heading text-sm md:text-base uppercase font-600 text-white tracking-wide">Expert Staff</span>
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span class="font-heading text-xs sm:text-sm uppercase tracking-wider text-white/80">Expert Staff</span>
           </div>
-          <!-- Local Service -->
-          <div class="flex items-center gap-3 justify-center">
-            <div class="w-10 h-10 flex-shrink-0 bg-white/20 rounded-lg flex items-center justify-center">
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            </div>
-            <span class="font-heading text-sm md:text-base uppercase font-600 text-white tracking-wide">Local Service</span>
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span class="font-heading text-xs sm:text-sm uppercase tracking-wider text-white/80">Local Service</span>
           </div>
-          <!-- Competitive Pricing -->
-          <div class="flex items-center gap-3 justify-center">
-            <div class="w-10 h-10 flex-shrink-0 bg-white/20 rounded-lg flex items-center justify-center">
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            </div>
-            <span class="font-heading text-sm md:text-base uppercase font-600 text-white tracking-wide">Competitive Pricing</span>
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span class="font-heading text-xs sm:text-sm uppercase tracking-wider text-white/80">Competitive Pricing</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== FEATURED PRODUCT CATEGORIES ========== -->
+    <!-- ========== FEATURED PRODUCT CATEGORIES — TABBED BROWSER ========== -->
     <section class="py-12 lg:py-20 bg-bg" aria-labelledby="products-heading">
       <div class="max-w-7xl mx-auto px-6">
-        <!-- Section Header -->
         <div class="text-center mb-14 fade-up">
           <h2 id="products-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-dark tracking-tight mb-4">What We Carry</h2>
           <div class="w-16 h-1 bg-accent mx-auto mb-4"></div>
-          <p class="text-text-secondary text-lg max-w-2xl mx-auto">From foundation to finish, we stock the supplies you need to get the job done right.</p>
+          <p class="text-text-secondary text-lg max-w-3xl mx-auto">From foundation to finish, we stock the supplies you need to get the job done right.</p>
         </div>
 
-        <!-- Product Category Cards -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children fade-up">
-
-          <!-- Concrete & Masonry -->
-          <a href="products/concrete-masonry.html" class="group block bg-white rounded-xl border border-border p-6 card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" style="box-shadow: 0 2px 8px rgba(27, 33, 24, 0.06);">
-            <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand group-hover:text-white transition-colors duration-300">
-              <svg class="w-7 h-7 text-brand group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-            </div>
-            <h3 class="font-heading text-xl font-600 text-dark mb-2 tracking-tight group-hover:text-brand transition-colors duration-200">Concrete &amp; Masonry</h3>
-            <p class="text-text-secondary text-sm">Cement, mortar, blocks, and everything you need for masonry projects.</p>
-          </a>
-
-          <!-- Tools & Equipment -->
-          <a href="products/tools-equipment.html" class="group block bg-white rounded-xl border border-border p-6 card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" style="box-shadow: 0 2px 8px rgba(27, 33, 24, 0.06);">
-            <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand group-hover:text-white transition-colors duration-300">
-              <svg class="w-7 h-7 text-brand group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            </div>
-            <h3 class="font-heading text-xl font-600 text-dark mb-2 tracking-tight group-hover:text-brand transition-colors duration-200">Tools &amp; Equipment</h3>
-            <p class="text-text-secondary text-sm">Hand tools, power tools, and construction equipment for every trade.</p>
-          </a>
-
-          <!-- Paint & Stain -->
-          <a href="products/paint-stain.html" class="group block bg-white rounded-xl border border-border p-6 card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" style="box-shadow: 0 2px 8px rgba(27, 33, 24, 0.06);">
-            <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand group-hover:text-white transition-colors duration-300">
-              <svg class="w-7 h-7 text-brand group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
-            </div>
-            <h3 class="font-heading text-xl font-600 text-dark mb-2 tracking-tight group-hover:text-brand transition-colors duration-200">Paint &amp; Stain</h3>
-            <p class="text-text-secondary text-sm">True Value paint, stains, primers, and all the supplies you need to finish the job.</p>
-          </a>
-
-          <!-- Plumbing -->
-          <a href="products/plumbing.html" class="group block bg-white rounded-xl border border-border p-6 card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" style="box-shadow: 0 2px 8px rgba(27, 33, 24, 0.06);">
-            <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand group-hover:text-white transition-colors duration-300">
-              <svg class="w-7 h-7 text-brand group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
-            </div>
-            <h3 class="font-heading text-xl font-600 text-dark mb-2 tracking-tight group-hover:text-brand transition-colors duration-200">Plumbing</h3>
-            <p class="text-text-secondary text-sm">Pipes, fittings, valves, and plumbing supplies for residential and commercial projects.</p>
-          </a>
-
-          <!-- Electrical -->
-          <a href="products/electrical.html" class="group block bg-white rounded-xl border border-border p-6 card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" style="box-shadow: 0 2px 8px rgba(27, 33, 24, 0.06);">
-            <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand group-hover:text-white transition-colors duration-300">
-              <svg class="w-7 h-7 text-brand group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            </div>
-            <h3 class="font-heading text-xl font-600 text-dark mb-2 tracking-tight group-hover:text-brand transition-colors duration-200">Electrical</h3>
-            <p class="text-text-secondary text-sm">Wiring, panels, switches, outlets, and electrical components for any job.</p>
-          </a>
-
-          <!-- Fasteners & Hardware -->
-          <a href="products/fasteners-hardware.html" class="group block bg-white rounded-xl border border-border p-6 card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" style="box-shadow: 0 2px 8px rgba(27, 33, 24, 0.06);">
-            <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand group-hover:text-white transition-colors duration-300">
-              <svg class="w-7 h-7 text-brand group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
-            </div>
-            <h3 class="font-heading text-xl font-600 text-dark mb-2 tracking-tight group-hover:text-brand transition-colors duration-200">Fasteners &amp; Hardware</h3>
-            <p class="text-text-secondary text-sm">Bolts, screws, nails, anchors, and general hardware for construction and repair.</p>
-          </a>
+        <!-- Tab Buttons -->
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10 fade-up" role="tablist" aria-label="Product categories">
+          <button role="tab" aria-selected="true" aria-controls="tab-panel-0" id="tab-btn-0" class="tab-btn font-heading text-xs sm:text-sm uppercase tracking-wide font-600 px-4 sm:px-5 py-2.5 rounded-full border-2 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 border-brand bg-brand text-white">Concrete &amp; Masonry</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-panel-1" id="tab-btn-1" class="tab-btn font-heading text-xs sm:text-sm uppercase tracking-wide font-600 px-4 sm:px-5 py-2.5 rounded-full border-2 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 border-border text-text-secondary hover:border-brand hover:text-brand">Tools &amp; Equipment</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-panel-2" id="tab-btn-2" class="tab-btn font-heading text-xs sm:text-sm uppercase tracking-wide font-600 px-4 sm:px-5 py-2.5 rounded-full border-2 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 border-border text-text-secondary hover:border-brand hover:text-brand">Paint &amp; Stain</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-panel-3" id="tab-btn-3" class="tab-btn font-heading text-xs sm:text-sm uppercase tracking-wide font-600 px-4 sm:px-5 py-2.5 rounded-full border-2 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 border-border text-text-secondary hover:border-brand hover:text-brand">Plumbing</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-panel-4" id="tab-btn-4" class="tab-btn font-heading text-xs sm:text-sm uppercase tracking-wide font-600 px-4 sm:px-5 py-2.5 rounded-full border-2 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 border-border text-text-secondary hover:border-brand hover:text-brand">Electrical</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-panel-5" id="tab-btn-5" class="tab-btn font-heading text-xs sm:text-sm uppercase tracking-wide font-600 px-4 sm:px-5 py-2.5 rounded-full border-2 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 border-border text-text-secondary hover:border-brand hover:text-brand">Fasteners</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-panel-6" id="tab-btn-6" class="tab-btn font-heading text-xs sm:text-sm uppercase tracking-wide font-600 px-4 sm:px-5 py-2.5 rounded-full border-2 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 border-border text-text-secondary hover:border-brand hover:text-brand">Safety &amp; PPE</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-panel-7" id="tab-btn-7" class="tab-btn font-heading text-xs sm:text-sm uppercase tracking-wide font-600 px-4 sm:px-5 py-2.5 rounded-full border-2 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 border-border text-text-secondary hover:border-brand hover:text-brand">Chimney &amp; Fireplace</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-panel-8" id="tab-btn-8" class="tab-btn font-heading text-xs sm:text-sm uppercase tracking-wide font-600 px-4 sm:px-5 py-2.5 rounded-full border-2 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 border-border text-text-secondary hover:border-brand hover:text-brand">Waterproofing</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-panel-9" id="tab-btn-9" class="tab-btn font-heading text-xs sm:text-sm uppercase tracking-wide font-600 px-4 sm:px-5 py-2.5 rounded-full border-2 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 border-border text-text-secondary hover:border-brand hover:text-brand">Outdoor &amp; Garden</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-panel-10" id="tab-btn-10" class="tab-btn font-heading text-xs sm:text-sm uppercase tracking-wide font-600 px-4 sm:px-5 py-2.5 rounded-full border-2 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 border-border text-text-secondary hover:border-brand hover:text-brand">Cleaning</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-panel-11" id="tab-btn-11" class="tab-btn font-heading text-xs sm:text-sm uppercase tracking-wide font-600 px-4 sm:px-5 py-2.5 rounded-full border-2 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 border-border text-text-secondary hover:border-brand hover:text-brand">Grout &amp; Epoxy</button>
         </div>
 
-        <!-- View All Link -->
-        <div class="text-center mt-12 fade-up">
-          <a href="products.html" class="inline-flex items-center gap-2 font-heading text-base uppercase tracking-wide font-600 text-brand hover:text-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-4 py-2 transition-colors duration-200">
-            View All Products
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
+        <!-- Tab Panels -->
+        <div class="fade-up">
+
+          <!-- Panel 0: Concrete & Masonry -->
+          <div role="tabpanel" id="tab-panel-0" aria-labelledby="tab-btn-0" class="tab-panel">
+            <div class="grid grid-cols-1 lg:grid-cols-7 gap-8 items-center">
+              <div class="lg:col-span-2">
+                <div class="rounded-xl overflow-hidden aspect-square" style="box-shadow: 0 8px 30px rgba(27, 33, 24, 0.12);">
+                  <img src="https://images.unsplash.com/photo-1716839150167-65bab9a253db?auto=format&fit=crop&w=600&q=80" alt="Concrete and masonry supplies" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <div class="lg:col-span-5">
+                <h3 class="font-heading text-2xl lg:text-3xl font-bold text-dark tracking-tight mb-3">Concrete &amp; Masonry</h3>
+                <p class="text-text-secondary mb-5" style="line-height:1.7;">Cement, mortar mix, concrete blocks, rebar, masonry tools, and everything you need for foundations, walls, and hardscape projects. We carry top brands and can special-order what we don't have in stock.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Cement</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Mortar Mix</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Blocks</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Rebar</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Masonry Tools</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Concrete Mix</span>
+                </div>
+                <a href="products/concrete-masonry.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-heading text-sm uppercase tracking-wide font-600 px-6 py-3 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 transition-colors duration-200">
+                  View All Concrete &amp; Masonry
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 1: Tools & Equipment -->
+          <div role="tabpanel" id="tab-panel-1" aria-labelledby="tab-btn-1" class="tab-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-7 gap-8 items-center">
+              <div class="lg:col-span-2">
+                <div class="rounded-xl overflow-hidden aspect-square" style="box-shadow: 0 8px 30px rgba(27, 33, 24, 0.12);">
+                  <img src="https://images.unsplash.com/photo-1761544775659-aaa6fa2e5b3d?auto=format&fit=crop&w=600&q=80" alt="Tools and equipment" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <div class="lg:col-span-5">
+                <h3 class="font-heading text-2xl lg:text-3xl font-bold text-dark tracking-tight mb-3">Tools &amp; Equipment</h3>
+                <p class="text-text-secondary mb-5" style="line-height:1.7;">Hand tools, power tools, and professional-grade construction equipment for every trade. From hammers and levels to concrete saws and mixers, we have what you need on the jobsite.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Hand Tools</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Power Tools</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Levels</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Saws</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Mixers</span>
+                </div>
+                <a href="products/tools-equipment.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-heading text-sm uppercase tracking-wide font-600 px-6 py-3 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 transition-colors duration-200">
+                  View All Tools &amp; Equipment
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 2: Paint & Stain -->
+          <div role="tabpanel" id="tab-panel-2" aria-labelledby="tab-btn-2" class="tab-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-7 gap-8 items-center">
+              <div class="lg:col-span-2">
+                <div class="rounded-xl overflow-hidden aspect-square" style="box-shadow: 0 8px 30px rgba(27, 33, 24, 0.12);">
+                  <img src="https://images.unsplash.com/photo-1675741954819-18ceaf53eb9c?auto=format&fit=crop&w=600&q=80" alt="Paint and stain supplies" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <div class="lg:col-span-5">
+                <h3 class="font-heading text-2xl lg:text-3xl font-bold text-dark tracking-tight mb-3">Paint &amp; Stain</h3>
+                <p class="text-text-secondary mb-5" style="line-height:1.7;">True Value paint, exterior and interior stains, primers, brushes, rollers, and all the supplies you need. We can color-match and help you pick the right product for your project.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Interior Paint</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Exterior Stain</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Primers</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Brushes &amp; Rollers</span>
+                </div>
+                <a href="products/paint-stain.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-heading text-sm uppercase tracking-wide font-600 px-6 py-3 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 transition-colors duration-200">
+                  View All Paint &amp; Stain
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 3: Plumbing -->
+          <div role="tabpanel" id="tab-panel-3" aria-labelledby="tab-btn-3" class="tab-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-7 gap-8 items-center">
+              <div class="lg:col-span-2">
+                <div class="rounded-xl overflow-hidden aspect-square" style="box-shadow: 0 8px 30px rgba(27, 33, 24, 0.12);">
+                  <img src="https://images.unsplash.com/photo-1567748533458-bddb1377adbc?auto=format&fit=crop&w=600&q=80" alt="Plumbing supplies" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <div class="lg:col-span-5">
+                <h3 class="font-heading text-2xl lg:text-3xl font-bold text-dark tracking-tight mb-3">Plumbing</h3>
+                <p class="text-text-secondary mb-5" style="line-height:1.7;">Pipes, fittings, valves, and plumbing supplies for residential and commercial projects. PVC, copper, PEX, and specialty fittings all in stock for quick jobsite pickups.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Pipes</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Fittings</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Valves</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">PVC &amp; Copper</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">PEX</span>
+                </div>
+                <a href="products/plumbing.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-heading text-sm uppercase tracking-wide font-600 px-6 py-3 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 transition-colors duration-200">
+                  View All Plumbing
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 4: Electrical -->
+          <div role="tabpanel" id="tab-panel-4" aria-labelledby="tab-btn-4" class="tab-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-7 gap-8 items-center">
+              <div class="lg:col-span-2">
+                <div class="rounded-xl overflow-hidden aspect-square" style="box-shadow: 0 8px 30px rgba(27, 33, 24, 0.12);">
+                  <img src="https://images.unsplash.com/photo-1576446470246-499c738d1c8e?auto=format&fit=crop&w=600&q=80" alt="Electrical supplies" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <div class="lg:col-span-5">
+                <h3 class="font-heading text-2xl lg:text-3xl font-bold text-dark tracking-tight mb-3">Electrical</h3>
+                <p class="text-text-secondary mb-5" style="line-height:1.7;">Wiring, panels, switches, outlets, breakers, and electrical components for residential and commercial work. Everything from basic Romex to specialized conduit and fittings.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Wiring</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Panels</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Switches</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Outlets</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Conduit</span>
+                </div>
+                <a href="products/electrical.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-heading text-sm uppercase tracking-wide font-600 px-6 py-3 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 transition-colors duration-200">
+                  View All Electrical
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 5: Fasteners & Hardware -->
+          <div role="tabpanel" id="tab-panel-5" aria-labelledby="tab-btn-5" class="tab-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-7 gap-8 items-center">
+              <div class="lg:col-span-2">
+                <div class="rounded-xl overflow-hidden aspect-square" style="box-shadow: 0 8px 30px rgba(27, 33, 24, 0.12);">
+                  <img src="https://images.unsplash.com/photo-1607733067654-364ff90d4866?auto=format&fit=crop&w=600&q=80" alt="Fasteners and hardware" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <div class="lg:col-span-5">
+                <h3 class="font-heading text-2xl lg:text-3xl font-bold text-dark tracking-tight mb-3">Fasteners &amp; Hardware</h3>
+                <p class="text-text-secondary mb-5" style="line-height:1.7;">Bolts, screws, nails, anchors, hinges, and general hardware for construction and repair. Bulk quantities available for contractors with competitive pricing on large orders.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Bolts</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Screws</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Nails</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Anchors</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Hinges</span>
+                </div>
+                <a href="products/fasteners-hardware.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-heading text-sm uppercase tracking-wide font-600 px-6 py-3 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 transition-colors duration-200">
+                  View All Fasteners &amp; Hardware
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 6: Safety & PPE -->
+          <div role="tabpanel" id="tab-panel-6" aria-labelledby="tab-btn-6" class="tab-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-7 gap-8 items-center">
+              <div class="lg:col-span-2">
+                <div class="rounded-xl overflow-hidden aspect-square" style="box-shadow: 0 8px 30px rgba(27, 33, 24, 0.12);">
+                  <img src="https://images.unsplash.com/photo-1705579612181-faf45962cfcb?w=600&h=600&fit=crop" alt="Safety equipment and PPE gear" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <div class="lg:col-span-5">
+                <h3 class="font-heading text-2xl lg:text-3xl font-bold text-dark tracking-tight mb-3">Safety &amp; PPE</h3>
+                <p class="text-text-secondary mb-5" style="line-height:1.7;">Protect your crew with our full line of personal protective equipment. From hard hats and safety glasses to high-visibility vests and work gloves, we carry the gear that keeps your team safe and OSHA-compliant on every job site.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Hard Hats</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Safety Glasses</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Work Gloves</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Hi-Vis Vests</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Ear Protection</span>
+                </div>
+                <a href="products/safety-ppe.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-heading text-sm uppercase tracking-wide font-600 px-6 py-3 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 transition-colors duration-200">
+                  View All Safety &amp; PPE
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 7: Chimney & Fireplace -->
+          <div role="tabpanel" id="tab-panel-7" aria-labelledby="tab-btn-7" class="tab-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-7 gap-8 items-center">
+              <div class="lg:col-span-2">
+                <div class="rounded-xl overflow-hidden aspect-square" style="box-shadow: 0 8px 30px rgba(27, 33, 24, 0.12);">
+                  <img src="https://images.unsplash.com/photo-1757605327126-9baefea3348b?w=600&h=600&fit=crop" alt="Fireplace and chimney supplies" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <div class="lg:col-span-5">
+                <h3 class="font-heading text-2xl lg:text-3xl font-bold text-dark tracking-tight mb-3">Chimney &amp; Fireplace</h3>
+                <p class="text-text-secondary mb-5" style="line-height:1.7;">Everything you need for chimney repair, maintenance, and fireplace installation. We carry chimney caps, liners, firebrick, refractory cement, dampers, and cleaning supplies to keep fireplaces burning safely all season long.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Chimney Caps</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Firebrick</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Refractory Cement</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Liners</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Dampers</span>
+                </div>
+                <a href="products/chimney-fireplace.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-heading text-sm uppercase tracking-wide font-600 px-6 py-3 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 transition-colors duration-200">
+                  View All Chimney &amp; Fireplace
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 8: Waterproofing -->
+          <div role="tabpanel" id="tab-panel-8" aria-labelledby="tab-btn-8" class="tab-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-7 gap-8 items-center">
+              <div class="lg:col-span-2">
+                <div class="rounded-xl overflow-hidden aspect-square" style="box-shadow: 0 8px 30px rgba(27, 33, 24, 0.12);">
+                  <img src="https://images.unsplash.com/photo-1717281234297-3def5ae3eee1?w=600&h=600&fit=crop" alt="Waterproofing and sealant products" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <div class="lg:col-span-5">
+                <h3 class="font-heading text-2xl lg:text-3xl font-bold text-dark tracking-tight mb-3">Waterproofing</h3>
+                <p class="text-text-secondary mb-5" style="line-height:1.7;">Keep water out with our comprehensive waterproofing product line. From basement membranes and foundation coatings to surface sealers and drainage solutions, we stock what you need to protect structures from moisture damage.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Membranes</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Coatings</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Sealers</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Drainage</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Foundation</span>
+                </div>
+                <a href="products/waterproofing.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-heading text-sm uppercase tracking-wide font-600 px-6 py-3 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 transition-colors duration-200">
+                  View All Waterproofing
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 9: Outdoor & Garden -->
+          <div role="tabpanel" id="tab-panel-9" aria-labelledby="tab-btn-9" class="tab-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-7 gap-8 items-center">
+              <div class="lg:col-span-2">
+                <div class="rounded-xl overflow-hidden aspect-square" style="box-shadow: 0 8px 30px rgba(27, 33, 24, 0.12);">
+                  <img src="https://images.unsplash.com/photo-1541779123709-488a159406aa?w=600&h=600&fit=crop" alt="Outdoor and garden supplies" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <div class="lg:col-span-5">
+                <h3 class="font-heading text-2xl lg:text-3xl font-bold text-dark tracking-tight mb-3">Outdoor &amp; Garden</h3>
+                <p class="text-text-secondary mb-5" style="line-height:1.7;">Landscaping and outdoor project supplies for residential and commercial work. We carry pavers, retaining wall blocks, edging, landscape fabric, garden tools, and seasonal supplies to tackle any outdoor project.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Pavers</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Retaining Walls</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Edging</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Landscape Fabric</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Garden Tools</span>
+                </div>
+                <a href="products/outdoor-lawn-garden.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-heading text-sm uppercase tracking-wide font-600 px-6 py-3 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 transition-colors duration-200">
+                  View All Outdoor &amp; Garden
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 10: Cleaning -->
+          <div role="tabpanel" id="tab-panel-10" aria-labelledby="tab-btn-10" class="tab-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-7 gap-8 items-center">
+              <div class="lg:col-span-2">
+                <div class="rounded-xl overflow-hidden aspect-square" style="box-shadow: 0 8px 30px rgba(27, 33, 24, 0.12);">
+                  <img src="https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?w=600&h=600&fit=crop" alt="Cleaning and janitorial supplies" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <div class="lg:col-span-5">
+                <h3 class="font-heading text-2xl lg:text-3xl font-bold text-dark tracking-tight mb-3">Cleaning &amp; Janitorial</h3>
+                <p class="text-text-secondary mb-5" style="line-height:1.7;">Professional-grade cleaning products for construction cleanup, facility maintenance, and job site sanitation. We carry concrete cleaners, degreasers, acid washes, pressure washer supplies, and general janitorial products.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Concrete Cleaners</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Degreasers</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Acid Wash</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Pressure Washer</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Janitorial</span>
+                </div>
+                <a href="products/cleaning-janitorial.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-heading text-sm uppercase tracking-wide font-600 px-6 py-3 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 transition-colors duration-200">
+                  View All Cleaning &amp; Janitorial
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 11: Grout & Epoxy -->
+          <div role="tabpanel" id="tab-panel-11" aria-labelledby="tab-btn-11" class="tab-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-7 gap-8 items-center">
+              <div class="lg:col-span-2">
+                <div class="rounded-xl overflow-hidden aspect-square" style="box-shadow: 0 8px 30px rgba(27, 33, 24, 0.12);">
+                  <img src="https://images.unsplash.com/photo-1523413184730-e85dbbd04aba?w=600&h=600&fit=crop" alt="Grout and epoxy tile installation" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <div class="lg:col-span-5">
+                <h3 class="font-heading text-2xl lg:text-3xl font-bold text-dark tracking-tight mb-3">Grout &amp; Epoxy</h3>
+                <p class="text-text-secondary mb-5" style="line-height:1.7;">Professional grout, epoxy, and tile-setting products for floors, walls, and specialty applications. We carry sanded and unsanded grout, epoxy grout, thinset mortar, epoxy coatings, and crack repair systems for lasting results.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Sanded Grout</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Epoxy Grout</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Thinset</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Epoxy Coatings</span>
+                  <span class="text-xs font-heading uppercase tracking-wide text-brand bg-brand-vlight px-3 py-1 rounded-full">Crack Repair</span>
+                </div>
+                <a href="products/grout-epoxy.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-heading text-sm uppercase tracking-wide font-600 px-6 py-3 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 transition-colors duration-200">
+                  View All Grout &amp; Epoxy
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
+
 
     <!-- ========== WHY CHOOSE US — STAT BLOCKS ========== -->
     <section class="py-12 lg:py-20 bg-brand-dark relative overflow-hidden" aria-labelledby="why-heading">
@@ -418,47 +672,27 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 fade-up">
 
           <!-- True Value Network -->
-          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10 flex gap-6 items-start">
-            <div class="flex-shrink-0">
-              <span class="font-heading text-5xl lg:text-6xl font-bold text-accent leading-none">TV</span>
-            </div>
-            <div>
-              <h3 class="font-heading text-lg font-600 text-white mb-2 tracking-tight">True Value Buying Power</h3>
-              <p class="text-white/60 text-sm">Access to thousands of products through the True Value network at competitive wholesale pricing — savings we pass directly to you.</p>
-            </div>
+          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+            <h3 class="font-heading text-xl font-bold text-accent mb-2 tracking-tight">True Value Buying Power</h3>
+            <p class="text-white/60 text-sm">Access to thousands of products through the True Value network at competitive wholesale pricing — savings we pass directly to you.</p>
           </div>
 
           <!-- Local Expertise -->
-          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10 flex gap-6 items-start">
-            <div class="flex-shrink-0">
-              <span class="font-heading text-5xl lg:text-6xl font-bold text-accent leading-none">PGH</span>
-            </div>
-            <div>
-              <h3 class="font-heading text-lg font-600 text-white mb-2 tracking-tight">Pittsburgh Expertise</h3>
-              <p class="text-white/60 text-sm">Staff who understand local building codes, weather conditions, and project requirements specific to the Greater Pittsburgh area.</p>
-            </div>
+          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+            <h3 class="font-heading text-xl font-bold text-accent mb-2 tracking-tight">Pittsburgh Expertise</h3>
+            <p class="text-white/60 text-sm">Staff who understand local building codes, weather conditions, and project requirements specific to the Greater Pittsburgh area.</p>
           </div>
 
           <!-- Contractor Accounts -->
-          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10 flex gap-6 items-start">
-            <div class="flex-shrink-0">
-              <span class="font-heading text-5xl lg:text-6xl font-bold text-accent leading-none">PRO</span>
-            </div>
-            <div>
-              <h3 class="font-heading text-lg font-600 text-white mb-2 tracking-tight">Contractor-Friendly</h3>
-              <p class="text-white/60 text-sm">Dedicated contractor accounts with bulk pricing, personalized ordering, and priority service — built for pros who need reliability.</p>
-            </div>
+          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+            <h3 class="font-heading text-xl font-bold text-accent mb-2 tracking-tight">Contractor-Friendly</h3>
+            <p class="text-white/60 text-sm">Dedicated contractor accounts with bulk pricing, personalized ordering, and priority service — built for pros who need reliability.</p>
           </div>
 
           <!-- One-Stop -->
-          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10 flex gap-6 items-start">
-            <div class="flex-shrink-0">
-              <span class="font-heading text-5xl lg:text-6xl font-bold text-accent leading-none">15+</span>
-            </div>
-            <div>
-              <h3 class="font-heading text-lg font-600 text-white mb-2 tracking-tight">Product Categories</h3>
-              <p class="text-white/60 text-sm">From concrete and masonry to tools, paint, plumbing, electrical, and more — everything for your project under one roof.</p>
-            </div>
+          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+            <h3 class="font-heading text-xl font-bold text-accent mb-2 tracking-tight">15+ Product Categories</h3>
+            <p class="text-white/60 text-sm">From concrete and masonry to tools, paint, plumbing, electrical, and more — everything for your project under one roof.</p>
           </div>
 
         </div>
@@ -474,38 +708,108 @@
           <p class="text-text-secondary text-lg max-w-2xl mx-auto">Getting the supplies you need is simple. Here's how we make it easy.</p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 stagger-children fade-up">
-          <!-- Step 1 -->
-          <div class="relative text-center">
-            <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mx-auto mb-5">
-              <span class="font-heading text-2xl font-bold text-white">1</span>
+        <!-- Timeline — Desktop: horizontal with connector line, Mobile: vertical -->
+        <div class="fade-up">
+          <!-- Desktop timeline -->
+          <div class="hidden lg:block relative">
+            <!-- Connector line -->
+            <div class="absolute top-7 left-[calc(12.5%+24px)] right-[calc(12.5%+24px)] h-0.5 bg-border" aria-hidden="true">
+              <div class="absolute inset-y-0 left-0 bg-accent" style="width: 100%; opacity: 0.3;"></div>
             </div>
-            <h3 class="font-heading text-lg font-600 text-dark mb-2 tracking-tight">Call or Visit</h3>
-            <p class="text-text-secondary text-sm">Give us a call or stop by our Pittsburgh location to discuss your project needs.</p>
+
+            <div class="grid grid-cols-4 gap-8 relative">
+              <!-- Step 1 -->
+              <div class="text-center">
+                <div class="relative inline-flex flex-col items-center">
+                  <div class="w-14 h-14 bg-accent rounded-full flex items-center justify-center mb-5 relative z-10 border-4 border-bg" style="box-shadow: 0 4px 16px rgba(85, 96, 99, 0.25);">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                  </div>
+                </div>
+                <div class="font-heading text-xs uppercase tracking-widest text-accent font-bold mb-1.5">Step 1</div>
+                <h3 class="font-heading text-lg font-600 text-dark mb-2 tracking-tight">Call or Visit</h3>
+                <p class="text-text-secondary text-sm">Give us a call or stop by our Pittsburgh location to discuss your project needs.</p>
+              </div>
+              <!-- Step 2 -->
+              <div class="text-center">
+                <div class="relative inline-flex flex-col items-center">
+                  <div class="w-14 h-14 bg-accent rounded-full flex items-center justify-center mb-5 relative z-10 border-4 border-bg" style="box-shadow: 0 4px 16px rgba(85, 96, 99, 0.25);">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                  </div>
+                </div>
+                <div class="font-heading text-xs uppercase tracking-widest text-accent font-bold mb-1.5">Step 2</div>
+                <h3 class="font-heading text-lg font-600 text-dark mb-2 tracking-tight">Get Expert Advice</h3>
+                <p class="text-text-secondary text-sm">Our knowledgeable staff helps you find the right products for your specific project.</p>
+              </div>
+              <!-- Step 3 -->
+              <div class="text-center">
+                <div class="relative inline-flex flex-col items-center">
+                  <div class="w-14 h-14 bg-accent rounded-full flex items-center justify-center mb-5 relative z-10 border-4 border-bg" style="box-shadow: 0 4px 16px rgba(85, 96, 99, 0.25);">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                  </div>
+                </div>
+                <div class="font-heading text-xs uppercase tracking-widest text-accent font-bold mb-1.5">Step 3</div>
+                <h3 class="font-heading text-lg font-600 text-dark mb-2 tracking-tight">Get Your Quote</h3>
+                <p class="text-text-secondary text-sm">We provide competitive pricing with contractor-friendly bulk rates and True Value savings.</p>
+              </div>
+              <!-- Step 4 -->
+              <div class="text-center">
+                <div class="relative inline-flex flex-col items-center">
+                  <div class="w-14 h-14 bg-accent rounded-full flex items-center justify-center mb-5 relative z-10 border-4 border-bg" style="box-shadow: 0 4px 16px rgba(85, 96, 99, 0.25);">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+                  </div>
+                </div>
+                <div class="font-heading text-xs uppercase tracking-widest text-accent font-bold mb-1.5">Step 4</div>
+                <h3 class="font-heading text-lg font-600 text-dark mb-2 tracking-tight">Pick Up or Deliver</h3>
+                <p class="text-text-secondary text-sm">Grab your order at our store or ask about delivery options for larger jobs.</p>
+              </div>
+            </div>
           </div>
-          <!-- Step 2 -->
-          <div class="relative text-center">
-            <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mx-auto mb-5">
-              <span class="font-heading text-2xl font-bold text-white">2</span>
+
+          <!-- Mobile/tablet timeline (vertical) -->
+          <div class="lg:hidden relative pl-12">
+            <!-- Vertical connector line -->
+            <div class="absolute left-[23px] top-4 bottom-4 w-0.5 bg-border" aria-hidden="true">
+              <div class="absolute inset-x-0 top-0 bottom-0 bg-accent" style="opacity: 0.3;"></div>
             </div>
-            <h3 class="font-heading text-lg font-600 text-dark mb-2 tracking-tight">Get Expert Advice</h3>
-            <p class="text-text-secondary text-sm">Our knowledgeable staff helps you find the right products for your specific project.</p>
-          </div>
-          <!-- Step 3 -->
-          <div class="relative text-center">
-            <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mx-auto mb-5">
-              <span class="font-heading text-2xl font-bold text-white">3</span>
+
+            <div class="space-y-10">
+              <!-- Step 1 -->
+              <div class="relative">
+                <div class="absolute -left-12 top-0 w-11 h-11 bg-accent rounded-full flex items-center justify-center border-4 border-bg z-10" style="box-shadow: 0 4px 12px rgba(85, 96, 99, 0.25);">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div class="font-heading text-xs uppercase tracking-widest text-accent font-bold mb-1">Step 1</div>
+                <h3 class="font-heading text-lg font-600 text-dark mb-1.5 tracking-tight">Call or Visit</h3>
+                <p class="text-text-secondary text-sm">Give us a call or stop by our Pittsburgh location to discuss your project needs.</p>
+              </div>
+              <!-- Step 2 -->
+              <div class="relative">
+                <div class="absolute -left-12 top-0 w-11 h-11 bg-accent rounded-full flex items-center justify-center border-4 border-bg z-10" style="box-shadow: 0 4px 12px rgba(85, 96, 99, 0.25);">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                </div>
+                <div class="font-heading text-xs uppercase tracking-widest text-accent font-bold mb-1">Step 2</div>
+                <h3 class="font-heading text-lg font-600 text-dark mb-1.5 tracking-tight">Get Expert Advice</h3>
+                <p class="text-text-secondary text-sm">Our knowledgeable staff helps you find the right products for your specific project.</p>
+              </div>
+              <!-- Step 3 -->
+              <div class="relative">
+                <div class="absolute -left-12 top-0 w-11 h-11 bg-accent rounded-full flex items-center justify-center border-4 border-bg z-10" style="box-shadow: 0 4px 12px rgba(85, 96, 99, 0.25);">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                </div>
+                <div class="font-heading text-xs uppercase tracking-widest text-accent font-bold mb-1">Step 3</div>
+                <h3 class="font-heading text-lg font-600 text-dark mb-1.5 tracking-tight">Get Your Quote</h3>
+                <p class="text-text-secondary text-sm">We provide competitive pricing with contractor-friendly bulk rates and True Value savings.</p>
+              </div>
+              <!-- Step 4 -->
+              <div class="relative">
+                <div class="absolute -left-12 top-0 w-11 h-11 bg-accent rounded-full flex items-center justify-center border-4 border-bg z-10" style="box-shadow: 0 4px 12px rgba(85, 96, 99, 0.25);">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+                </div>
+                <div class="font-heading text-xs uppercase tracking-widest text-accent font-bold mb-1">Step 4</div>
+                <h3 class="font-heading text-lg font-600 text-dark mb-1.5 tracking-tight">Pick Up or Deliver</h3>
+                <p class="text-text-secondary text-sm">Grab your order at our store or ask about delivery options for larger jobs.</p>
+              </div>
             </div>
-            <h3 class="font-heading text-lg font-600 text-dark mb-2 tracking-tight">Get Your Quote</h3>
-            <p class="text-text-secondary text-sm">We provide competitive pricing with contractor-friendly bulk rates and True Value savings.</p>
-          </div>
-          <!-- Step 4 -->
-          <div class="relative text-center">
-            <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mx-auto mb-5">
-              <span class="font-heading text-2xl font-bold text-white">4</span>
-            </div>
-            <h3 class="font-heading text-lg font-600 text-dark mb-2 tracking-tight">Pick Up or Deliver</h3>
-            <p class="text-text-secondary text-sm">Grab your order at our store or ask about delivery options for larger jobs.</p>
           </div>
         </div>
 
@@ -518,53 +822,59 @@
       </div>
     </section>
 
-    <!-- ========== VENDOR PARTNERS ========== -->
+    <!-- ========== VENDOR PARTNERS — REAL LOGOS ========== -->
     <section class="py-12 lg:py-20 bg-white" aria-labelledby="vendors-heading">
       <div class="max-w-7xl mx-auto px-6">
         <!-- Section Header -->
         <div class="text-center mb-12 fade-up">
-          <h2 id="vendors-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-dark tracking-tight mb-4">Our Trusted Partners</h2>
+          <h2 id="vendors-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-dark tracking-tight mb-4">Quality Brands You Can Trust</h2>
           <div class="w-16 h-1 bg-accent mx-auto mb-4"></div>
-          <p class="text-text-secondary text-lg max-w-2xl mx-auto">We work with industry-leading manufacturers and suppliers to bring you the best products available.</p>
+          <p class="text-text-secondary text-lg max-w-4xl mx-auto">We work with industry-leading manufacturers and suppliers to bring you the best products available.</p>
         </div>
 
-        <!-- Logo Scroll -->
+        <!-- Logo Scroll — Real Logos -->
         <div class="overflow-hidden fade-up">
           <div class="flex items-center logo-scroll" style="width: max-content;">
             <!-- First set -->
             <div class="flex items-center gap-16 px-8">
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="True Value">
-                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=True+Value" alt="True Value logo" class="h-14 w-auto">
+                <img src="images/vendors/true-value.png" alt="True Value logo" class="h-12 w-auto object-contain">
               </a>
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Fairborn Cement Company">
-                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=Fairborn+Cement" alt="Fairborn Cement Company logo" class="h-14 w-auto">
+                <img src="images/vendors/fairborn-cement.jpg" alt="Fairborn Cement Company logo" class="h-12 w-auto object-contain">
               </a>
-              <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Superior Clay Products">
-                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=Superior+Clay" alt="Superior Clay Products logo" class="h-14 w-auto">
+              <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-3 bg-brand-dark rounded-xl" aria-label="Superior Clay Products">
+                <img src="images/vendors/superior-clay.png" alt="Superior Clay Products logo" class="h-10 w-auto object-contain">
               </a>
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Equiparts">
-                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=Equiparts" alt="Equiparts logo" class="h-14 w-auto">
+                <img src="images/vendors/equiparts.png" alt="Equiparts logo" class="h-12 w-auto object-contain">
               </a>
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Bon Tool">
-                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=Bon+Tool" alt="Bon Tool logo" class="h-14 w-auto">
+                <img src="images/vendors/bon-tool.png" alt="Bon Tool logo" class="h-12 w-auto object-contain">
+              </a>
+              <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Do It Best Lumber">
+                <img src="images/vendors/doitbest.png" alt="Do It Best Lumber logo" class="h-12 w-auto object-contain">
               </a>
             </div>
             <!-- Duplicate set for seamless scroll -->
             <div class="flex items-center gap-16 px-8">
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="True Value">
-                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=True+Value" alt="True Value logo" class="h-14 w-auto">
+                <img src="images/vendors/true-value.png" alt="True Value logo" class="h-12 w-auto object-contain">
               </a>
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Fairborn Cement Company">
-                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=Fairborn+Cement" alt="Fairborn Cement Company logo" class="h-14 w-auto">
+                <img src="images/vendors/fairborn-cement.jpg" alt="Fairborn Cement Company logo" class="h-12 w-auto object-contain">
               </a>
-              <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Superior Clay Products">
-                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=Superior+Clay" alt="Superior Clay Products logo" class="h-14 w-auto">
+              <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-3 bg-brand-dark rounded-xl" aria-label="Superior Clay Products">
+                <img src="images/vendors/superior-clay.png" alt="Superior Clay Products logo" class="h-10 w-auto object-contain">
               </a>
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Equiparts">
-                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=Equiparts" alt="Equiparts logo" class="h-14 w-auto">
+                <img src="images/vendors/equiparts.png" alt="Equiparts logo" class="h-12 w-auto object-contain">
               </a>
               <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Bon Tool">
-                <img src="https://placehold.co/200x80/FFFFFF/2F5733?text=Bon+Tool" alt="Bon Tool logo" class="h-14 w-auto">
+                <img src="images/vendors/bon-tool.png" alt="Bon Tool logo" class="h-12 w-auto object-contain">
+              </a>
+              <a href="vendors.html" class="block flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-2" aria-label="Do It Best Lumber">
+                <img src="images/vendors/doitbest.png" alt="Do It Best Lumber logo" class="h-12 w-auto object-contain">
               </a>
             </div>
           </div>
@@ -578,6 +888,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- ========== TESTIMONIALS CAROUSEL ========== -->
     <!-- REPLACE WITH REAL REVIEWS -->
@@ -975,6 +1286,47 @@
     }, { passive: true });
   })();
   </script>
+
+<!-- Option B: Tab Switcher -->
+<script>
+(function() {
+  var btns = document.querySelectorAll('.tab-btn');
+  var panels = document.querySelectorAll('.tab-panel');
+  if (!btns.length || !panels.length) return;
+
+  function switchTab(idx) {
+    for (var i = 0; i < btns.length; i++) {
+      var isActive = i === idx;
+      btns[i].setAttribute('aria-selected', isActive ? 'true' : 'false');
+      if (isActive) {
+        btns[i].className = btns[i].className.replace('border-border text-text-secondary hover:border-brand hover:text-brand', 'border-brand bg-brand text-white');
+      } else {
+        btns[i].className = btns[i].className.replace('border-brand bg-brand text-white', 'border-border text-text-secondary hover:border-brand hover:text-brand');
+      }
+    }
+    for (var j = 0; j < panels.length; j++) {
+      if (j === idx) {
+        panels[j].classList.remove('hidden');
+        panels[j].style.opacity = '0';
+        panels[j].style.transform = 'translateY(8px)';
+        panels[j].style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        setTimeout(function(p) {
+          p.style.opacity = '1';
+          p.style.transform = 'translateY(0)';
+        }, 20, panels[j]);
+      } else {
+        panels[j].classList.add('hidden');
+      }
+    }
+  }
+
+  for (var i = 0; i < btns.length; i++) {
+    (function(idx) {
+      btns[idx].addEventListener('click', function() { switchTab(idx); });
+    })(i);
+  }
+})();
+</script>
 
 <script src="js/color-picker.js"></script>
 </body>
