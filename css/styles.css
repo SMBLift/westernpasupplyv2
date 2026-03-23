@@ -66,6 +66,24 @@ footer li a {
   align-items: center;
 }
 
+/* Sticky header transition */
+#site-header .top-bar-wrap {
+  max-height: 28px;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  opacity: 1;
+}
+#site-header.header-scrolled .top-bar-wrap {
+  max-height: 0;
+  opacity: 0;
+}
+#site-header nav {
+  transition: box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#site-header.header-scrolled nav {
+  box-shadow: 0 4px 20px rgba(47, 87, 51, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
 /* Nav underline animation */
 .nav-link {
   position: relative;

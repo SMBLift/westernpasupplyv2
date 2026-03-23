@@ -102,11 +102,11 @@
     <!-- ============================================
        HEADER
        ============================================ -->
-  <header class="w-full z-50 relative">
+  <header id="site-header" class="w-full z-50 sticky top-0">
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- ========== TOP BAR ========== -->
-    <div class="bg-dark text-white/90 text-sm font-body hidden lg:block h-7">
+    <div class="top-bar-wrap"><div class="bg-dark text-white/90 text-sm font-body hidden lg:block h-7">
       <div class="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
         <span class="flex items-center gap-1.5">
           <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
@@ -119,6 +119,7 @@
       </div>
     </div>
 
+    </div><!-- /top-bar-wrap -->
     <!-- Main Navigation -->
     <nav class="bg-white border-b border-border" aria-label="Main navigation">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -257,14 +258,14 @@
     </section>
 
     <!-- ========== COMPANY STORY SECTION ========== -->
-    <section class="py-20 lg:py-28 bg-white">
+    <section class="py-12 lg:py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           <!-- Image Column -->
           <div class="relative">
             <div class="relative rounded-2xl overflow-hidden shadow-xl" style="box-shadow: 0 12px 40px rgba(47, 87, 51, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);">
-              <img src="https://images.unsplash.com/photo-1574184383650-5f859b6793c5?auto=format&fit=crop&w=800&q=80" alt="Western PA Supply Co team and store front" class="w-full h-auto object-cover" loading="lazy">
+              <img src="images/pittsburgh-skyline.png" alt="Pittsburgh skyline with bridges over the river" class="w-full h-auto object-cover" loading="lazy">
               <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
             </div>
             <!-- Decorative accent block -->
@@ -295,60 +296,48 @@
     </section>
 
     <!-- ========== WHAT SETS US APART SECTION ========== -->
-    <section class="py-20 lg:py-28 bg-brand-vlight">
+    <section class="py-12 lg:py-20 bg-brand-dark">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-14">
-          <div class="w-12 h-1 bg-accent mx-auto mb-6"></div>
-          <h2 class="font-heading text-3xl md:text-4xl font-bold text-brand-dark tracking-tight" style="letter-spacing: -0.03em; line-height: 1.15;">
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-white tracking-tight" style="letter-spacing: -0.03em; line-height: 1.15;">
             What Sets Us Apart
           </h2>
-          <p class="mt-4 text-text-secondary max-w-2xl mx-auto" style="line-height: 1.7;">
+          <div class="w-16 h-1 bg-accent mx-auto mt-4 mb-4"></div>
+          <p class="mt-4 text-white/70 max-w-2xl mx-auto" style="line-height: 1.7;">
             The right combination of national resources and local expertise to keep your projects on track.
           </p>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 stagger-children">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
 
           <!-- Card 1: True Value Network -->
-          <div class="fade-up bg-white rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
-            <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
-              <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            </div>
-            <h3 class="font-heading text-lg font-bold text-dark uppercase tracking-tight mb-3">True Value Network</h3>
-            <p class="text-text-secondary text-sm" style="line-height: 1.7;">
+          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+            <h3 class="font-heading text-xl font-bold text-accent mb-2 tracking-tight">True Value Network</h3>
+            <p class="text-white/60 text-sm" style="line-height: 1.7;">
               Access to thousands of products, competitive wholesale pricing, and the backing of one of America's most trusted hardware brands.
             </p>
           </div>
 
           <!-- Card 2: Local Knowledge -->
-          <div class="fade-up bg-white rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
-            <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
-              <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-            </div>
-            <h3 class="font-heading text-lg font-bold text-dark uppercase tracking-tight mb-3">Local Knowledge</h3>
-            <p class="text-text-secondary text-sm" style="line-height: 1.7;">
+          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+            <h3 class="font-heading text-xl font-bold text-accent mb-2 tracking-tight">Local Knowledge</h3>
+            <p class="text-white/60 text-sm" style="line-height: 1.7;">
               Staff who understand Pittsburgh's building codes, weather challenges, and construction needs from firsthand experience.
             </p>
           </div>
 
           <!-- Card 3: Contractor Focus -->
-          <div class="fade-up bg-white rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
-            <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
-              <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
-            </div>
-            <h3 class="font-heading text-lg font-bold text-dark uppercase tracking-tight mb-3">Contractor Focus</h3>
-            <p class="text-text-secondary text-sm" style="line-height: 1.7;">
+          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+            <h3 class="font-heading text-xl font-bold text-accent mb-2 tracking-tight">Contractor Focus</h3>
+            <p class="text-white/60 text-sm" style="line-height: 1.7;">
               Dedicated accounts, project support, and the reliability professionals demand to keep jobs moving on schedule.
             </p>
           </div>
 
           <!-- Card 4: Full-Service Supply -->
-          <div class="fade-up bg-white rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
-            <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
-              <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
-            </div>
-            <h3 class="font-heading text-lg font-bold text-dark uppercase tracking-tight mb-3">Full-Service Supply</h3>
-            <p class="text-text-secondary text-sm" style="line-height: 1.7;">
+          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+            <h3 class="font-heading text-xl font-bold text-accent mb-2 tracking-tight">Full-Service Supply</h3>
+            <p class="text-white/60 text-sm" style="line-height: 1.7;">
               From foundation to finish, we carry everything for the job, including concrete, masonry, tools, hardware, paint, plumbing, and more.
             </p>
           </div>
@@ -357,14 +346,13 @@
     </section>
 
     <!-- ========== SERVICE AREA SECTION ========== -->
-    <section class="py-20 lg:py-28 bg-white">
+    <section class="py-12 lg:py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           <!-- Map / Area Visual -->
           <div class="fade-up relative rounded-2xl overflow-hidden" style="box-shadow: 0 12px 40px rgba(47, 87, 51, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);">
-            <img src="https://placehold.co/700x480/E0E0D8/2F5733?text=Greater+Pittsburgh+Service+Area+Map" alt="Map showing Western PA Supply Co service area across the Greater Pittsburgh region" class="w-full h-auto object-cover" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/20 to-transparent"></div>
+            <img src="images/pittsburgh-service-area-map.svg" alt="Map showing Western PA Supply Co service area across the Greater Pittsburgh region" class="w-full h-auto" loading="lazy">
           </div>
 
           <!-- Service Area Text -->
@@ -414,68 +402,58 @@
       </div>
     </section>
 
-    <!-- ========== TEAM SECTION ========== -->
-    <section class="py-20 lg:py-28 bg-brand-vlight">
+
+    <!-- ========== COMPANIES WE SUPPLY ========== -->
+    <section class="py-12 lg:py-20 bg-brand-vlight">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-14">
           <div class="w-12 h-1 bg-accent mx-auto mb-6"></div>
           <h2 class="font-heading text-3xl md:text-4xl font-bold text-brand-dark tracking-tight" style="letter-spacing: -0.03em; line-height: 1.15;">
-            Meet Our Team
+            Trusted by Local Contractors
           </h2>
           <p class="mt-4 text-text-secondary max-w-2xl mx-auto" style="line-height: 1.7;">
-            Our team brings decades of combined experience in construction supply, hardware, and project consultation. We are here to help you find the right products and get the job done.
+            We are proud to supply materials to companies across the Greater Pittsburgh area.
           </p>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 stagger-children">
+        <div class="flex flex-wrap justify-center gap-6 lg:gap-8 items-center">
 
-          <!-- Team Member 1 -->
-          <div class="fade-up bg-white rounded-2xl overflow-hidden card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
-            <div class="relative">
-              <img src="https://placehold.co/400x400/1E3B22/FAFAF7?text=Team+Member" alt="Team member placeholder photo" class="w-full h-72 object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-            </div>
-            <div class="p-6">
-              <h3 class="font-heading text-lg font-bold text-dark uppercase tracking-tight">Team Member Name</h3>
-              <p class="text-text-secondary font-medium text-sm mt-1">Position Title</p>
-              <p class="text-text-secondary text-sm mt-3" style="line-height: 1.7;">
-                <!-- PLACEHOLDER: Replace with real team member bio -->
-                Experienced in construction supply and customer service. Dedicated to helping customers find the right products for their projects.
-              </p>
-            </div>
-          </div>
+          <!-- Escajeda Masonry -->
+          <a href="https://www.escajedamasonry.com/" target="_blank" rel="noopener noreferrer" aria-label="Escajeda Masonry (opens in new tab)" class="bg-bg rounded-2xl border border-border p-6 flex items-center justify-center h-36 w-[calc(50%-12px)] sm:w-[calc(33.333%-16px)] lg:w-[calc(25%-24px)] hover:border-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+            <img src="images/partners/escajeda-masonry.png" alt="Escajeda Masonry logo" class="max-h-14 w-auto object-contain" loading="lazy">
+          </a>
 
-          <!-- Team Member 2 -->
-          <div class="fade-up bg-white rounded-2xl overflow-hidden card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
-            <div class="relative">
-              <img src="https://placehold.co/400x400/2F5733/FAFAF7?text=Team+Member" alt="Team member placeholder photo" class="w-full h-72 object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-            </div>
-            <div class="p-6">
-              <h3 class="font-heading text-lg font-bold text-dark uppercase tracking-tight">Team Member Name</h3>
-              <p class="text-text-secondary font-medium text-sm mt-1">Position Title</p>
-              <p class="text-text-secondary text-sm mt-3" style="line-height: 1.7;">
-                <!-- PLACEHOLDER: Replace with real team member bio -->
-                Knowledgeable in building materials and hardware solutions. Passionate about helping Pittsburgh-area builders succeed.
-              </p>
-            </div>
-          </div>
+          <!-- Three Rivers Roofing -->
+          <a href="https://threeriversroofing.com/" target="_blank" rel="noopener noreferrer" aria-label="Three Rivers Roofing (opens in new tab)" class="bg-bg rounded-2xl border border-border p-6 flex items-center justify-center h-36 w-[calc(50%-12px)] sm:w-[calc(33.333%-16px)] lg:w-[calc(25%-24px)] hover:border-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+            <img src="images/partners/three-rivers-roofing.png" alt="Three Rivers Roofing logo" class="max-h-14 w-auto object-contain" loading="lazy">
+          </a>
 
-          <!-- Team Member 3 -->
-          <div class="fade-up bg-white rounded-2xl overflow-hidden card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
-            <div class="relative">
-              <img src="https://placehold.co/400x400/4A7A4F/FAFAF7?text=Team+Member" alt="Team member placeholder photo" class="w-full h-72 object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-            </div>
-            <div class="p-6">
-              <h3 class="font-heading text-lg font-bold text-dark uppercase tracking-tight">Team Member Name</h3>
-              <p class="text-text-secondary font-medium text-sm mt-1">Position Title</p>
-              <p class="text-text-secondary text-sm mt-3" style="line-height: 1.7;">
-                <!-- PLACEHOLDER: Replace with real team member bio -->
-                Specializes in project consultation and contractor accounts. Committed to delivering fast, reliable service.
-              </p>
-            </div>
-          </div>
+          <!-- Hoolahan Roofing -->
+          <a href="https://hoolahanroofing.com/" target="_blank" rel="noopener noreferrer" aria-label="Hoolahan Roofing (opens in new tab)" class="bg-bg rounded-2xl border border-border p-6 flex items-center justify-center h-36 w-[calc(50%-12px)] sm:w-[calc(33.333%-16px)] lg:w-[calc(25%-24px)] hover:border-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+            <img src="images/partners/hoolahan-roofing.png" alt="Hoolahan Roofing logo" class="max-h-14 w-auto object-contain" loading="lazy">
+          </a>
+
+          <!-- Inks Installations -->
+          <a href="https://inksinstallations.com/" target="_blank" rel="noopener noreferrer" aria-label="Inks Installations (opens in new tab)" class="bg-bg rounded-2xl border border-border p-6 flex items-center justify-center h-36 w-[calc(50%-12px)] sm:w-[calc(33.333%-16px)] lg:w-[calc(25%-24px)] hover:border-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+            <img src="images/partners/inks-installations.png" alt="Inks Installations logo" class="w-auto object-contain" style="max-height:107px" loading="lazy">
+          </a>
+
+          <!-- Alex Restoration -->
+          <a href="https://www.alexrestoration.com/" target="_blank" rel="noopener noreferrer" aria-label="Alex Restoration (opens in new tab)" class="bg-bg rounded-2xl border border-border p-6 flex items-center justify-center h-36 w-[calc(50%-12px)] sm:w-[calc(33.333%-16px)] lg:w-[calc(25%-24px)] hover:border-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+            <img src="images/partners/alex-restoration.png" alt="Alex Restoration logo" class="w-auto object-contain" style="max-height:76px" loading="lazy">
+          </a>
+
+          <!-- JL Baker Roofing -->
+          <a href="https://inksinstallations.com/" target="_blank" rel="noopener noreferrer" aria-label="JL Baker Roofing (opens in new tab)" class="bg-bg rounded-2xl border border-border p-6 flex items-center justify-center h-36 w-[calc(50%-12px)] sm:w-[calc(33.333%-16px)] lg:w-[calc(25%-24px)] hover:border-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+            <img src="images/partners/jl-baker-roofing.png" alt="JL Baker Roofing logo" class="max-h-20 w-auto object-contain" loading="lazy">
+          </a>
+
+          <!-- Bronson Roofing -->
+          <a href="https://www.bronsonroofing.net/" target="_blank" rel="noopener noreferrer" aria-label="Bronson Roofing (opens in new tab)" class="bg-bg rounded-2xl border border-border p-6 flex items-center justify-center h-36 w-[calc(50%-12px)] sm:w-[calc(33.333%-16px)] lg:w-[calc(25%-24px)] hover:border-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+            <img src="images/partners/bronson-roofing.webp" alt="Bronson Roofing logo" class="max-h-20 w-auto object-contain" loading="lazy">
+          </a>
+
+
         </div>
       </div>
     </section>
@@ -559,7 +537,7 @@
     </section>
 
     <!-- ========== CTA SECTION ========== -->
-    <section class="relative py-20 lg:py-28 bg-brand-dark overflow-hidden grain">
+    <section class="relative py-12 lg:py-20 bg-brand-dark overflow-hidden grain">
 
       <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div class="fade-up">

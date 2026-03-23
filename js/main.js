@@ -121,18 +121,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ---- Sticky Header Shadow on Scroll ----
-  const header = document.querySelector('header');
-  if (header) {
-    let lastScroll = 0;
+  // ---- Sticky Header — collapse top bar + add shadow on scroll ----
+  const siteHeader = document.getElementById('site-header');
+  if (siteHeader) {
     window.addEventListener('scroll', () => {
-      const currentScroll = window.scrollY;
-      if (currentScroll > 20) {
-        header.classList.add('shadow-lg');
+      if (window.scrollY > 40) {
+        siteHeader.classList.add('header-scrolled');
       } else {
-        header.classList.remove('shadow-lg');
+        siteHeader.classList.remove('header-scrolled');
       }
-      lastScroll = currentScroll;
     }, { passive: true });
   }
 

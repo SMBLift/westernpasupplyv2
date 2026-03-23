@@ -75,11 +75,11 @@
     <!-- ============================================
        HEADER
        ============================================ -->
-  <header class="w-full z-50 relative">
+  <header id="site-header" class="w-full z-50 sticky top-0">
     <a href="#main-content" class="skip-link font-heading">Skip to main content</a>
 
     <!-- ========== TOP BAR ========== -->
-    <div class="bg-dark text-white/90 text-sm font-body hidden lg:block h-7">
+    <div class="top-bar-wrap"><div class="bg-dark text-white/90 text-sm font-body hidden lg:block h-7">
       <div class="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
         <span class="flex items-center gap-1.5">
           <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
@@ -92,6 +92,7 @@
       </div>
     </div>
 
+    </div><!-- /top-bar-wrap -->
     <!-- Main Navigation -->
     <nav class="bg-white border-b border-border" aria-label="Main navigation">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -227,21 +228,19 @@
       </div>
     </section>
 
-    <!-- ===== INTRO TEXT ===== -->
-    <section class="py-20 lg:py-28">
-      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p class="text-text-secondary text-lg leading-relaxed" style="line-height: 1.7;">Western PA Supply carries a comprehensive selection of building materials, construction supplies, tools, and hardware. As a True Value member store, we have access to thousands of products to meet every project need. Browse our categories below or call us for product availability and pricing.</p>
-      </div>
-    </section>
-
-    <!-- ===== PRODUCT CATEGORY GRID ===== -->
-    <section class="pb-20 lg:pb-28">
+    <!-- ===== PRODUCT CATEGORIES ===== -->
+    <section class="py-12 lg:py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-brand-dark tracking-tight mb-6" style="letter-spacing: -0.03em; line-height: 1.15;">What We Carry</h2>
+          <div class="w-12 h-1 bg-accent mx-auto mb-6"></div>
+          <p class="text-text-secondary text-lg max-w-3xl mx-auto" style="line-height: 1.7;">Western PA Supply carries a comprehensive selection of building materials, construction supplies, tools, and hardware. As a True Value member store, we have access to thousands of products to meet every project need. Browse our categories below or call us for product availability and pricing.</p>
+        </div>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 lg:gap-5">
 
           <!-- Concrete & Masonry -->
           <a href="products/concrete-masonry.html" class="group relative rounded-2xl overflow-hidden aspect-[4/3] focus-ring" style="box-shadow: 0 4px 20px rgba(47,87,51,0.08);">
-            <img src="https://images.unsplash.com/photo-1716839150167-65bab9a253db?auto=format&fit=crop&w=600&q=80" alt="Concrete and masonry supplies" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
+            <img src="images/stock/concrete-masonry.jpg" alt="Concrete and masonry supplies" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4">
               <h2 class="font-heading text-sm sm:text-base font-bold text-white leading-tight">Concrete &amp; Masonry</h2>
@@ -250,7 +249,7 @@
 
           <!-- Tools & Equipment -->
           <a href="products/tools-equipment.html" class="group relative rounded-2xl overflow-hidden aspect-[4/3] focus-ring" style="box-shadow: 0 4px 20px rgba(47,87,51,0.08);">
-            <img src="https://plus.unsplash.com/premium_photo-1663133575226-5df1ba81c695?auto=format&fit=crop&w=600&q=80" alt="Tools and equipment" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
+            <img src="images/stock/tools-equipment.jpg" alt="Tools and equipment" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4">
               <h2 class="font-heading text-sm sm:text-base font-bold text-white leading-tight">Tools &amp; Equipment</h2>
@@ -259,7 +258,7 @@
 
           <!-- Paint & Stain -->
           <a href="products/paint-stain.html" class="group relative rounded-2xl overflow-hidden aspect-[4/3] focus-ring" style="box-shadow: 0 4px 20px rgba(47,87,51,0.08);">
-            <img src="https://images.unsplash.com/photo-1581782046583-d09f142bdd65?auto=format&fit=crop&w=600&q=80" alt="Paint and stain supplies" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
+            <img src="images/stock/paint-stain.jpg" alt="Paint and stain supplies" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4">
               <h2 class="font-heading text-sm sm:text-base font-bold text-white leading-tight">Paint &amp; Stain</h2>
@@ -268,7 +267,7 @@
 
           <!-- Plumbing -->
           <a href="products/plumbing.html" class="group relative rounded-2xl overflow-hidden aspect-[4/3] focus-ring" style="box-shadow: 0 4px 20px rgba(47,87,51,0.08);">
-            <img src="https://images.unsplash.com/photo-1738918897772-0ba101be25c8?auto=format&fit=crop&w=600&q=80" alt="Plumbing supplies" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
+            <img src="images/stock/plumbing.jpg" alt="Plumbing supplies" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4">
               <h2 class="font-heading text-sm sm:text-base font-bold text-white leading-tight">Plumbing</h2>
@@ -277,7 +276,7 @@
 
           <!-- Electrical -->
           <a href="products/electrical.html" class="group relative rounded-2xl overflow-hidden aspect-[4/3] focus-ring" style="box-shadow: 0 4px 20px rgba(47,87,51,0.08);">
-            <img src="https://images.unsplash.com/photo-1571233594617-434b02ec3dbb?auto=format&fit=crop&w=600&q=80" alt="Electrical supplies" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
+            <img src="images/stock/electrical.jpg" alt="Electrical supplies" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4">
               <h2 class="font-heading text-sm sm:text-base font-bold text-white leading-tight">Electrical</h2>
@@ -286,7 +285,7 @@
 
           <!-- Fasteners & Hardware -->
           <a href="products/fasteners-hardware.html" class="group relative rounded-2xl overflow-hidden aspect-[4/3] focus-ring" style="box-shadow: 0 4px 20px rgba(47,87,51,0.08);">
-            <img src="https://images.unsplash.com/photo-1607733067654-364ff90d4866?auto=format&fit=crop&w=600&q=80" alt="Fasteners and hardware" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
+            <img src="images/stock/fasteners-hardware.jpg" alt="Fasteners and hardware" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4">
               <h2 class="font-heading text-sm sm:text-base font-bold text-white leading-tight">Fasteners &amp; Hardware</h2>
@@ -295,7 +294,7 @@
 
           <!-- Safety & PPE -->
           <a href="products/safety-ppe.html" class="group relative rounded-2xl overflow-hidden aspect-[4/3] focus-ring" style="box-shadow: 0 4px 20px rgba(47,87,51,0.08);">
-            <img src="https://images.unsplash.com/photo-1705579612181-faf45962cfcb?auto=format&fit=crop&w=600&q=80" alt="Safety equipment and PPE gear" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
+            <img src="images/stock/safety-ppe.jpg" alt="Safety equipment and PPE gear" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4">
               <h2 class="font-heading text-sm sm:text-base font-bold text-white leading-tight">Safety &amp; PPE</h2>
@@ -304,7 +303,7 @@
 
           <!-- Chimney & Fireplace -->
           <a href="products/chimney-fireplace.html" class="group relative rounded-2xl overflow-hidden aspect-[4/3] focus-ring" style="box-shadow: 0 4px 20px rgba(47,87,51,0.08);">
-            <img src="https://images.unsplash.com/photo-1757605327126-9baefea3348b?auto=format&fit=crop&w=600&q=80" alt="Fireplace and chimney supplies" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
+            <img src="images/stock/chimney-fireplace.jpg" alt="Fireplace and chimney supplies" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4">
               <h2 class="font-heading text-sm sm:text-base font-bold text-white leading-tight">Chimney &amp; Fireplace</h2>
@@ -313,7 +312,7 @@
 
           <!-- Waterproofing -->
           <a href="products/waterproofing.html" class="group relative rounded-2xl overflow-hidden aspect-[4/3] focus-ring" style="box-shadow: 0 4px 20px rgba(47,87,51,0.08);">
-            <img src="https://plus.unsplash.com/premium_photo-1754254972657-f05160acac15?auto=format&fit=crop&w=600&q=80" alt="Waterproofing materials and membranes" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
+            <img src="images/stock/waterproofing.jpg" alt="Waterproofing materials and membranes" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4">
               <h2 class="font-heading text-sm sm:text-base font-bold text-white leading-tight">Waterproofing</h2>
@@ -322,7 +321,7 @@
 
           <!-- Outdoor & Garden -->
           <a href="products/outdoor-lawn-garden.html" class="group relative rounded-2xl overflow-hidden aspect-[4/3] focus-ring" style="box-shadow: 0 4px 20px rgba(47,87,51,0.08);">
-            <img src="https://images.unsplash.com/photo-1759287301416-3010d2dc504d?auto=format&fit=crop&w=600&q=80" alt="Outdoor and garden supplies" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
+            <img src="images/stock/outdoor-garden.jpg" alt="Outdoor and garden supplies" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4">
               <h2 class="font-heading text-sm sm:text-base font-bold text-white leading-tight">Outdoor &amp; Garden</h2>
@@ -331,7 +330,7 @@
 
           <!-- Cleaning & Janitorial -->
           <a href="products/cleaning-janitorial.html" class="group relative rounded-2xl overflow-hidden aspect-[4/3] focus-ring" style="box-shadow: 0 4px 20px rgba(47,87,51,0.08);">
-            <img src="https://plus.unsplash.com/premium_photo-1661964316283-fde7ae410ea7?auto=format&fit=crop&w=600&q=80" alt="Cleaning and janitorial supplies" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
+            <img src="images/stock/cleaning-janitorial.jpg" alt="Cleaning and janitorial supplies" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4">
               <h2 class="font-heading text-sm sm:text-base font-bold text-white leading-tight">Cleaning &amp; Janitorial</h2>
@@ -340,7 +339,7 @@
 
           <!-- Grout & Epoxy -->
           <a href="products/grout-epoxy.html" class="group relative rounded-2xl overflow-hidden aspect-[4/3] focus-ring" style="box-shadow: 0 4px 20px rgba(47,87,51,0.08);">
-            <img src="https://plus.unsplash.com/premium_photo-1682597000932-d7041f42f669?auto=format&fit=crop&w=600&q=80" alt="Grout and epoxy application" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
+            <img src="images/stock/grout-epoxy.jpg" alt="Grout and epoxy application" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4">
               <h2 class="font-heading text-sm sm:text-base font-bold text-white leading-tight">Grout &amp; Epoxy</h2>
@@ -349,7 +348,7 @@
 
           <!-- Curing & Sealing -->
           <a href="products/curing-sealing.html" class="group relative rounded-2xl overflow-hidden aspect-[4/3] focus-ring" style="box-shadow: 0 4px 20px rgba(47,87,51,0.08);">
-            <img src="https://images.unsplash.com/photo-1771530789155-b1f03fbf82b5?auto=format&fit=crop&w=600&q=80" alt="Sealed concrete floor" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
+            <img src="images/stock/curing-sealing.jpg" alt="Sealed concrete floor" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4">
               <h2 class="font-heading text-sm sm:text-base font-bold text-white leading-tight">Curing &amp; Sealing</h2>
@@ -358,7 +357,7 @@
 
           <!-- Joint Sealant & Expansion -->
           <a href="products/joint-sealant-expansion.html" class="group relative rounded-2xl overflow-hidden aspect-[4/3] focus-ring" style="box-shadow: 0 4px 20px rgba(47,87,51,0.08);">
-            <img src="https://plus.unsplash.com/premium_photo-1683140906059-1ef9d08ea2ab?auto=format&fit=crop&w=600&q=80" alt="Sealant application on construction joint" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
+            <img src="images/stock/joint-sealant.jpg" alt="Sealant application on construction joint" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4">
               <h2 class="font-heading text-sm sm:text-base font-bold text-white leading-tight">Joint Sealant</h2>
@@ -367,7 +366,7 @@
 
           <!-- Repair Products -->
           <a href="products/repair-products.html" class="group relative rounded-2xl overflow-hidden aspect-[4/3] focus-ring" style="box-shadow: 0 4px 20px rgba(47,87,51,0.08);">
-            <img src="https://images.unsplash.com/photo-1763028142321-5df0e9d8cd92?auto=format&fit=crop&w=600&q=80" alt="Concrete repair and patching" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
+            <img src="images/stock/repair-products.jpg" alt="Concrete repair and patching" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4">
               <h2 class="font-heading text-sm sm:text-base font-bold text-white leading-tight">Repair Products</h2>
@@ -394,7 +393,7 @@
     </section>
 
     <!-- ===== CTA SECTION ===== -->
-    <section class="relative py-20 lg:py-28 bg-brand-dark overflow-hidden grain">
+    <section class="relative py-12 lg:py-20 bg-brand-dark overflow-hidden grain">
       <div class="absolute inset-0 bg-gradient-to-br from-brand-dark via-brand-dark to-dark opacity-90"></div>
       <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div class="fade-up">
