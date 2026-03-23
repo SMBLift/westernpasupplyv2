@@ -49,27 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ---- Scroll Animations (IntersectionObserver) ----
-  const animatedElements = document.querySelectorAll('.fade-up, .fade-in');
-
-  if (animatedElements.length > 0) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.05,
-      rootMargin: '0px 0px 200px 0px'
-    });
-
-    animatedElements.forEach(el => {
-      observer.observe(el);
-    });
-  }
-
   // ---- Form Handling ----
   const contactForm = document.getElementById('contact-form');
   const formTimestamp = document.getElementById('form-timestamp');

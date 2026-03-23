@@ -57,7 +57,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Western PA Supply Co",
-    "description": "Building & Construction Supply, True Value Member Store serving the Greater Pittsburgh area.",
+    "description": "Building and construction supply company serving contractors, builders, and homeowners in the Greater Pittsburgh area. True Value member store.",
     "image": "https://westernpasupply.com/images/westernpasupplylogowhitebg.png",
     "telephone": "(412) 760-4621",
     "email": "info@westernpasupply.com",
@@ -69,26 +69,23 @@
       "postalCode": "15236",
       "addressCountry": "US"
     },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "07:00",
-        "closes": "17:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "08:00",
-        "closes": "14:00"
-      }
-    ],
     "url": "https://westernpasupply.com",
-    "sameAs": []
+    "sameAs": [],
+    "openingHours": "Mo-Fr 07:00-17:00, Sa 08:00-14:00",
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.3551,
+        "longitude": -79.9777
+      },
+      "geoRadius": "50"
+    }
   }
   </script>
 </head>
-<body class="font-body text-text bg-bg leading-relaxed pb-20 lg:pb-0">
+<body class="font-body text-text bg-bg pb-20 lg:pb-0" style="line-height: 1.7;">
 
     <!-- ============================================
        HEADER
@@ -154,7 +151,7 @@
               </div>
             </div>
 
-            <a href="vendors.html" class="nav-link active font-heading text-sm uppercase tracking-wider text-brand hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2">Vendors</a>
+            <a href="vendors.html" aria-current="page" class="nav-link active font-heading text-sm uppercase tracking-wider text-brand hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2">Vendors</a>
             <a href="services.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2">Services</a>
             <a href="contact.html" class="inline-block font-heading text-sm uppercase tracking-wider bg-accent hover:bg-accent-dark text-white px-6 py-2.5 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">Contact Us</a>
           </div>
@@ -210,7 +207,7 @@
           </div>
         </div>
 
-        <a href="vendors.html" class="font-heading text-lg uppercase tracking-wider text-brand bg-brand-vlight hover:text-brand px-4 py-3 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Vendors</a>
+        <a href="vendors.html" class="font-heading text-lg uppercase tracking-wider text-brand bg-brand-vlight hover:text-brand px-4 py-3 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-current="page">Vendors</a>
         <a href="services.html" class="font-heading text-lg uppercase tracking-wider text-text hover:text-brand hover:bg-brand-vlight px-4 py-3 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Services</a>
         <a href="contact.html" class="mt-4 font-heading text-base uppercase tracking-wider text-center bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">Contact Us</a>
       </nav>
@@ -258,7 +255,7 @@
         <div class="space-y-12">
 
           <!-- TRUE VALUE (Featured) -->
-          <div class="fade-up bg-bg rounded-2xl border-2 border-brand p-8 md:p-12 relative overflow-hidden" style="box-shadow: 0 8px 32px rgba(68,107,62,0.1), 0 2px 8px rgba(68,107,62,0.05);">
+          <div class="bg-bg rounded-2xl border-2 border-brand p-8 md:p-12 relative overflow-hidden" style="box-shadow: 0 8px 32px rgba(68,107,62,0.1), 0 2px 8px rgba(68,107,62,0.05);">
             <div class="absolute top-0 right-0 bg-brand text-white font-heading text-xs uppercase tracking-wider px-5 py-2 rounded-bl-xl">Featured Partner</div>
             <div class="md:flex md:items-start md:gap-12">
               <div class="flex-shrink-0 mb-6 md:mb-0 md:w-[292px]">
@@ -283,7 +280,7 @@
           </div>
 
           <!-- FAIRBORN CEMENT COMPANY -->
-          <div class="fade-up bg-bg rounded-2xl border border-border p-8 md:p-12 relative overflow-hidden card-hover" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
+          <div class="bg-bg rounded-2xl border border-border p-8 md:p-12 relative overflow-hidden card-hover" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
             <div class="absolute top-0 right-0 bg-accent text-white font-heading text-xs uppercase tracking-wider px-5 py-2 rounded-bl-xl">Authorized Dealer</div>
             <div class="md:flex md:items-start md:gap-12">
               <div class="flex-shrink-0 mb-6 md:mb-0 md:w-[292px]">
@@ -308,7 +305,7 @@
           </div>
 
           <!-- SUPERIOR CLAY PRODUCTS -->
-          <div class="fade-up bg-bg rounded-2xl border border-border p-8 md:p-12 relative overflow-hidden card-hover" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
+          <div class="bg-bg rounded-2xl border border-border p-8 md:p-12 relative overflow-hidden card-hover" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
             <div class="absolute top-0 right-0 bg-accent text-white font-heading text-xs uppercase tracking-wider px-5 py-2 rounded-bl-xl">Authorized Dealer</div>
             <div class="md:flex md:items-start md:gap-12">
               <div class="flex-shrink-0 mb-6 md:mb-0 md:w-[292px]">
@@ -333,7 +330,7 @@
           </div>
 
           <!-- EQUIPARTS -->
-          <div class="fade-up bg-bg rounded-2xl border border-border p-8 md:p-12 relative overflow-hidden card-hover" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
+          <div class="bg-bg rounded-2xl border border-border p-8 md:p-12 relative overflow-hidden card-hover" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
             <div class="absolute top-0 right-0 bg-accent text-white font-heading text-xs uppercase tracking-wider px-5 py-2 rounded-bl-xl">Authorized Dealer</div>
             <div class="md:flex md:items-start md:gap-12">
               <div class="flex-shrink-0 mb-6 md:mb-0 md:w-[292px]">
@@ -358,7 +355,7 @@
           </div>
 
           <!-- BON TOOL -->
-          <div class="fade-up bg-bg rounded-2xl border border-border p-8 md:p-12 relative overflow-hidden card-hover" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
+          <div class="bg-bg rounded-2xl border border-border p-8 md:p-12 relative overflow-hidden card-hover" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
             <div class="absolute top-0 right-0 bg-accent text-white font-heading text-xs uppercase tracking-wider px-5 py-2 rounded-bl-xl">Authorized Dealer</div>
             <div class="md:flex md:items-start md:gap-12">
               <div class="flex-shrink-0 mb-6 md:mb-0 md:w-[292px]">
@@ -383,7 +380,7 @@
           </div>
 
           <!-- DO IT BEST LUMBER -->
-          <div class="fade-up bg-bg rounded-2xl border border-border p-8 md:p-12 relative overflow-hidden card-hover" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
+          <div class="bg-bg rounded-2xl border border-border p-8 md:p-12 relative overflow-hidden card-hover" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
             <div class="absolute top-0 right-0 bg-accent text-white font-heading text-xs uppercase tracking-wider px-5 py-2 rounded-bl-xl">Authorized Dealer</div>
             <div class="md:flex md:items-start md:gap-12">
               <div class="flex-shrink-0 mb-6 md:mb-0 md:w-[292px]">
@@ -414,7 +411,7 @@
     <!-- ======== CTA SECTION ======== -->
     <section class="relative py-12 lg:py-20 bg-brand-dark overflow-hidden">
       <div class="grain absolute inset-0"></div>
-      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center fade-up">
+      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <h2 class="font-heading text-3xl md:text-4xl text-white mb-4" style="letter-spacing:-0.03em;">Become a Vendor</h2>
         <div class="w-16 h-0.5 bg-accent mx-auto mb-8"></div>
         <p class="text-white/80 text-lg mb-10" style="line-height:1.7;">Interested in partnering with Western PA Supply? We're always looking to expand our product offerings with quality manufacturers.</p>
@@ -433,7 +430,7 @@
         <!-- Col 1: Logo + Tagline -->
         <div>
           <a href="index.html">
-            <img src="images/westernpasuppplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-10 w-auto mb-4 opacity-90">
+            <img src="images/westernpasupplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-10 w-auto mb-4 opacity-90">
           </a>
           <p class="text-white/50 text-sm">Tools &middot; Materials &middot; Lumber</p>
         </div>
@@ -484,7 +481,6 @@
             <li class="flex items-start gap-3 pt-2">
               <svg class="w-4 h-4 mt-0.5 text-accent flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
               <span class="text-white/60">
-                <!-- PLACEHOLDER HOURS -->
                 Mon&ndash;Fri: 7:00 AM &ndash; 5:00 PM<br>
                 Sat: 8:00 AM &ndash; 2:00 PM<br>
                 Sun: Closed

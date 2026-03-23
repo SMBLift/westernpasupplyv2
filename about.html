@@ -78,7 +78,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Western PA Supply Co",
-    "description": "Locally owned building and construction supply company serving the Greater Pittsburgh area. True Value member store.",
+    "description": "Building and construction supply company serving contractors, builders, and homeowners in the Greater Pittsburgh area. True Value member store.",
     "image": "https://westernpasupply.com/images/westernpasupplylogowhitebg.png",
     "telephone": "(412) 760-4621",
     "email": "info@westernpasupply.com",
@@ -93,11 +93,20 @@
     "url": "https://westernpasupply.com",
     "sameAs": [],
     "openingHours": "Mo-Fr 07:00-17:00, Sa 08:00-14:00",
-    "priceRange": "$$"
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.3551,
+        "longitude": -79.9777
+      },
+      "geoRadius": "50"
+    }
   }
   </script>
 </head>
-<body class="font-body text-text bg-bg pb-20 lg:pb-0">
+<body class="font-body text-text bg-bg pb-20 lg:pb-0" style="line-height: 1.7;">
 
     <!-- ============================================
        HEADER
@@ -133,7 +142,7 @@
           <!-- Desktop Nav Links -->
           <div class="hidden lg:flex items-center gap-8">
             <a href="index.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2">Home</a>
-            <a href="about.html" class="nav-link active font-heading text-sm uppercase tracking-wider text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2">About</a>
+            <a href="about.html" aria-current="page" class="nav-link active font-heading text-sm uppercase tracking-wider text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2">About</a>
 
             <!-- Products Dropdown -->
             <div class="services-trigger relative">
@@ -189,7 +198,7 @@
           </button>
         </div>
         <a href="index.html" class="font-heading text-lg uppercase tracking-wider text-text hover:text-brand hover:bg-brand-vlight px-4 py-3 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Home</a>
-        <a href="about.html" class="font-heading text-lg uppercase tracking-wider text-brand bg-brand-vlight px-4 py-3 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">About</a>
+        <a href="about.html" class="font-heading text-lg uppercase tracking-wider text-brand bg-brand-vlight px-4 py-3 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-current="page">About</a>
 
         <!-- Mobile Products Accordion -->
         <div>
@@ -351,12 +360,12 @@
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           <!-- Map / Area Visual -->
-          <div class="fade-up relative rounded-2xl overflow-hidden" style="box-shadow: 0 12px 40px rgba(47, 87, 51, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);">
+          <div class="relative rounded-2xl overflow-hidden" style="box-shadow: 0 12px 40px rgba(47, 87, 51, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);">
             <img src="images/pittsburgh-service-area-map.svg" alt="Map showing Western PA Supply Co service area across the Greater Pittsburgh region" class="w-full h-auto" loading="lazy">
           </div>
 
           <!-- Service Area Text -->
-          <div class="fade-up">
+          <div>
             <div class="w-12 h-1 bg-accent mb-6"></div>
             <h2 class="font-heading text-3xl md:text-4xl font-bold text-brand-dark tracking-tight mb-6" style="letter-spacing: -0.03em; line-height: 1.15;">
               Serving the Greater Pittsburgh Area
@@ -444,7 +453,7 @@
           </a>
 
           <!-- JL Baker Roofing -->
-          <a href="https://inksinstallations.com/" target="_blank" rel="noopener noreferrer" aria-label="JL Baker Roofing (opens in new tab)" class="bg-bg rounded-2xl border border-border p-6 flex items-center justify-center h-36 w-[calc(50%-12px)] sm:w-[calc(33.333%-16px)] lg:w-[calc(25%-24px)] hover:border-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+          <a href="https://jlbakerroofing.com/" target="_blank" rel="noopener noreferrer" aria-label="JL Baker Roofing (opens in new tab)" class="bg-bg rounded-2xl border border-border p-6 flex items-center justify-center h-36 w-[calc(50%-12px)] sm:w-[calc(33.333%-16px)] lg:w-[calc(25%-24px)] hover:border-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <img src="images/partners/jl-baker-roofing.png" alt="JL Baker Roofing logo" class="max-h-20 w-auto object-contain" loading="lazy">
           </a>
 
@@ -461,12 +470,12 @@
     <!-- ========== FAQ ========== -->
     <section class="py-12 lg:py-20 bg-white" aria-labelledby="faq-heading">
       <div class="max-w-3xl mx-auto px-6">
-        <div class="text-center mb-14 fade-up">
+        <div class="text-center mb-14">
           <h2 id="faq-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark tracking-tight mb-4">Frequently Asked Questions</h2>
           <div class="w-16 h-1 bg-accent mx-auto mb-4"></div>
         </div>
 
-        <div class="space-y-4 fade-up" id="faq-accordion">
+        <div class="space-y-4" id="faq-accordion">
           <!-- FAQ 1 -->
           <div class="border border-border rounded-xl overflow-hidden">
             <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left bg-bg hover:bg-brand-vlight transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-inset" aria-expanded="false" aria-controls="faq-1">
@@ -540,7 +549,7 @@
     <section class="relative py-12 lg:py-20 bg-brand-dark overflow-hidden grain">
 
       <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="fade-up">
+        <div>
           <div class="w-12 h-1 bg-accent mx-auto mb-6"></div>
           <h2 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight" style="letter-spacing: -0.03em; line-height: 1.15;">
             Ready to Work Together?
@@ -574,7 +583,7 @@
         <!-- Column 1: Logo & Tagline -->
         <div>
           <a href="index.html" class="inline-block mb-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded" aria-label="Western PA Supply Co home">
-            <img src="images/westernpasuppplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-12 w-auto opacity-90">
+            <img src="images/westernpasupplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-12 w-auto opacity-90">
           </a>
           <p class="text-white/70 text-sm" style="line-height: 1.7;">
             Locally owned building and construction supply serving the Greater Pittsburgh area. True Value member store.

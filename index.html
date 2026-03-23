@@ -82,33 +82,33 @@
   <!-- Schema.org LocalBusiness JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Western PA Supply Co",
-    "description": "Building and construction supply company serving contractors, builders, and homeowners in the Greater Pittsburgh area. True Value member store.",
-    "image": "https://westernpasupply.com/images/westernpasupplylogowhitebg.png",
-    "telephone": "(412) 760-4621",
-    "email": "info@westernpasupply.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "3561 Valley Drive",
-      "addressLocality": "Pittsburgh",
-      "addressRegion": "PA",
-      "postalCode": "15236",
-      "addressCountry": "US"
+   "@context": "https://schema.org",
+   "@type": "LocalBusiness",
+   "name": "Western PA Supply Co",
+   "description": "Building and construction supply company serving contractors, builders, and homeowners in the Greater Pittsburgh area. True Value member store.",
+   "image": "https://westernpasupply.com/images/westernpasupplylogowhitebg.png",
+   "telephone": "(412) 760-4621",
+   "email": "info@westernpasupply.com",
+   "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "3561 Valley Drive",
+     "addressLocality": "Pittsburgh",
+     "addressRegion": "PA",
+     "postalCode": "15236",
+     "addressCountry": "US"
     },
-    "url": "https://westernpasupply.com",
-    "sameAs": [],
-    "openingHours": "Mo-Fr 07:00-17:00, Sa 08:00-14:00",
-    "priceRange": "$$",
-    "areaServed": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 40.3551,
-        "longitude": -79.9777
+   "url": "https://westernpasupply.com",
+   "sameAs": [],
+   "openingHours": "Mo-Fr 07:00-17:00, Sa 08:00-14:00",
+   "priceRange": "$$",
+   "areaServed": {
+     "@type": "GeoCircle",
+     "geoMidpoint": {
+       "@type": "GeoCoordinates",
+       "latitude": 40.3551,
+       "longitude": -79.9777
       },
-      "geoRadius": "50"
+     "geoRadius": "50"
     }
   }
   </script>
@@ -149,7 +149,7 @@
 
           <!-- Desktop Nav Links -->
           <div class="hidden lg:flex items-center gap-8">
-            <a href="index.html" class="nav-link active font-heading text-sm uppercase tracking-wider text-brand hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2">Home</a>
+            <a href="index.html" aria-current="page" class="nav-link active font-heading text-sm uppercase tracking-wider text-brand hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2">Home</a>
             <a href="about.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2">About</a>
 
             <!-- Products Dropdown -->
@@ -205,7 +205,7 @@
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
           </button>
         </div>
-        <a href="index.html" class="font-heading text-lg uppercase tracking-wider text-brand bg-brand-vlight hover:text-brand px-4 py-3 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Home</a>
+        <a href="index.html" class="font-heading text-lg uppercase tracking-wider text-brand bg-brand-vlight hover:text-brand px-4 py-3 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-current="page">Home</a>
         <a href="about.html" class="font-heading text-lg uppercase tracking-wider text-text hover:text-brand hover:bg-brand-vlight px-4 py-3 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">About</a>
 
         <!-- Mobile Products Accordion -->
@@ -373,14 +373,14 @@
     <!-- ========== WHAT WE CARRY — PHOTO GRID + ICON ROW ========== -->
     <section class="py-12 lg:py-20 bg-bg" aria-labelledby="products-heading">
       <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-14 fade-up">
+        <div class="text-center mb-14">
           <h2 id="products-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark tracking-tight mb-4">What we carry</h2>
           <div class="w-16 h-1 bg-accent mx-auto mb-4"></div>
           <p class="text-text-secondary text-lg max-w-3xl mx-auto">From foundation to finish, we stock the supplies you need to get the job done right.</p>
         </div>
 
         <!-- Top 8: Photo Cards -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 mb-12 fade-up">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 mb-12">
           <!-- Concrete & Masonry -->
           <a href="products/concrete-masonry.html" class="group relative rounded-2xl overflow-hidden aspect-[4/3]" style="box-shadow: 0 4px 20px rgba(47,87,51,0.08);">
             <img src="images/stock/concrete-masonry.jpg" alt="Concrete and masonry supplies" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" style="transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);">
@@ -470,14 +470,14 @@
     <!-- ========== HOW IT WORKS (PROCESS) ========== -->
     <section class="py-12 lg:py-20 bg-white" aria-labelledby="process-heading">
       <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-14 fade-up">
+        <div class="text-center mb-14">
           <h2 id="process-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark tracking-tight mb-4">How It Works</h2>
           <div class="w-16 h-1 bg-accent mx-auto mb-4"></div>
           <p class="text-text-secondary text-lg max-w-2xl mx-auto">Getting the supplies you need is simple. Here's how we make it easy.</p>
         </div>
 
         <!-- Timeline — Desktop: horizontal with connector line, Mobile: vertical -->
-        <div class="fade-up">
+        <div>
           <!-- Desktop timeline -->
           <div class="hidden lg:block relative">
             <!-- Connector line -->
@@ -581,7 +581,7 @@
           </div>
         </div>
 
-        <div class="text-center mt-10 fade-up">
+        <div class="text-center mt-10">
           <a href="contact.html" class="inline-flex items-center justify-center gap-2 bg-brand hover:bg-accent-dark text-white font-heading text-base uppercase tracking-wide font-600 px-7 py-3.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 transition-colors duration-200">
             Get Started
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
@@ -594,14 +594,14 @@
     <section class="py-12 lg:py-20 bg-brand-dark" aria-labelledby="why-heading">
       <div class="max-w-7xl mx-auto px-6">
         <!-- Section Header -->
-        <div class="text-center mb-14 fade-up">
+        <div class="text-center mb-14">
           <h2 id="why-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4">Why Choose Western PA Supply</h2>
           <div class="w-16 h-1 bg-accent mx-auto mb-4"></div>
           <p class="text-white/70 text-lg max-w-2xl mx-auto">National buying power. Local expertise. The best value for your building projects.</p>
         </div>
 
         <!-- 2x2 Stat Blocks -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 fade-up">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
           <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-8 border border-white/10">
             <h3 class="font-heading text-xl font-bold text-accent mb-2 tracking-tight">True Value Buying Power</h3>
             <p class="text-white/60 text-sm">Access to thousands of products through the True Value network at competitive wholesale pricing — savings we pass directly to you.</p>
@@ -626,14 +626,14 @@
     <!-- REPLACE WITH REAL REVIEWS -->
     <section class="py-12 lg:py-20 bg-brand-vlight" aria-labelledby="testimonials-heading">
       <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-14 fade-up">
+        <div class="text-center mb-14">
           <h2 id="testimonials-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark tracking-tight mb-4">What Our Customers Say</h2>
           <div class="w-16 h-1 bg-accent mx-auto mb-4"></div>
           <p class="text-text-secondary text-lg max-w-2xl mx-auto">Contractors and homeowners across Pittsburgh trust Western PA Supply for their projects.</p>
         </div>
 
         <!-- Carousel -->
-        <div class="relative fade-up">
+        <div class="relative">
           <!-- Desktop arrows -->
           <button id="reviews-prev" class="hidden lg:flex absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-11 h-11 items-center justify-center rounded-full bg-white border border-border hover:bg-brand-vlight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand transition-colors duration-200" aria-label="Previous review" style="box-shadow: 0 2px 8px rgba(47,87,51,0.1);">
             <svg class="w-5 h-5 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
@@ -758,7 +758,7 @@
       <div class="max-w-7xl mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <!-- Image Side -->
-          <div class="fade-up order-2 lg:order-1">
+          <div class="order-2 lg:order-1">
             <div class="relative rounded-2xl overflow-hidden" style="box-shadow: 0 12px 40px rgba(47, 87, 51, 0.15), 0 2px 8px rgba(47, 87, 51, 0.08);">
               <img src="images/hero-handshake.jpg" alt="Handshake representing trusted partnership" class="w-full h-auto" loading="lazy">
               <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/30 to-transparent"></div>
@@ -766,7 +766,7 @@
           </div>
 
           <!-- Text Side -->
-          <div class="fade-up order-1 lg:order-2">
+          <div class="order-1 lg:order-2">
             <h2 id="about-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark tracking-tight mb-4">Locally Owned, Community Driven</h2>
             <div class="w-16 h-1 bg-accent mb-6"></div>
             <p class="text-text mb-4">Founded in 2025, Western PA Supply Co is a locally owned building and construction supply company proudly serving the Greater Pittsburgh area. As a True Value member store, we combine national buying power with local expertise and personalized service.</p>
@@ -785,7 +785,7 @@
       <div class="relative z-10 max-w-6xl mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <!-- Left: Text + Phone -->
-          <div class="text-center lg:text-left fade-up">
+          <div class="text-center lg:text-left">
             <h2 id="cta-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4">Get Your <span class="text-accent">Free</span> Quote Today</h2>
             <div class="w-16 h-1 bg-accent mb-6 mx-auto lg:mx-0"></div>
             <p class="text-white/80 text-lg mb-8 max-w-lg mx-auto lg:mx-0">Whether you are a contractor, builder, or homeowner, we have the supplies you need. Stop by our store, call us, or fill out the form and we'll get back to you within one business day.</p>
@@ -796,7 +796,7 @@
           </div>
 
           <!-- Right: Mini Form -->
-          <div class="fade-up">
+          <div>
             <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
               <h3 class="font-heading text-xl font-600 text-white mb-6 tracking-tight">Request a Quick Quote</h3>
               <form class="space-y-4" action="contact.html" method="get">
@@ -832,7 +832,7 @@
         <!-- Column 1: Logo & Tagline -->
         <div>
           <a href="index.html" class="inline-block mb-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded" aria-label="Western PA Supply Co home">
-            <img src="images/westernpasuppplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-12 w-auto opacity-90">
+            <img src="images/westernpasupplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-12 w-auto opacity-90">
           </a>
           <p class="text-white/60 text-sm mb-3">Your local source for building materials, construction supplies, tools, and hardware in the Greater Pittsburgh area.</p>
           <p class="font-heading text-sm uppercase tracking-wider text-white/70 font-500">Tools &middot; Materials &middot; Lumber</p>

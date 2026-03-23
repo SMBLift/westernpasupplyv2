@@ -57,8 +57,10 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Western PA Supply Co",
-    "description": "Grouts, epoxy systems, bonding agents, and adhesives at Western PA Supply in Pittsburgh, PA.",
+    "description": "Building and construction supply company serving contractors, builders, and homeowners in the Greater Pittsburgh area. True Value member store.",
+    "image": "https://westernpasupply.com/images/westernpasupplylogowhitebg.png",
     "telephone": "(412) 760-4621",
+    "email": "info@westernpasupply.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "3561 Valley Drive",
@@ -67,27 +69,29 @@
       "postalCode": "15236",
       "addressCountry": "US"
     },
-    "url": "https://westernpasupply.com"
+    "url": "https://westernpasupply.com",
+    "sameAs": [],
+    "openingHours": "Mo-Fr 07:00-17:00, Sa 08:00-14:00",
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.3551,
+        "longitude": -79.9777
+      },
+      "geoRadius": "50"
+    }
   }
   </script>
-  <style>
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-      }
-    }
-  </style>
-  <link rel="preload" as="image" href="../images/stock/hero-grout-epoxy.jpg">
 </head>
-<body class="font-body text-text bg-bg pb-20 lg:pb-0">
+<body class="font-body text-text bg-bg pb-20 lg:pb-0" style="line-height: 1.7;">
 
   <!-- ========== TOP BAR + HEADER ========== -->
-  <header class="w-full z-50 relative">
+  <header id="site-header" class="w-full z-50 sticky top-0">
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- Top Bar -->
+    <div class="top-bar-wrap">
     <div class="bg-dark text-white/90 text-sm font-body hidden lg:block h-7">
       <div class="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
         <span class="flex items-center gap-1.5">
@@ -100,6 +104,8 @@
         </a>
       </div>
     </div>
+
+    </div><!-- /top-bar-wrap -->
 
     <!-- Main Nav -->
     <nav class="bg-white border-b border-border" aria-label="Main navigation">
@@ -116,7 +122,7 @@
 
           <!-- Products Dropdown -->
           <div class="services-trigger relative">
-            <a href="../products.html" class="active nav-link font-heading text-sm uppercase tracking-wider text-brand transition-colors duration-200 flex items-center gap-1" aria-haspopup="true">
+            <a href="../products.html" aria-current="page" class="active nav-link font-heading text-sm uppercase tracking-wider text-brand transition-colors duration-200 flex items-center gap-1" aria-haspopup="true">
               Products
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
             </a>
@@ -187,7 +193,7 @@
             <a href="tools-equipment.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Tools &amp; Equipment</a>
             <a href="fasteners-hardware.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Fasteners &amp; Hardware</a>
             <a href="joint-sealant-expansion.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Joint Sealant &amp; Expansion</a>
-            <a href="grout-epoxy.html" class="text-sm text-brand font-semibold bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Grout &amp; Epoxy</a>
+            <a href="grout-epoxy.html" aria-current="page" class="text-sm text-brand font-semibold bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Grout &amp; Epoxy</a>
             <a href="repair-products.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Repair Products</a>
             <a href="paint-stain.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Paint &amp; Stain</a>
             <a href="plumbing.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Plumbing</a>
@@ -260,10 +266,10 @@
     <!-- ===== PRODUCTS GRID ===== -->
     <section class="pb-20 lg:pb-28">
       <div class="max-w-7xl mx-auto px-4">
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 stagger-children">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <!-- Product 1 -->
-          <div class="fade-up bg-white rounded-xl border border-border p-8 card-hover">
+          <div class="bg-white rounded-xl border border-border p-8 card-hover">
             <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-6">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/><path d="M8 7v10M12 7v10M16 7v10"/></svg>
             </div>
@@ -272,7 +278,7 @@
           </div>
 
           <!-- Product 2 -->
-          <div class="fade-up bg-white rounded-xl border border-border p-8 card-hover">
+          <div class="bg-white rounded-xl border border-border p-8 card-hover">
             <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-6">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
@@ -281,7 +287,7 @@
           </div>
 
           <!-- Product 3 -->
-          <div class="fade-up bg-white rounded-xl border border-border p-8 card-hover">
+          <div class="bg-white rounded-xl border border-border p-8 card-hover">
             <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-6">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 10H3M21 6H3M21 14H3M21 18H3"/></svg>
             </div>
@@ -290,7 +296,7 @@
           </div>
 
           <!-- Product 4 -->
-          <div class="fade-up bg-white rounded-xl border border-border p-8 card-hover">
+          <div class="bg-white rounded-xl border border-border p-8 card-hover">
             <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-6">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20"/></svg>
             </div>
@@ -299,7 +305,7 @@
           </div>
 
           <!-- Product 5 -->
-          <div class="fade-up bg-white rounded-xl border border-border p-8 card-hover">
+          <div class="bg-white rounded-xl border border-border p-8 card-hover">
             <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-6">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
             </div>
@@ -308,7 +314,7 @@
           </div>
 
           <!-- Product 6 -->
-          <div class="fade-up bg-white rounded-xl border border-border p-8 card-hover">
+          <div class="bg-white rounded-xl border border-border p-8 card-hover">
             <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-6">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2L12 22M8 6l4-4 4 4M8 18l4 4 4-4"/></svg>
             </div>
@@ -384,7 +390,7 @@
 
         <!-- Col 1: About -->
         <div>
-          <img src="../images/westernpasuppplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-12 mb-4 opacity-90">
+          <img src="../images/westernpasupplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-12 mb-4 opacity-90">
           <p class="text-white/60 text-sm leading-relaxed">Your trusted source for concrete, masonry, and building supplies in the Greater Pittsburgh area.</p>
         </div>
 

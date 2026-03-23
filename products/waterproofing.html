@@ -57,8 +57,10 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Western PA Supply Co",
-    "description": "Building materials, masonry supplies, and hardware in Pittsburgh, PA.",
+    "description": "Building and construction supply company serving contractors, builders, and homeowners in the Greater Pittsburgh area. True Value member store.",
+    "image": "https://westernpasupply.com/images/westernpasupplylogowhitebg.png",
     "telephone": "(412) 760-4621",
+    "email": "info@westernpasupply.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "3561 Valley Drive",
@@ -67,30 +69,32 @@
       "postalCode": "15236",
       "addressCountry": "US"
     },
-    "url": "https://westernpasupply.com"
+    "url": "https://westernpasupply.com",
+    "sameAs": [],
+    "openingHours": "Mo-Fr 07:00-17:00, Sa 08:00-14:00",
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.3551,
+        "longitude": -79.9777
+      },
+      "geoRadius": "50"
+    }
   }
   </script>
-  <style>
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-      }
-    }
-  </style>
-  <link rel="preload" as="image" href="../images/stock/hero-waterproofing.jpg">
 </head>
-<body class="font-body text-text bg-bg pb-20 lg:pb-0">
+<body class="font-body text-text bg-bg pb-20 lg:pb-0" style="line-height: 1.7;">
 
     <!-- ============================================
        HEADER
        ============================================ -->
-  <header class="w-full z-50 relative">
+  <header id="site-header" class="w-full z-50 sticky top-0">
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- ========== TOP BAR ========== -->
+    <div class="top-bar-wrap">
     <div class="bg-dark text-white/90 text-sm font-body hidden lg:block h-7">
       <div class="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
         <span class="flex items-center gap-1.5">
@@ -103,6 +107,7 @@
         </a>
       </div>
     </div>
+    </div><!-- /top-bar-wrap -->
 
     <!-- Main Navigation -->
     <nav class="bg-white border-b border-border" aria-label="Main navigation">
@@ -115,7 +120,7 @@
             <a href="../index.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2">Home</a>
             <a href="../about.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2">About</a>
             <div class="services-trigger relative">
-              <a href="../products.html" class="nav-link active font-heading text-sm uppercase tracking-wider text-brand hover:text-brand transition-colors duration-200 flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2" aria-haspopup="true">
+              <a href="../products.html" aria-current="page" class="nav-link active font-heading text-sm uppercase tracking-wider text-brand hover:text-brand transition-colors duration-200 flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2" aria-haspopup="true">
                 Products
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
               </a>
@@ -173,7 +178,7 @@
               <a href="concrete-masonry.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Concrete &amp; Masonry</a>
               <a href="chimney-fireplace.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Chimney &amp; Fireplace</a>
               <a href="curing-sealing.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Curing &amp; Sealing</a>
-              <a href="waterproofing.html" class="text-sm text-brand font-semibold bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Waterproofing</a>
+              <a href="waterproofing.html" aria-current="page" class="text-sm text-brand font-semibold bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Waterproofing</a>
               <a href="tools-equipment.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Tools &amp; Equipment</a>
               <a href="fasteners-hardware.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Fasteners &amp; Hardware</a>
               <a href="joint-sealant-expansion.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Joint Sealant &amp; Expansion</a>
@@ -240,10 +245,10 @@
         </div>
 
         <!-- Product Cards Grid -->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
           <!-- Card 1: Foundation Waterproofing -->
-          <div class="fade-up bg-white rounded-xl border border-border p-6 card-hover">
+          <div class="bg-white rounded-xl border border-border p-6 card-hover">
             <div class="w-12 h-12 bg-brand-vlight rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
             </div>
@@ -252,7 +257,7 @@
           </div>
 
           <!-- Card 2: Drainage Products -->
-          <div class="fade-up bg-white rounded-xl border border-border p-6 card-hover">
+          <div class="bg-white rounded-xl border border-border p-6 card-hover">
             <div class="w-12 h-12 bg-brand-vlight rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
             </div>
@@ -261,7 +266,7 @@
           </div>
 
           <!-- Card 3: Sheet Membranes -->
-          <div class="fade-up bg-white rounded-xl border border-border p-6 card-hover">
+          <div class="bg-white rounded-xl border border-border p-6 card-hover">
             <div class="w-12 h-12 bg-brand-vlight rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zm0 8a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2zm0 8a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2z"/></svg>
             </div>
@@ -270,7 +275,7 @@
           </div>
 
           <!-- Card 4: Liquid-Applied Membranes -->
-          <div class="fade-up bg-white rounded-xl border border-border p-6 card-hover">
+          <div class="bg-white rounded-xl border border-border p-6 card-hover">
             <div class="w-12 h-12 bg-brand-vlight rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
             </div>
@@ -279,7 +284,7 @@
           </div>
 
           <!-- Card 5: Dampproofing -->
-          <div class="fade-up bg-white rounded-xl border border-border p-6 card-hover">
+          <div class="bg-white rounded-xl border border-border p-6 card-hover">
             <div class="w-12 h-12 bg-brand-vlight rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
             </div>
@@ -288,7 +293,7 @@
           </div>
 
           <!-- Card 6: Water Stops -->
-          <div class="fade-up bg-white rounded-xl border border-border p-6 card-hover">
+          <div class="bg-white rounded-xl border border-border p-6 card-hover">
             <div class="w-12 h-12 bg-brand-vlight rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg>
             </div>
@@ -308,7 +313,7 @@
           <div class="w-12 h-1 bg-accent mx-auto mt-4"></div>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 fade-up">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <a href="curing-sealing.html" class="group block bg-bg rounded-xl border border-border p-6 text-center card-hover">
             <div class="w-12 h-12 bg-brand-vlight rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-brand transition-colors">
               <svg class="w-6 h-6 text-brand group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
@@ -358,7 +363,7 @@
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
         <!-- Logo & Tagline -->
         <div>
-          <img src="../images/westernpasuppplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-12 w-auto mb-4 opacity-90">
+          <img src="../images/westernpasupplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-12 w-auto mb-4 opacity-90">
           <p class="text-white/60 text-sm leading-relaxed">Your trusted source for building materials, masonry supplies, and hardware in Pittsburgh, PA.</p>
         </div>
 

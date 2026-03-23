@@ -69,7 +69,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Western PA Supply Co",
-    "description": "Locally owned building and construction supply company serving the Greater Pittsburgh area. True Value member store.",
+    "description": "Building and construction supply company serving contractors, builders, and homeowners in the Greater Pittsburgh area. True Value member store.",
     "image": "https://westernpasupply.com/images/westernpasupplylogowhitebg.png",
     "telephone": "(412) 760-4621",
     "email": "info@westernpasupply.com",
@@ -84,30 +84,29 @@
     "url": "https://westernpasupply.com",
     "sameAs": [],
     "openingHours": "Mo-Fr 07:00-17:00, Sa 08:00-14:00",
-    "priceRange": "$$"
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.3551,
+        "longitude": -79.9777
+      },
+      "geoRadius": "50"
+    }
   }
   </script>
-  <style>
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-      }
-    }
-  </style>
-  <link rel="preload" as="image" href="../images/stock/hero-electrical.jpg">
 </head>
-<body class="font-body text-text bg-bg pb-20 lg:pb-0">
+<body class="font-body text-text bg-bg pb-20 lg:pb-0" style="line-height: 1.7;">
 
   <!-- ============================================
        HEADER
        ============================================ -->
-  <header class="w-full z-50 relative">
+  <header id="site-header" class="w-full z-50 sticky top-0">
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- ========== TOP BAR ========== -->
+    <div class="top-bar-wrap">
     <div class="bg-dark text-white/90 text-sm font-body hidden lg:block h-7">
       <div class="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
         <span class="flex items-center gap-1.5">
@@ -120,6 +119,7 @@
         </a>
       </div>
     </div>
+    </div><!-- /top-bar-wrap -->
 
     <!-- Main Navigation -->
     <nav class="bg-white border-b border-border" aria-label="Main navigation">
@@ -138,7 +138,7 @@
 
             <!-- Products Dropdown -->
             <div class="services-trigger relative">
-              <a href="../products.html" class="nav-link active font-heading text-sm uppercase tracking-wider text-brand transition-colors duration-200 flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2" aria-haspopup="true">
+              <a href="../products.html" aria-current="page" class="nav-link active font-heading text-sm uppercase tracking-wider text-brand transition-colors duration-200 flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2" aria-haspopup="true">
                 Products
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
               </a>
@@ -212,7 +212,7 @@
               <a href="repair-products.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Repair Products</a>
               <a href="paint-stain.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Paint &amp; Stain</a>
               <a href="plumbing.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Plumbing</a>
-              <a href="electrical.html" class="text-sm text-brand font-semibold bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Electrical</a>
+              <a href="electrical.html" aria-current="page" class="text-sm text-brand font-semibold bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Electrical</a>
               <a href="outdoor-lawn-garden.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Outdoor &amp; Lawn and Garden</a>
               <a href="safety-ppe.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Safety &amp; PPE</a>
               <a href="cleaning-janitorial.html" class="text-sm text-text-secondary hover:text-brand hover:bg-brand-vlight px-4 py-2 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Cleaning &amp; Janitorial</a>
@@ -283,10 +283,10 @@
         </div>
 
         <!-- Product Grid -->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 stagger-children">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <!-- Product 1 -->
-          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+          <div class="bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
             </div>
@@ -297,7 +297,7 @@
           </div>
 
           <!-- Product 2 -->
-          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+          <div class="bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
             </div>
@@ -308,7 +308,7 @@
           </div>
 
           <!-- Product 3 -->
-          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+          <div class="bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
             </div>
@@ -319,7 +319,7 @@
           </div>
 
           <!-- Product 4 -->
-          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+          <div class="bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
             </div>
@@ -330,7 +330,7 @@
           </div>
 
           <!-- Product 5 -->
-          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+          <div class="bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
             </div>
@@ -341,7 +341,7 @@
           </div>
 
           <!-- Product 6 -->
-          <div class="fade-up bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+          <div class="bg-bg rounded-2xl p-8 card-hover border border-border" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h8m-8 6h16"></path></svg>
             </div>
@@ -365,10 +365,10 @@
           </h2>
         </div>
 
-        <div class="grid sm:grid-cols-3 gap-8 stagger-children">
+        <div class="grid sm:grid-cols-3 gap-8">
 
           <!-- Related 1 -->
-          <a href="tools-equipment.html" class="fade-up group bg-white rounded-2xl p-8 card-hover border border-border text-center block" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+          <a href="tools-equipment.html" class="group bg-white rounded-2xl p-8 card-hover border border-border text-center block" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5 mx-auto group-hover:bg-brand transition-colors duration-200">
               <svg class="w-7 h-7 text-brand group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
             </div>
@@ -380,7 +380,7 @@
           </a>
 
           <!-- Related 2 -->
-          <a href="plumbing.html" class="fade-up group bg-white rounded-2xl p-8 card-hover border border-border text-center block" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+          <a href="plumbing.html" class="group bg-white rounded-2xl p-8 card-hover border border-border text-center block" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5 mx-auto group-hover:bg-brand transition-colors duration-200">
               <svg class="w-7 h-7 text-brand group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
             </div>
@@ -392,7 +392,7 @@
           </a>
 
           <!-- Related 3 -->
-          <a href="safety-ppe.html" class="fade-up group bg-white rounded-2xl p-8 card-hover border border-border text-center block" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
+          <a href="safety-ppe.html" class="group bg-white rounded-2xl p-8 card-hover border border-border text-center block" style="box-shadow: 0 2px 8px rgba(47, 87, 51, 0.06);">
             <div class="w-14 h-14 rounded-xl bg-brand-vlight flex items-center justify-center mb-5 mx-auto group-hover:bg-brand transition-colors duration-200">
               <svg class="w-7 h-7 text-brand group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
             </div>
@@ -411,7 +411,7 @@
     <section class="relative py-20 lg:py-28 bg-brand-dark overflow-hidden grain">
 
       <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="fade-up">
+        <div>
           <div class="w-12 h-1 bg-accent mx-auto mb-6"></div>
           <h2 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight" style="letter-spacing: -0.03em; line-height: 1.15;">
             Need Help Finding the Right Product?
@@ -445,7 +445,7 @@
         <!-- Column 1: Logo & Tagline -->
         <div>
           <a href="../index.html" class="inline-block mb-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded" aria-label="Western PA Supply Co home">
-            <img src="../images/westernpasuppplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-12 w-auto opacity-90">
+            <img src="../images/westernpasupplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-12 w-auto opacity-90">
           </a>
           <p class="text-white/70 text-sm" style="line-height: 1.7;">
             Locally owned building and construction supply serving the Greater Pittsburgh area. True Value member store.

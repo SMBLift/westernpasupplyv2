@@ -57,7 +57,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Western PA Supply Co",
-    "description": "Building & Construction Supply, True Value Member Store serving the Greater Pittsburgh area.",
+    "description": "Building and construction supply company serving contractors, builders, and homeowners in the Greater Pittsburgh area. True Value member store.",
     "image": "https://westernpasupply.com/images/westernpasupplylogowhitebg.png",
     "telephone": "(412) 760-4621",
     "email": "info@westernpasupply.com",
@@ -69,26 +69,23 @@
       "postalCode": "15236",
       "addressCountry": "US"
     },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "07:00",
-        "closes": "17:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "08:00",
-        "closes": "14:00"
-      }
-    ],
     "url": "https://westernpasupply.com",
-    "sameAs": []
+    "sameAs": [],
+    "openingHours": "Mo-Fr 07:00-17:00, Sa 08:00-14:00",
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.3551,
+        "longitude": -79.9777
+      },
+      "geoRadius": "50"
+    }
   }
   </script>
 </head>
-<body class="font-body text-text bg-bg leading-relaxed pb-20 lg:pb-0">
+<body class="font-body text-text bg-bg pb-20 lg:pb-0" style="line-height: 1.7;">
 
     <!-- ============================================
        HEADER
@@ -155,7 +152,7 @@
             </div>
 
             <a href="vendors.html" class="nav-link font-heading text-sm uppercase tracking-wider text-text hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2">Vendors</a>
-            <a href="services.html" class="nav-link active font-heading text-sm uppercase tracking-wider text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2">Services</a>
+            <a href="services.html" aria-current="page" class="nav-link active font-heading text-sm uppercase tracking-wider text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded px-3 py-2">Services</a>
             <a href="contact.html" class="inline-block font-heading text-sm uppercase tracking-wider bg-accent hover:bg-accent-dark text-white px-6 py-2.5 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">Contact Us</a>
           </div>
 
@@ -211,7 +208,7 @@
         </div>
 
         <a href="vendors.html" class="font-heading text-lg uppercase tracking-wider text-text hover:text-brand hover:bg-brand-vlight px-4 py-3 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Vendors</a>
-        <a href="services.html" class="font-heading text-lg uppercase tracking-wider text-brand bg-brand-vlight px-4 py-3 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Services</a>
+        <a href="services.html" class="font-heading text-lg uppercase tracking-wider text-brand bg-brand-vlight px-4 py-3 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-current="page">Services</a>
         <a href="contact.html" class="mt-4 font-heading text-base uppercase tracking-wider text-center bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">Contact Us</a>
       </nav>
 
@@ -258,7 +255,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <!-- Contractor Accounts -->
-          <div class="fade-up bg-bg rounded-2xl border border-border p-8 card-hover flex flex-col" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
+          <div class="bg-bg rounded-2xl border border-border p-8 card-hover flex flex-col" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
             <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-6">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                 <path d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15a2.25 2.25 0 012.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z"/>
@@ -273,7 +270,7 @@
           </div>
 
           <!-- Project Consultation -->
-          <div class="fade-up bg-bg rounded-2xl border border-border p-8 card-hover flex flex-col" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
+          <div class="bg-bg rounded-2xl border border-border p-8 card-hover flex flex-col" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
             <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-6">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                 <path d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/>
@@ -288,7 +285,7 @@
           </div>
 
           <!-- Local Delivery -->
-          <div class="fade-up bg-bg rounded-2xl border border-border p-8 card-hover flex flex-col" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
+          <div class="bg-bg rounded-2xl border border-border p-8 card-hover flex flex-col" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
             <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-6">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                 <path d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/>
@@ -303,7 +300,7 @@
           </div>
 
           <!-- Special Orders -->
-          <div class="fade-up bg-bg rounded-2xl border border-border p-8 card-hover flex flex-col" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
+          <div class="bg-bg rounded-2xl border border-border p-8 card-hover flex flex-col" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
             <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-6">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                 <path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
@@ -318,7 +315,7 @@
           </div>
 
           <!-- Competitive Pricing -->
-          <div class="fade-up bg-bg rounded-2xl border border-border p-8 card-hover flex flex-col" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
+          <div class="bg-bg rounded-2xl border border-border p-8 card-hover flex flex-col" style="box-shadow: 0 4px 20px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.02);">
             <div class="w-14 h-14 bg-brand-vlight rounded-xl flex items-center justify-center mb-6">
               <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                 <path d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"/>
@@ -340,7 +337,7 @@
     <!-- ======== CTA SECTION ======== -->
     <section class="relative py-12 lg:py-20 bg-brand-dark overflow-hidden">
       <div class="grain absolute inset-0"></div>
-      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center fade-up">
+      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <h2 class="font-heading text-3xl md:text-4xl text-white mb-4" style="letter-spacing:-0.03em;">Ready to Get Started?</h2>
         <div class="w-16 h-0.5 bg-accent mx-auto mb-8"></div>
         <p class="text-white/80 text-lg mb-10" style="line-height:1.7;">Whether you need a contractor account, project advice, or a delivery quote, we're here to help.</p>
@@ -365,7 +362,7 @@
         <!-- Col 1: Logo + Tagline -->
         <div>
           <a href="index.html">
-            <img src="images/westernpasuppplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-10 w-auto mb-4 opacity-90">
+            <img src="images/westernpasupplylogowhitetext.png" alt="Western PA Supply Co logo" class="h-10 w-auto mb-4 opacity-90">
           </a>
           <p class="text-white/50 text-sm">Tools &middot; Materials &middot; Lumber</p>
         </div>
@@ -416,7 +413,6 @@
             <li class="flex items-start gap-3 pt-2">
               <svg class="w-4 h-4 mt-0.5 text-accent flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
               <span class="text-white/60">
-                <!-- PLACEHOLDER HOURS -->
                 Mon&ndash;Fri: 7:00 AM &ndash; 5:00 PM<br>
                 Sat: 8:00 AM &ndash; 2:00 PM<br>
                 Sun: Closed

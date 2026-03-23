@@ -22,35 +22,6 @@
   }
 }
 
-/* Scroll animation base states */
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.fade-in.visible {
-  opacity: 1;
-}
-
-/* Stagger children */
-.stagger-children > *:nth-child(1) { transition-delay: 0ms; }
-.stagger-children > *:nth-child(2) { transition-delay: 100ms; }
-.stagger-children > *:nth-child(3) { transition-delay: 200ms; }
-.stagger-children > *:nth-child(4) { transition-delay: 300ms; }
-.stagger-children > *:nth-child(5) { transition-delay: 400ms; }
-.stagger-children > *:nth-child(6) { transition-delay: 500ms; }
-.stagger-children > *:nth-child(7) { transition-delay: 600ms; }
-.stagger-children > *:nth-child(8) { transition-delay: 700ms; }
-
 /* Touch target minimum sizes (WCAG 2.5.8) */
 header a:not(.skip-link),
 header button,
