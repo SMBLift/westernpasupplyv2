@@ -64,10 +64,8 @@
   <text x="345" y="232" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#1E3B22" letter-spacing="1">PITTSBURGH</text>
 
   <!-- Store location marker -->
-  <circle cx="380" cy="310" r="6" fill="#B85014"/>
-  <circle cx="380" cy="310" r="10" fill="none" stroke="#B85014" stroke-width="2" opacity="0.4"/>
-  <rect x="392" y="302" width="95" height="18" rx="3" fill="#B85014"/>
-  <text x="439" y="314" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" fill="white" letter-spacing="0.3">OUR LOCATION</text>
+  <circle cx="380" cy="310" r="9" fill="#B85014"/>
+  <circle cx="380" cy="310" r="15" fill="none" stroke="#B85014" stroke-width="2" opacity="0.4"/>
 
   <!-- Surrounding communities -->
   <circle cx="300" cy="100" r="3.5" fill="#2F5733" opacity="0.6"/>
@@ -122,5 +120,5 @@
   <text x="48" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#1E3B22" font-weight="600">Western PA Supply</text>
   <line x1="195" y1="542" x2="195" y2="568" stroke="#1E3B22" stroke-width="0.5" opacity="0.2"/>
   <circle cx="215" cy="555" r="5" fill="#2F5733" opacity="0.6"/>
-  <text x="228" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#1E3B22" opacity="0.7" font-weight="600">Service Area</text>
+  <text x="228" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#1E3B22" font-weight="600">Service Area</text>
 </svg>
