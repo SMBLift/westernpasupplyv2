@@ -30,6 +30,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+  <!-- Critical hero styles (prevents FOUC) -->
+  <style>h1{font-size:2.25rem}@media(min-width:768px){h1{font-size:3rem}}@media(min-width:1024px){h1{font-size:3.75rem}}</style>
+
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -374,7 +377,7 @@
     <section class="py-12 lg:py-20 bg-bg" aria-labelledby="products-heading">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-14">
-          <h2 id="products-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark tracking-tight mb-4">What We Carry</h2>
+          <h2 id="products-heading" class="font-heading text-3xl md:text-[38px] font-bold text-brand-dark tracking-tight mb-4">What We Carry</h2>
           <div class="w-16 h-1 bg-accent mx-auto mb-4"></div>
           <p class="text-text-secondary text-lg max-w-3xl mx-auto">From foundation to finish, we stock the supplies you need to get the job done right.</p>
         </div>
@@ -471,7 +474,7 @@
     <section class="py-12 lg:py-20 bg-white" aria-labelledby="process-heading">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-14">
-          <h2 id="process-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark tracking-tight mb-4">How It Works</h2>
+          <h2 id="process-heading" class="font-heading text-3xl md:text-[38px] font-bold text-brand-dark tracking-tight mb-4">How It Works</h2>
           <div class="w-16 h-1 bg-accent mx-auto mb-4"></div>
           <p class="text-text-secondary text-lg max-w-2xl mx-auto">Getting the supplies you need is simple. Here's how we make it easy.</p>
         </div>
@@ -595,7 +598,7 @@
       <div class="max-w-7xl mx-auto px-6">
         <!-- Section Header -->
         <div class="text-center mb-14">
-          <h2 id="why-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4">Why Choose Western PA Supply</h2>
+          <h2 id="why-heading" class="font-heading text-3xl md:text-[38px] font-bold text-white tracking-tight mb-4">Why Choose Western PA Supply</h2>
           <div class="w-16 h-1 bg-accent mx-auto mb-4"></div>
           <p class="text-white/70 text-lg max-w-2xl mx-auto">National buying power. Local expertise. The best value for your building projects.</p>
         </div>
@@ -627,7 +630,7 @@
     <section class="py-12 lg:py-20 bg-brand-vlight" aria-labelledby="testimonials-heading">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-14">
-          <h2 id="testimonials-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark tracking-tight mb-4">What Our Customers Say</h2>
+          <h2 id="testimonials-heading" class="font-heading text-3xl md:text-[38px] font-bold text-brand-dark tracking-tight mb-4">What Our Customers Say</h2>
           <div class="w-16 h-1 bg-accent mx-auto mb-4"></div>
           <p class="text-text-secondary text-lg max-w-2xl mx-auto">Contractors and homeowners across Pittsburgh trust Western PA Supply for their projects.</p>
         </div>
@@ -767,7 +770,7 @@
 
           <!-- Text Side -->
           <div class="order-1 lg:order-2">
-            <h2 id="about-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark tracking-tight mb-4">Locally Owned, Community Driven</h2>
+            <h2 id="about-heading" class="font-heading text-3xl md:text-[38px] font-bold text-brand-dark tracking-tight mb-4">Locally Owned, Community Driven</h2>
             <div class="w-16 h-1 bg-accent mb-6"></div>
             <p class="text-text mb-4">Founded in 2025, Western PA Supply Co is a locally owned building and construction supply company proudly serving the Greater Pittsburgh area. As a True Value Member Store, we combine national buying power with local expertise and personalized service.</p>
             <p class="text-text-secondary mb-8">Whether you are a contractor managing a large-scale project or a homeowner tackling a weekend repair, our knowledgeable team is here to help you find exactly what you need at a price that works for your budget.</p>
@@ -786,7 +789,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <!-- Left: Text + Phone -->
           <div class="text-center lg:text-left">
-            <h2 id="cta-heading" class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4">Get Your <span class="text-accent">Free</span> Quote Today</h2>
+            <h2 id="cta-heading" class="font-heading text-3xl md:text-[38px] font-bold text-white tracking-tight mb-4">Get Your <span class="text-accent">Free</span> Quote Today</h2>
             <div class="w-16 h-1 bg-accent mb-6 mx-auto lg:mx-0"></div>
             <p class="text-white/80 text-lg mb-8 max-w-lg mx-auto lg:mx-0">Whether you are a contractor, builder, or homeowner, we have the supplies you need. Stop by our store, call us, or fill out the form and we'll get back to you within one business day.</p>
             <a href="tel:4127604621" class="inline-flex items-center justify-center gap-3 border-2 border-white/30 text-white hover:bg-accent-dark hover:border-accent-dark font-heading text-lg uppercase tracking-wide font-600 px-8 py-4 rounded-lg btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-dark transition-colors duration-200">
