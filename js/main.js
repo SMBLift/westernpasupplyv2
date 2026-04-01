@@ -103,11 +103,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---- Sticky Header — collapse top bar + add shadow on scroll ----
   const siteHeader = document.getElementById('site-header');
   if (siteHeader) {
+    let headerCollapsed = false;
+    let ticking = false;
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 40) {
-        siteHeader.classList.add('header-scrolled');
-      } else {
-        siteHeader.classList.remove('header-scrolled');
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const y = window.scrollY;
+          if (!headerCollapsed && y > 60) {
+            siteHeader.classList.add('header-scrolled');
+            headerCollapsed = true;
+          } else if (headerCollapsed && y < 5) {
+            siteHeader.classList.remove('header-scrolled');
+            headerCollapsed = false;
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     }, { passive: true });
   }
