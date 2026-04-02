@@ -58,7 +58,7 @@ footer li a {
 
 /* Hero height — scales with viewport but capped for ultrawides */
 .hero-height {
-  min-height: clamp(300px, 40vh, 500px);
+  min-height: clamp(270px, 35vh, 440px);
 }
 
 /* Nav underline animation */
