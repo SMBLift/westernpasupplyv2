@@ -138,7 +138,7 @@ footer li a {
   mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0));
 }
 .logo-scroll {
-  animation: scroll-logos 30s linear infinite;
+  animation: scroll-logos var(--scroll-duration, 30s) linear infinite;
   will-change: transform;
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;

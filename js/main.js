@@ -4,6 +4,15 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ---- Logo Scroll Speed (consistent across all pages) ----
+  const logoScroll = document.querySelector('.logo-scroll');
+  if (logoScroll) {
+    const speed = 50; // pixels per second — consistent regardless of logo count
+    const setWidth = logoScroll.scrollWidth / 4; // 4 duplicate sets
+    const duration = setWidth / speed;
+    logoScroll.style.setProperty('--scroll-duration', duration + 's');
+  }
+
   // ---- Mobile Menu ----
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobile-menu');
