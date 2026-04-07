@@ -238,6 +238,61 @@ footer li a {
   outline-offset: 2px;
 }
 
+/* ========== How It Works — Animations ========== */
+
+/* ========== How It Works — Progressive Fill ========== */
+@keyframes progressive-fill {
+  0% { transform: scaleX(0); }
+  80% { transform: scaleX(1); }
+  90% { transform: scaleX(1); opacity: 1; }
+  100% { transform: scaleX(1); opacity: 0; }
+}
+.line-progressive-fill {
+  position: relative;
+  overflow: hidden;
+}
+.line-progressive-fill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #2F5733, #B85014);
+  transform-origin: left;
+  animation: progressive-fill 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+/* Vertical version (mobile) */
+@keyframes progressive-fill-vertical {
+  0% { transform: scaleY(0); }
+  80% { transform: scaleY(1); }
+  90% { transform: scaleY(1); opacity: 1; }
+  100% { transform: scaleY(1); opacity: 0; }
+}
+.line-progressive-fill-vertical {
+  position: relative;
+  overflow: hidden;
+}
+.line-progressive-fill-vertical::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #2F5733, #B85014);
+  transform-origin: top;
+  animation: progressive-fill-vertical 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+/* Step card hover lift */
+.step-card {
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.step-card:hover {
+  transform: translateY(-6px);
+}
+.step-card:hover .step-circle {
+  box-shadow: 0 0 0 6px rgba(184,80,20,0.2);
+  transform: scale(1.1);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 /* Email word break */
 .break-words {
   overflow-wrap: break-word;
