@@ -87,6 +87,10 @@ footer li a {
   transform: translateY(-8px);
   transition: opacity 0.25s cubic-bezier(0.22, 1, 0.36, 1), transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.25s;
 }
+.services-dropdown > div {
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
+}
 .services-trigger:hover .services-dropdown,
 .services-dropdown:hover {
   opacity: 1;

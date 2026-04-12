@@ -158,6 +158,29 @@ document.addEventListener('DOMContentLoaded', () => {
     positionDropdown(); // initial position
   }
 
+  // ---- Footer Accordion (mobile) ----
+  document.querySelectorAll('.footer-accordion-trigger').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const panel = btn.nextElementSibling;
+      const icon = btn.querySelector('.footer-accordion-icon');
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+      // Close all other panels
+      document.querySelectorAll('.footer-accordion-trigger').forEach(other => {
+        if (other !== btn) {
+          other.setAttribute('aria-expanded', 'false');
+          other.nextElementSibling.style.maxHeight = '0';
+          other.querySelector('.footer-accordion-icon').style.transform = 'rotate(0deg)';
+        }
+      });
+
+      // Toggle this panel
+      btn.setAttribute('aria-expanded', !isOpen);
+      panel.style.maxHeight = isOpen ? '0' : panel.scrollHeight + 'px';
+      icon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+    });
+  });
+
   // ---- Current Year ----
   const yearEl = document.getElementById('current-year');
   if (yearEl) {
