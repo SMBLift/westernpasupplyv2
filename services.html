@@ -36,7 +36,7 @@
         extend: {
           colors: {
             brand: { DEFAULT: '#2F5733', dark: '#1E3B22', light: '#4A7A4F', vlight: '#EBF3EC' },
-            accent: { DEFAULT: '#B85014', dark: '#953F0F', light: '#F3D4BE' },
+            accent: { DEFAULT: '#B85014', dark: '#953F0F', light: '#F3D4BE', bright: '#D8783C' },
             dark: '#1B2118',
             text: { DEFAULT: '#2C2C2C', secondary: '#5A5A5A' },
             bg: '#FAFAF7',
@@ -458,7 +458,7 @@
               <li><a href="about.html" class="block text-sm text-white/70 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-1 transition-colors duration-200">About Us</a></li>
               <li><a href="products.html" class="block text-sm text-white/70 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-1 transition-colors duration-200">Products</a></li>
               <li><a href="vendors.html" class="block text-sm text-white/70 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-1 transition-colors duration-200">Vendors</a></li>
-              <li><a href="services.html" class="block text-sm text-white/70 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-1 transition-colors duration-200">Services</a></li>
+              <li><a href="services.html" class="block text-sm text-accent-bright hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-1 transition-colors duration-200" aria-current="page">Services</a></li>
               <li><a href="contact.html" class="block text-sm text-white/70 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-1 transition-colors duration-200">Contact</a></li>
             </ul>
           </div>
@@ -536,7 +536,7 @@
               <li><a href="about.html" class="block text-sm text-white/70 hover:text-accent py-1.5 transition-colors duration-200">About Us</a></li>
               <li><a href="products.html" class="block text-sm text-white/70 hover:text-accent py-1.5 transition-colors duration-200">Products</a></li>
               <li><a href="vendors.html" class="block text-sm text-white/70 hover:text-accent py-1.5 transition-colors duration-200">Vendors</a></li>
-              <li><a href="services.html" class="block text-sm text-white/70 hover:text-accent py-1.5 transition-colors duration-200">Services</a></li>
+              <li><a href="services.html" class="block text-sm text-accent-bright hover:text-white py-1.5 transition-colors duration-200" aria-current="page">Services</a></li>
               <li><a href="contact.html" class="block text-sm text-white/70 hover:text-accent py-1.5 transition-colors duration-200">Contact</a></li>
             </ul>
           </div>
@@ -609,12 +609,12 @@
   </footer>
 
   <!-- ============ STICKY MOBILE BAR ============ -->
-  <aside class="mobile-bar fixed bottom-0 left-0 right-0 bg-brand-dark z-50 lg:hidden" aria-label="Call us" style="box-shadow: 0 -4px 16px rgba(0,0,0,0.15);">
+  <nav class="mobile-bar fixed bottom-0 left-0 right-0 bg-brand-dark z-50 lg:hidden" aria-label="Quick actions" style="box-shadow: 0 -4px 16px rgba(0,0,0,0.15);">
     <a href="tel:4127604621" class="flex items-center justify-center gap-3 py-4 text-white font-heading uppercase tracking-wider text-sm hover:bg-brand-dark active:bg-brand-dark transition-colors duration-200">
       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
       Call (412) 760-4621
     </a>
-  </aside>
+  </nav>
 
   <!-- Main JS -->
   <script src="js/main.js"></script>
