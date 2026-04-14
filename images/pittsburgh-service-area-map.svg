@@ -40,12 +40,12 @@
   <circle cx="345" cy="250" r="8" fill="#2F5733"/>
   <circle cx="345" cy="250" r="13" fill="none" stroke="#2F5733" stroke-width="2" opacity="0.4"/>
   <circle cx="345" cy="250" r="20" fill="none" stroke="#2F5733" stroke-width="1" opacity="0.15"/>
-  <text x="345" y="232" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#1E3B22" letter-spacing="1">PITTSBURGH</text>
+  <text x="345" y="232" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#1E3B22" letter-spacing="1">PITTSBURGH</text>
 
   <!-- Store location marker -->
   <circle cx="380" cy="310" r="9" fill="#B85014"/>
   <circle cx="380" cy="310" r="15" fill="none" stroke="#B85014" stroke-width="2" opacity="0.4"/>
-  <text x="398" y="315" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#B85014" font-weight="700" letter-spacing="0.5">WESTERN PA SUPPLY</text>
+  <text x="398" y="315" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#B85014" font-weight="700" letter-spacing="0.5">WESTERN PA SUPPLY</text>
 
   <!-- Surrounding communities -->
   <circle cx="300" cy="100" r="3.5" fill="#2F5733" opacity="0.6"/>
@@ -88,8 +88,8 @@
   <circle cx="230" cy="410" r="3" fill="#2F5733" opacity="0.5"/>
   <text x="230" y="425" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#1E3B22" opacity="0.6" font-weight="500">Canonsburg</text>
 
-  <circle cx="535" cy="310" r="3" fill="#2F5733" opacity="0.5"/>
-  <text x="535" y="325" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#1E3B22" opacity="0.6" font-weight="500">Irwin</text>
+  <circle cx="510" cy="340" r="3" fill="#2F5733" opacity="0.5"/>
+  <text x="510" y="355" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#1E3B22" opacity="0.6" font-weight="500">Irwin</text>
 
   <circle cx="580" cy="290" r="3" fill="#2F5733" opacity="0.5"/>
   <text x="580" y="305" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#1E3B22" opacity="0.6" font-weight="500">Greensburg</text>
