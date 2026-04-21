@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
           throw new Error('Submission failed');
         }
       } catch (err) {
-        alert('Something went wrong. Please call us directly at (412) 760-4621.');
+        alert('Something went wrong. Please call us directly at (412) 643-9638.');
       } finally {
         btn.disabled = false;
         btn.textContent = 'Send Message';
