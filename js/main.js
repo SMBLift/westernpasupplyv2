@@ -62,9 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contact-form');
   const formTimestamp = document.getElementById('form-timestamp');
 
-  // Set timestamp on page load
+  // Set timestamps on page load
   if (formTimestamp) {
     formTimestamp.value = Date.now();
+  }
+  const ctaTimestamp = document.getElementById('cta-timestamp');
+  if (ctaTimestamp) {
+    ctaTimestamp.value = Date.now();
   }
 
   if (contactForm) {
@@ -81,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.textContent = 'Sending...';
 
       try {
-        const res = await fetch('WORKER_URL', {
+        const res = await fetch('/submit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)
@@ -105,6 +109,47 @@ document.addEventListener('DOMContentLoaded', () => {
       } finally {
         btn.disabled = false;
         btn.textContent = 'Send Message';
+      }
+    });
+  }
+
+  // ---- CTA Quick Quote Form Handling ----
+  const ctaForm = document.getElementById('cta-form');
+  if (ctaForm) {
+    ctaForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const data = Object.fromEntries(new FormData(form));
+
+      if (data._honeypot) return;
+
+      const btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      try {
+        const res = await fetch('/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        if (res.ok) {
+          form.reset();
+          if (ctaTimestamp) ctaTimestamp.value = Date.now();
+          form.classList.add('hidden');
+          const msg = document.getElementById('cta-form-success');
+          if (msg) {
+            msg.classList.remove('hidden');
+            msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        } else {
+          throw new Error('Submission failed');
+        }
+      } catch (err) {
+        alert('Something went wrong. Please call us directly at (412) 643-9638.');
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Get a Quote';
       }
     });
   }
