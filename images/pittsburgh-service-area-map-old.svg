@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 -10 860 600" fill="none">
+  <!-- Background -->
+  <rect x="-80" y="-10" width="860" height="600" rx="0" fill="#EBF3EC"/>
+
+  <!-- County boundaries — extended to fill zoomed-out view -->
+  <!-- Allegheny County (center) -->
+  <path d="M160 60 L280 45 L400 50 L500 70 L540 130 L560 200 L550 280 L530 350 L490 410 L420 445 L340 460 L260 445 L190 410 L140 350 L120 280 L115 200 L130 130Z" fill="#D6E8D8" fill-opacity="0.5" stroke="#2F5733" stroke-width="1.2" stroke-opacity="0.25"/>
+  <text x="345" y="140" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#2F5733" opacity="0.35" font-weight="600" letter-spacing="2">ALLEGHENY COUNTY</text>
+
+  <!-- Washington County (southwest) — extended south -->
+  <path d="M-80 280 L120 280 L140 350 L190 410 L260 445 L240 530 L-80 590Z" fill="#CDE0CF" fill-opacity="0.35" stroke="#2F5733" stroke-width="1.2" stroke-opacity="0.25"/>
+  <text x="75" y="430" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#2F5733" opacity="0.3" font-weight="600" letter-spacing="1.5">WASHINGTON CO.</text>
+
+  <!-- Westmoreland County (east) — extended -->
+  <path d="M540 130 L780 90 L780 590 L490 590 L490 410 L530 350 L550 280 L560 200Z" fill="#CDE0CF" fill-opacity="0.35" stroke="#2F5733" stroke-width="1.2" stroke-opacity="0.25"/>
+  <text x="660" y="310" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#2F5733" opacity="0.3" font-weight="600" letter-spacing="1.5">WESTMORELAND CO.</text>
+
+  <!-- Butler County (north) — extended -->
+  <path d="M130 -10 L400 -10 L400 50 L280 45 L160 60 L130 130 L115 60Z" fill="#CDE0CF" fill-opacity="0.35" stroke="#2F5733" stroke-width="1.2" stroke-opacity="0.25"/>
+  <text x="265" y="18" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#2F5733" opacity="0.3" font-weight="600" letter-spacing="1.5">BUTLER CO.</text>
+
+  <!-- Beaver County (northwest) — extended -->
+  <path d="M-80 -10 L130 -10 L115 60 L130 130 L115 200 L120 280 L-80 280Z" fill="#CDE0CF" fill-opacity="0.35" stroke="#2F5733" stroke-width="1.2" stroke-opacity="0.25"/>
+  <text x="20" y="165" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#2F5733" opacity="0.3" font-weight="600" letter-spacing="1.5">BEAVER CO.</text>
+
+  <!-- Armstrong County (northeast) — extended -->
+  <path d="M400 -10 L780 -10 L780 90 L540 130 L500 70 L400 50Z" fill="#CDE0CF" fill-opacity="0.35" stroke="#2F5733" stroke-width="1.2" stroke-opacity="0.25"/>
+  <text x="600" y="40" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#2F5733" opacity="0.3" font-weight="600" letter-spacing="1.5">ARMSTRONG CO.</text>
+
+  <!-- Fayette County (southeast) — extended -->
+  <path d="M420 445 L490 410 L490 590 L240 590 L260 445 L340 460Z" fill="#CDE0CF" fill-opacity="0.35" stroke="#2F5733" stroke-width="1.2" stroke-opacity="0.25"/>
+  <text x="400" y="530" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#2F5733" opacity="0.3" font-weight="600" letter-spacing="1.5">FAYETTE CO.</text>
+
+  <!-- Water features - rivers -->
+  <!-- Ohio River -->
+  <path d="M-80 215 Q80 210 140 225 Q180 235 220 240 Q280 248 310 252 Q330 254 345 250" stroke="#93BFD5" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Allegheny River -->
+  <path d="M345 250 Q360 240 380 225 Q400 210 420 190 Q450 165 480 145 Q520 120 560 100 Q600 80 650 55 Q680 40 780 -10" stroke="#93BFD5" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Monongahela River -->
+  <path d="M345 250 Q355 265 365 285 Q375 310 390 335 Q405 355 425 375 Q450 400 480 420 Q510 440 545 455 Q570 465 600 480 Q640 500 700 530 Q740 550 780 570" stroke="#93BFD5" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Youghiogheny River -->
+  <path d="M480 420 Q490 400 500 385 Q515 360 530 340 Q545 320 560 305" stroke="#93BFD5" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- River fill areas -->
+  <path d="M-80 212 Q80 207 140 222 Q180 232 220 237 Q280 245 310 249 Q330 251 345 247 L345 253 Q330 257 310 255 Q280 251 220 243 Q180 238 140 228 Q80 213 -80 218Z" fill="#93BFD5" opacity="0.4"/>
+  <path d="M345 247 Q360 237 380 222 Q400 207 420 187 Q450 162 480 142 Q520 117 560 97 Q600 77 650 52 Q680 37 780 -13 L780 -5 Q680 45 650 60 Q600 85 560 105 Q520 125 480 150 Q450 170 420 195 Q400 215 380 230 Q360 245 345 255Z" fill="#93BFD5" opacity="0.4"/>
+  <path d="M342 250 Q352 265 362 285 Q372 310 387 335 Q402 355 422 375 Q447 400 477 420 Q507 440 542 455 Q567 465 597 480 Q637 500 697 530 Q737 550 780 570 L780 574 Q740 554 700 534 Q640 504 600 484 Q570 469 545 459 Q510 442 480 422 Q450 402 425 377 Q405 357 390 337 Q375 312 365 287 Q355 267 348 254Z" fill="#93BFD5" opacity="0.4"/>
+
+  <!-- Subtle road network -->
+  <path d="M-40 230 Q150 235 250 248 Q300 252 345 250 Q400 248 460 240 Q520 232 620 220" stroke="#2F5733" stroke-width="1" stroke-opacity="0.12" stroke-dasharray="8 4" fill="none"/>
+  <path d="M240 -10 Q245 80 250 160 Q255 240 250 320 Q245 380 235 440 Q225 500 215 560" stroke="#2F5733" stroke-width="1" stroke-opacity="0.12" stroke-dasharray="8 4" fill="none"/>
+  <path d="M-40 310 Q100 305 200 295 Q280 285 345 270 Q420 255 500 240 Q580 225 700 200" stroke="#2F5733" stroke-width="1" stroke-opacity="0.12" stroke-dasharray="8 4" fill="none"/>
+  <path d="M345 250 Q355 290 365 330 Q370 360 370 400 Q368 440 365 520" stroke="#2F5733" stroke-width="0.8" stroke-opacity="0.1" stroke-dasharray="6 3" fill="none"/>
+  <path d="M345 250 Q420 245 500 240 Q560 235 700 225" stroke="#2F5733" stroke-width="0.8" stroke-opacity="0.1" stroke-dasharray="6 3" fill="none"/>
+
+  <!-- Service area radius — centered in image at (350, 290) -->
+  <circle cx="350" cy="290" r="260" fill="#2F5733" fill-opacity="0.06" stroke="#2F5733" stroke-width="1.5" stroke-dasharray="6 4" stroke-opacity="0.25"/>
+  <circle cx="350" cy="290" r="165" fill="#2F5733" fill-opacity="0.04" stroke="#2F5733" stroke-width="1" stroke-dasharray="4 3" stroke-opacity="0.15"/>
+
+  <!-- Pittsburgh downtown marker -->
+  <circle cx="345" cy="250" r="8" fill="#2F5733"/>
+  <circle cx="345" cy="250" r="13" fill="none" stroke="#2F5733" stroke-width="2" opacity="0.4"/>
+  <circle cx="345" cy="250" r="20" fill="none" stroke="#2F5733" stroke-width="1" opacity="0.15"/>
+  <text x="345" y="232" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#1E3B22" letter-spacing="1">PITTSBURGH</text>
+
+  <!-- Store location marker -->
+  <circle cx="380" cy="310" r="9" fill="#B85014"/>
+  <circle cx="380" cy="310" r="15" fill="none" stroke="#B85014" stroke-width="2" opacity="0.4"/>
+
+  <!-- Surrounding communities -->
+  <circle cx="300" cy="100" r="3.5" fill="#2F5733" opacity="0.6"/>
+  <text x="300" y="92" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#1E3B22" opacity="0.7" font-weight="500">Cranberry Twp</text>
+
+  <circle cx="310" cy="175" r="3" fill="#2F5733" opacity="0.5"/>
+  <text x="310" y="167" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#1E3B22" opacity="0.6" font-weight="500">Ross Twp</text>
+
+  <circle cx="490" cy="245" r="3.5" fill="#2F5733" opacity="0.6"/>
+  <text x="490" y="237" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#1E3B22" opacity="0.7" font-weight="500">Monroeville</text>
+
+  <circle cx="440" cy="200" r="3" fill="#2F5733" opacity="0.5"/>
+  <text x="440" y="192" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#1E3B22" opacity="0.6" font-weight="500">Penn Hills</text>
+
+  <circle cx="555" cy="235" r="3" fill="#2F5733" opacity="0.5"/>
+  <text x="555" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#1E3B22" opacity="0.6" font-weight="500">Murrysville</text>
+
+  <circle cx="290" cy="320" r="3.5" fill="#2F5733" opacity="0.6"/>
+  <text x="290" y="335" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#1E3B22" opacity="0.7" font-weight="500">Mt. Lebanon</text>
+
+  <circle cx="310" cy="370" r="3" fill="#2F5733" opacity="0.5"/>
+  <text x="310" y="385" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#1E3B22" opacity="0.6" font-weight="500">Bethel Park</text>
+
+  <circle cx="440" cy="330" r="3" fill="#2F5733" opacity="0.5"/>
+  <text x="440" y="345" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#1E3B22" opacity="0.6" font-weight="500">McKeesport</text>
+
+  <circle cx="395" cy="360" r="3" fill="#2F5733" opacity="0.5"/>
+  <text x="395" y="375" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#1E3B22" opacity="0.6" font-weight="500">West Mifflin</text>
+
+  <circle cx="195" cy="215" r="3.5" fill="#2F5733" opacity="0.6"/>
+  <text x="195" y="207" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#1E3B22" opacity="0.7" font-weight="500">Moon Twp</text>
+
+  <circle cx="220" cy="270" r="3" fill="#2F5733" opacity="0.5"/>
+  <text x="220" y="285" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#1E3B22" opacity="0.6" font-weight="500">Robinson</text>
+
+  <!-- Washington — well inside the circle now -->
+  <circle cx="165" cy="435" r="3.5" fill="#2F5733" opacity="0.6"/>
+  <text x="165" y="450" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#1E3B22" opacity="0.7" font-weight="500">Washington</text>
+
+  <circle cx="230" cy="410" r="3" fill="#2F5733" opacity="0.5"/>
+  <text x="230" y="425" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#1E3B22" opacity="0.6" font-weight="500">Canonsburg</text>
+
+  <circle cx="500" cy="310" r="3" fill="#2F5733" opacity="0.5"/>
+  <text x="500" y="325" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#1E3B22" opacity="0.6" font-weight="500">Irwin</text>
+
+  <circle cx="580" cy="290" r="3" fill="#2F5733" opacity="0.5"/>
+  <text x="580" y="305" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#1E3B22" opacity="0.6" font-weight="500">Greensburg</text>
+
+  <!-- Legend -->
+  <rect x="5" y="525" width="340" height="60" rx="8" fill="white" opacity="0.92" stroke="#2F5733" stroke-width="0.5" stroke-opacity="0.1"/>
+  <circle cx="35" cy="555" r="6" fill="#B85014"/>
+  <text x="48" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#1E3B22" font-weight="600">Western PA Supply</text>
+  <line x1="195" y1="542" x2="195" y2="568" stroke="#1E3B22" stroke-width="0.5" opacity="0.2"/>
+  <circle cx="215" cy="555" r="5" fill="#2F5733" opacity="0.6"/>
+  <text x="228" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#1E3B22" font-weight="600">Service Area</text>
+</svg>
