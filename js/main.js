@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const logoScroll = document.querySelector('.logo-scroll');
   if (logoScroll) {
     const speed = 50; // pixels per second — consistent regardless of logo count
-    const setWidth = logoScroll.scrollWidth / 4; // 4 duplicate sets
+    const setWidth = logoScroll.scrollWidth / 2; // 2 duplicate sets
     const duration = setWidth / speed;
     logoScroll.style.setProperty('--scroll-duration', duration + 's');
   }
