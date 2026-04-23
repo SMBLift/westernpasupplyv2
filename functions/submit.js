@@ -29,21 +29,13 @@ export async function onRequestPost(context) {
     // --- Send notification email to client (plain text) ---
     const notificationText = `New Website Inquiry
 
-You received a new inquiry from your website contact form. Details are below.
-
 Name: ${name}
 Email: ${email || 'Not provided'}
 Phone: ${phone}
 Inquiry Type: ${inquiryType}
 
 Message:
-${message}
-
-To reply directly, respond to this email or contact the customer using the information above.
-
---
-This message was sent from the contact form on westernpasupply.com
-Western PA Supply - 3561 Valley Drive, Pittsburgh, PA 15236 - (412) 643-9638`;
+${message}`;
 
     await fetch('https://api.brevo.com/v3/smtp/email', {
       method: 'POST',
