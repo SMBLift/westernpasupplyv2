@@ -46,7 +46,7 @@ export async function onRequestPost(context) {
         'api-key': env.BREVO_API_KEY,
       },
       body: JSON.stringify({
-        sender: { name: 'Western PA Supply Co', email: 'info@westernpasupply.com' },
+        sender: { name: 'Western PA Supply', email: 'info@westernpasupply.com' },
         to: [{ email: 'info@westernpasupply.com' }],
         replyTo: email ? { email: email, name: name } : undefined,
         subject: `New ${inquiryType} from ${name} — Western PA Supply Website`,
@@ -82,7 +82,7 @@ export async function onRequestPost(context) {
           'api-key': env.BREVO_API_KEY,
         },
         body: JSON.stringify({
-          sender: { name: 'Western PA Supply Co', email: 'info@westernpasupply.com' },
+          sender: { name: 'Western PA Supply', email: 'info@westernpasupply.com' },
           to: [{ email: email, name: name }],
           subject: 'We received your inquiry — Western PA Supply Co',
           htmlContent: autoReplyHtml,
