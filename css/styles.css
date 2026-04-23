@@ -135,7 +135,7 @@ footer li a {
 /* Vendor logo scroll */
 @keyframes scroll-logos {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-25%); }
 }
 .logo-scroll-wrap {
   -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0));
