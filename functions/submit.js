@@ -26,16 +26,15 @@ export async function onRequestPost(context) {
     const inquiryType = data.inquiry_type || 'General Inquiry';
     const message = data.message || 'No message provided';
 
-    // --- Send notification email to client (plain text) ---
-    const notificationText = `New Website Inquiry
-
-Name: ${name}
-Email: ${email || 'Not provided'}
-Phone: ${phone}
-Inquiry Type: ${inquiryType}
-
-Message:
-${message}`;
+    // --- Send notification email to client (HTML) ---
+    const notificationHtml = `<div style="font-family:Arial,sans-serif;font-size:14px;color:#333;line-height:1.6;">
+<h2 style="color:#2F5733;margin:0 0 16px 0;">New Website Inquiry</h2>
+<p><strong>Name:</strong> ${name}</p>
+<p><strong>Email:</strong> ${email || 'Not provided'}</p>
+<p><strong>Phone:</strong> ${phone}</p>
+<p><strong>Inquiry Type:</strong> ${inquiryType}</p>
+<p><strong>Message:</strong><br>${message}</p>
+</div>`;
 
     await fetch('https://api.brevo.com/v3/smtp/email', {
       method: 'POST',
@@ -48,7 +47,7 @@ ${message}`;
         to: [{ email: 'info@westernpasupply.com' }],
         replyTo: email ? { email: email, name: name } : undefined,
         subject: `New ${inquiryType} from ${name}`,
-        textContent: notificationText,
+        htmlContent: notificationHtml,
       }),
     });
 
