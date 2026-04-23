@@ -26,18 +26,24 @@ export async function onRequestPost(context) {
     const inquiryType = data.inquiry_type || 'General Inquiry';
     const message = data.message || 'No message provided';
 
-    // --- Send notification email to client ---
-    const notificationHtml = `
-      <h2 style="color:#2F5733;">New Website Inquiry</h2>
-      <table style="border-collapse:collapse;width:100%;max-width:600px;">
-        <tr><td style="padding:8px 12px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5;">Name</td><td style="padding:8px 12px;border:1px solid #ddd;">${name}</td></tr>
-        <tr><td style="padding:8px 12px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5;">Email</td><td style="padding:8px 12px;border:1px solid #ddd;">${email}</td></tr>
-        <tr><td style="padding:8px 12px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5;">Phone</td><td style="padding:8px 12px;border:1px solid #ddd;">${phone}</td></tr>
-        <tr><td style="padding:8px 12px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5;">Inquiry Type</td><td style="padding:8px 12px;border:1px solid #ddd;">${inquiryType}</td></tr>
-        <tr><td style="padding:8px 12px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5;">Message</td><td style="padding:8px 12px;border:1px solid #ddd;">${message}</td></tr>
-      </table>
-      <p style="color:#888;font-size:12px;margin-top:20px;">Sent from westernpasupply.com</p>
-    `;
+    // --- Send notification email to client (plain text) ---
+    const notificationText = `New Website Inquiry
+
+You received a new inquiry from your website contact form. Details are below.
+
+Name: ${name}
+Email: ${email || 'Not provided'}
+Phone: ${phone}
+Inquiry Type: ${inquiryType}
+
+Message:
+${message}
+
+To reply directly, respond to this email or contact the customer using the information above.
+
+--
+This message was sent from the contact form on westernpasupply.com
+Western PA Supply - 3561 Valley Drive, Pittsburgh, PA 15236 - (412) 643-9638`;
 
     await fetch('https://api.brevo.com/v3/smtp/email', {
       method: 'POST',
@@ -49,31 +55,31 @@ export async function onRequestPost(context) {
         sender: { name: 'Western PA Supply', email: 'info@westernpasupply.com' },
         to: [{ email: 'info@westernpasupply.com' }],
         replyTo: email ? { email: email, name: name } : undefined,
-        subject: `New ${inquiryType} from ${name} — Western PA Supply Website`,
-        htmlContent: notificationHtml,
+        subject: `New ${inquiryType} from ${name}`,
+        textContent: notificationText,
       }),
     });
 
-    // --- Send auto-reply to submitter (only if email provided) ---
+    // --- Send auto-reply to submitter (plain text, only if email provided) ---
     if (email) {
-      const autoReplyHtml = `
-        <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;">
-          <div style="background:#2F5733;padding:24px;text-align:center;">
-            <h1 style="color:white;margin:0;font-size:22px;">Western PA Supply Co</h1>
-          </div>
-          <div style="padding:24px;background:#ffffff;">
-            <p>Hi ${name},</p>
-            <p>Thank you for reaching out to Western PA Supply Co. We've received your inquiry and will get back to you as soon as possible — typically within 1 business hour during our operating hours.</p>
-            <p><strong>Your inquiry:</strong> ${inquiryType}</p>
-            <p>If you need immediate assistance, please call us at <strong>(412) 643-9638</strong>.</p>
-            <p>Thank you,<br>Western PA Supply Co</p>
-          </div>
-          <div style="background:#f5f5f5;padding:16px;text-align:center;font-size:12px;color:#888;">
-            <p>3561 Valley Drive, Pittsburgh, PA 15236<br>(412) 643-9638 | info@westernpasupply.com</p>
-            <p>Mon–Fri: 7:00 AM – 5:00 PM | Sat: 8:00 AM – 2:00 PM</p>
-          </div>
-        </div>
-      `;
+      const autoReplyText = `Hi ${name},
+
+Thank you for reaching out to Western PA Supply. We have received your inquiry and a member of our team will get back to you as soon as possible.
+
+Your inquiry type: ${inquiryType}
+
+Our regular business hours are Monday through Friday from 7:00 AM to 5:00 PM, and Saturday from 8:00 AM to 2:00 PM. We do our best to respond to all inquiries within the same business day.
+
+If you need immediate assistance, please call us directly at (412) 643-9638. We are always happy to help.
+
+Thank you,
+Western PA Supply
+
+--
+Western PA Supply
+3561 Valley Drive, Pittsburgh, PA 15236
+(412) 643-9638 | info@westernpasupply.com
+Mon-Fri: 7:00 AM - 5:00 PM | Sat: 8:00 AM - 2:00 PM`;
 
       await fetch('https://api.brevo.com/v3/smtp/email', {
         method: 'POST',
@@ -84,8 +90,8 @@ export async function onRequestPost(context) {
         body: JSON.stringify({
           sender: { name: 'Western PA Supply', email: 'info@westernpasupply.com' },
           to: [{ email: email, name: name }],
-          subject: 'We received your inquiry — Western PA Supply Co',
-          htmlContent: autoReplyHtml,
+          subject: 'We received your inquiry - Western PA Supply',
+          textContent: autoReplyText,
         }),
       });
     }
