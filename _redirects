@@ -1,1 +1,4 @@
+# Block access to server config files
+/.htaccess  /404.html  404
+
 # Cloudflare Pages handles clean URLs automatically
