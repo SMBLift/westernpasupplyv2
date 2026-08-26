@@ -68,7 +68,7 @@ Western PA Supply
 
 --
 Western PA Supply
-3561 Valley Drive, Pittsburgh, PA 15236
+3561 Valley Drive, Pittsburgh, PA 15234
 (412) 643-9638 | info@westernpasupply.com
 Mon-Fri: 7:00 AM - 5:00 PM | Sat: 8:00 AM - 2:00 PM`;
 
